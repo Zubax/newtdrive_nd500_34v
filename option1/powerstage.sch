@@ -2261,9 +2261,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-2.1" y1="-0.6" x2="-0.8" y2="-0.6" width="0.2" layer="21"/>
 <text x="0" y="0.6" size="1" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="XT30-RA" urn="urn:adsk.eagle:footprint:6285130/2" library_version="10">
-<pad name="+" x="-2.5" y="0" drill="1.7"/>
-<pad name="-" x="2.5" y="0" drill="1.7"/>
+<package name="XT30-RA" urn="urn:adsk.eagle:footprint:6285130/2" locally_modified="yes" library_version="12" library_locally_modified="yes">
+<pad name="+" x="-2.5" y="0" drill="1.7" thermals="no"/>
+<pad name="-" x="2.5" y="0" drill="1.7" thermals="no"/>
 <pad name="P$3" x="-5.5" y="10" drill="1"/>
 <pad name="P$4" x="5.5" y="10" drill="1"/>
 <wire x1="4.95" y1="3.25" x2="4.95" y2="13.15" width="0.127" layer="21"/>
@@ -2292,7 +2292,7 @@ DIN A3, landscape with location and doc. field</description>
 <packageinstance name="BM02B-SURS-TF"/>
 </packageinstances>
 </package3d>
-<package3d name="XT30-RA" urn="urn:adsk.eagle:package:6285131/3" type="model" library_version="12">
+<package3d name="XT30-RA" urn="urn:adsk.eagle:package:6285131/3" locally_modified="yes" type="model" library_version="12" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="XT30-RA"/>
 </packageinstances>
@@ -2329,7 +2329,7 @@ DIN A3, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BATTERY_CON-2P" urn="urn:adsk.eagle:component:3750537/5" prefix="CON" library_version="12">
+<deviceset name="BATTERY_CON-2P" urn="urn:adsk.eagle:component:3750537/5" locally_modified="yes" prefix="CON" library_version="12" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="SPARKFUN-CONNECTORS_JST_2MM_MALE" x="0" y="0"/>
 </gates>
