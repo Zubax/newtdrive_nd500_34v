@@ -1,0 +1,49 @@
+# Ignore list for Eagle, a PCB layout tool
+
+# Backup files
+*.s#?
+*.b#?
+*.l#?
+
+# Eagle project file
+# It contains a serial number and references to the file structure
+# on your computer.
+# comment the following line if you want to have your project file included.
+eagle.epf
+
+# CAM files
+*.$$$
+*.cmp
+*.ly2
+*.l15
+*.sol
+*.plc
+*.stc
+*.sts
+*.crc
+*.crs
+
+*.dri
+*.drl
+*.gpi
+*.pls
+*.gbr
+
+*.drd
+*.drd.*
+
+*.info
+
+*.eps
+
+# Common files
+*~
+*.log
+desktop.ini
+Thumbs.db
+
+# Altium Designer generated files
+History
+__Previews
+history
+__previews
