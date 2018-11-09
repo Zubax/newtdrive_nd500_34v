@@ -1229,6 +1229,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
 <part name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X06" device="-2" package3d_urn="urn:adsk.eagle:package:6650269/2"/>
 <part name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
+<part name="GND2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
+<part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
+<part name="+P3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1262,17 +1265,26 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="+P1" gate="G$1" x="96.52" y="160.02" smashed="yes">
 <attribute name="VALUE" x="96.52" y="163.576" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="CON4" gate="G$1" x="243.84" y="78.74" smashed="yes">
-<attribute name="NAME" x="246.38" y="87.63" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
+<instance part="CON4" gate="G$1" x="223.52" y="101.6" smashed="yes">
+<attribute name="NAME" x="226.06" y="110.49" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="CON5" gate="G$1" x="243.84" y="63.5" smashed="yes">
-<attribute name="NAME" x="246.38" y="72.39" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
+<instance part="CON5" gate="G$1" x="223.52" y="96.52" smashed="yes" rot="MR180">
+<attribute name="NAME" x="226.06" y="87.63" size="1.778" layer="95" font="vector" ratio="15" rot="MR180" align="center"/>
 </instance>
-<instance part="CON3" gate="G$1" x="243.84" y="109.22" smashed="yes">
-<attribute name="NAME" x="246.38" y="128.27" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
+<instance part="CON3" gate="G$1" x="223.52" y="114.3" smashed="yes">
+<attribute name="NAME" x="226.06" y="133.35" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="CON6" gate="G$1" x="243.84" y="137.16" smashed="yes">
-<attribute name="NAME" x="246.38" y="146.05" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
+<instance part="CON6" gate="G$1" x="223.52" y="162.56" smashed="yes" rot="MR180">
+<attribute name="NAME" x="226.06" y="153.67" size="1.778" layer="95" font="vector" ratio="15" rot="MR180" align="center"/>
+</instance>
+<instance part="GND2" gate="1" x="233.68" y="152.4" smashed="yes">
+<attribute name="VALUE" x="233.68" y="151.13" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="GND3" gate="1" x="233.68" y="86.36" smashed="yes">
+<attribute name="VALUE" x="233.68" y="85.09" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="+P3" gate="G$1" x="233.68" y="96.52" smashed="yes">
+<attribute name="VALUE" x="233.68" y="100.076" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -1287,6 +1299,18 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="CON1" gate="G$1" pin="10"/>
 <wire x1="93.98" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
 <junction x="93.98" y="154.94"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="233.68" y1="157.48" x2="233.68" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="CON6" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="157.48" x2="231.14" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="233.68" y1="88.9" x2="233.68" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="CON5" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PHASE_A_GND" class="0">
@@ -1403,12 +1427,22 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="MODULE2" gate="G$1" pin="CAN1_TX"/>
 <label x="170.18" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="5"/>
+<wire x1="231.14" y1="127" x2="233.68" y2="127" width="0.1524" layer="91"/>
+<label x="233.68" y="127" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="CAN1_RX" class="0">
 <segment>
 <wire x1="165.1" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="MODULE2" gate="G$1" pin="CAN1_RX"/>
 <label x="170.18" y="154.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="4"/>
+<wire x1="231.14" y1="124.46" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
+<label x="233.68" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VDD_5V" class="0">
@@ -1423,6 +1457,12 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="+P1" gate="G$1" pin="VDD_5V"/>
 <wire x1="96.52" y1="157.48" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="160.02" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON5" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="93.98" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="+P3" gate="G$1" pin="VDD_5V"/>
+<wire x1="233.68" y1="93.98" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TEMPERATURE_SENSOR" class="0">
@@ -1501,6 +1541,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="165.1" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
 <label x="170.18" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
+<label x="233.68" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO1" class="0">
 <segment>
@@ -1508,12 +1553,70 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="165.1" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
 <label x="167.64" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON6" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="160.02" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
+<label x="233.68" y="160.02" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="3"/>
+<wire x1="231.14" y1="121.92" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
+<label x="233.68" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO2" class="0">
 <segment>
 <pinref part="MODULE2" gate="G$1" pin="GPIO2"/>
 <wire x1="165.1" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
 <label x="167.64" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CAN1_LED" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="CAN1_LED"/>
+<wire x1="165.1" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
+<label x="167.64" y="139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="6"/>
+<wire x1="231.14" y1="129.54" x2="233.68" y2="129.54" width="0.1524" layer="91"/>
+<label x="233.68" y="129.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="RGB_LED_B"/>
+<wire x1="165.1" y1="124.46" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
+<label x="167.64" y="124.46" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="116.84" x2="233.68" y2="116.84" width="0.1524" layer="91"/>
+<label x="233.68" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GREEN" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="RGB_LED_G"/>
+<wire x1="165.1" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
+<label x="167.64" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON4" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="106.68" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
+<label x="233.68" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RED" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="RGB_LED_R"/>
+<wire x1="165.1" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+<label x="167.64" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON4" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="104.14" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
+<label x="233.68" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
