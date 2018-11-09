@@ -228,162 +228,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="R_digikey" urn="urn:adsk.eagle:library:2539499">
-<description>Yageo resistor library with digikey partnumbers assigned. All resistors are 1% if not specified additionally</description>
-<packages>
-<package name="R0402" urn="urn:adsk.eagle:footprint:2539502/1" library_version="2">
-<smd name="1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
-<smd name="2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
-<text x="0" y="0" size="0.5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="0.9" size="0.5" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<wire x1="-0.9" y1="0.45" x2="0.9" y2="0.45" width="0.1" layer="21"/>
-<wire x1="0.9" y1="0.45" x2="0.9" y2="-0.45" width="0.1" layer="21"/>
-<wire x1="0.9" y1="-0.45" x2="-0.9" y2="-0.45" width="0.1" layer="21"/>
-<wire x1="-0.9" y1="-0.45" x2="-0.9" y2="0.45" width="0.1" layer="21"/>
-</package>
-<package name="R0603" urn="urn:adsk.eagle:footprint:2539505/1" library_version="2">
-<smd name="P$1" x="-0.725" y="0" dx="0.6" dy="0.9" layer="1"/>
-<smd name="P$2" x="0.725" y="0" dx="0.6" dy="0.9" layer="1"/>
-<wire x1="-1.125" y1="0.55" x2="-1.125" y2="-0.55" width="0.1" layer="21"/>
-<wire x1="-1.125" y1="-0.55" x2="1.125" y2="-0.55" width="0.1" layer="21"/>
-<wire x1="1.125" y1="-0.55" x2="1.125" y2="0.55" width="0.1" layer="21"/>
-<wire x1="1.125" y1="0.55" x2="-1.125" y2="0.55" width="0.1" layer="21"/>
-<text x="0" y="0" size="0.5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="1" size="0.5" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="R0805" urn="urn:adsk.eagle:footprint:2539506/1" library_version="2">
-<smd name="1" x="-1" y="0" dx="0.9" dy="1.3" layer="1"/>
-<smd name="2" x="1" y="0" dx="0.9" dy="1.3" layer="1"/>
-<wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.127" layer="51"/>
-<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.127" layer="51"/>
-<text x="0" y="0" size="0.5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.27" size="0.5" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="R0402" urn="urn:adsk.eagle:package:2539512/2" type="model" library_version="2">
-<packageinstances>
-<packageinstance name="R0402"/>
-</packageinstances>
-</package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:2539515/2" type="model" library_version="2">
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-<package3d name="R0805" urn="urn:adsk.eagle:package:2539516/2" type="model" library_version="2">
-<packageinstances>
-<packageinstance name="R0805"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="R-EU" urn="urn:adsk.eagle:symbol:2539509/1" library_version="2">
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<text x="0" y="0" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="-0.254" y="-2.032" size="0.762" layer="96" align="bottom-right">&gt;VALUE</text>
-<text x="-3.81" y="0.508" size="0.508" layer="95" align="center">&gt;PACKAGE</text>
-<text x="0.254" y="-2.032" size="0.762" layer="96">&gt;TOLERANCE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1K" urn="urn:adsk.eagle:component:2539526/2" prefix="R" library_version="2" library_locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="R-EU" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0402" package="R0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2539512/2"/>
-</package3dinstances>
-<technologies>
-<technology name="-1%">
-<attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" constant="no"/>
-<attribute name="MANF" value="Yageo" constant="no"/>
-<attribute name="MANF#" value="RC0402FR-071KL" constant="no"/>
-<attribute name="PACKAGE" value="0402" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-<technology name="-5%">
-<attribute name="DIGIKEY#" value="311-1.0KJRTR-ND" constant="no"/>
-<attribute name="MANF" value="Yageo" constant="no"/>
-<attribute name="MANF#" value="RC0402JR-071KL" constant="no"/>
-<attribute name="PACKAGE" value="0402" constant="no"/>
-<attribute name="TOLERANCE" value="5%" constant="no"/>
-<attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603" package="R0603">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2539515/2"/>
-</package3dinstances>
-<technologies>
-<technology name="-1%">
-<attribute name="DIGIKEY#" value="311-1.00KHRCT-ND" constant="no"/>
-<attribute name="MANF" value="Yageo" constant="no"/>
-<attribute name="MANF#" value="RC0603FR-071KL" constant="no"/>
-<attribute name="PACKAGE" value="0603" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-<technology name="-5%">
-<attribute name="DIGIKEY#" value="311-1.0KGRCT-ND" constant="no"/>
-<attribute name="MANF" value="Yageo" constant="no"/>
-<attribute name="MANF#" value="RC0603JR-071KL" constant="no"/>
-<attribute name="PACKAGE" value="0603" constant="no"/>
-<attribute name="TOLERANCE" value="5%" constant="no"/>
-<attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-0805" package="R0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2539516/2"/>
-</package3dinstances>
-<technologies>
-<technology name="-1%">
-<attribute name="DIGIKEY#" value="YAG1240CT-ND" constant="no"/>
-<attribute name="MANF" value="Yageo" constant="no"/>
-<attribute name="MANF#" value="RT0805FRE071KL" constant="no"/>
-<attribute name="PACKAGE" value="0805" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-<technology name="-5%">
-<attribute name="DIGIKEY#" value="311-1.0KARCT-ND" constant="no"/>
-<attribute name="MANF" value="Yageo" constant="no"/>
-<attribute name="MANF#" value="RC0805JR-071KL" constant="no"/>
-<attribute name="PACKAGE" value="0805" constant="no"/>
-<attribute name="TOLERANCE" value="5%" constant="no"/>
-<attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -579,87 +423,105 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="2" y1="-1" x2="-0.5" y2="-1" width="0.15" layer="21"/>
 <text x="0" y="1.6" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="1X04-PTH-2.54" urn="urn:adsk.eagle:footprint:2540359/1" library_version="11">
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<package name="1X06-PTH-2.54" urn="urn:adsk.eagle:footprint:2540361/1" library_version="13" library_locally_modified="yes">
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1" diameter="1.7" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1" diameter="1.7" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1" diameter="1.7" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1" diameter="1.7" rot="R90"/>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1" diameter="1.9" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1" diameter="1.9" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1" diameter="1.9" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1" diameter="1.9" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1" diameter="1.9" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1" diameter="1.9" rot="R90"/>
 <text x="0" y="0" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 </package>
-<package name="1X04-PTH-2" urn="urn:adsk.eagle:footprint:4854335/2" library_version="11">
-<pad name="1" x="-3" y="0" drill="0.8" diameter="1.4"/>
-<pad name="2" x="-1" y="0" drill="0.8" diameter="1.4"/>
-<pad name="3" x="1" y="0" drill="0.8" diameter="1.4"/>
-<pad name="4" x="3" y="0" drill="0.8" diameter="1.4"/>
-<wire x1="-3.5" y1="1" x2="-2.5" y2="1" width="0.15" layer="25"/>
-<wire x1="-2.5" y1="1" x2="-2" y2="0.5" width="0.15" layer="25"/>
-<wire x1="-2" y1="-0.5" x2="-2.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="-2.5" y1="-1" x2="-3.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="-3.5" y1="-1" x2="-4" y2="-0.5" width="0.15" layer="25"/>
-<wire x1="-4" y1="-0.5" x2="-4" y2="0.5" width="0.15" layer="25"/>
-<wire x1="-4" y1="0.5" x2="-3.5" y2="1" width="0.15" layer="25"/>
-<wire x1="-1.5" y1="1" x2="-0.5" y2="1" width="0.15" layer="25"/>
-<wire x1="-0.5" y1="1" x2="0" y2="0.5" width="0.15" layer="25"/>
-<wire x1="0" y1="-0.5" x2="-0.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="-0.5" y1="-1" x2="-1.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="-1.5" y1="-1" x2="-2" y2="-0.5" width="0.15" layer="25"/>
-<wire x1="-2" y1="0.5" x2="-1.5" y2="1" width="0.15" layer="25"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="1" width="0.15" layer="25"/>
-<wire x1="1.5" y1="1" x2="2" y2="0.5" width="0.15" layer="25"/>
-<wire x1="2" y1="-0.5" x2="1.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="1.5" y1="-1" x2="0.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="0.5" y1="-1" x2="0" y2="-0.5" width="0.15" layer="25"/>
-<wire x1="0" y1="0.5" x2="0.5" y2="1" width="0.15" layer="25"/>
-<wire x1="2.5" y1="1" x2="3.5" y2="1" width="0.15" layer="25"/>
-<wire x1="3.5" y1="1" x2="4" y2="0.5" width="0.15" layer="25"/>
-<wire x1="4" y1="-0.5" x2="3.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="3.5" y1="-1" x2="2.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="2.5" y1="-1" x2="2" y2="-0.5" width="0.15" layer="25"/>
-<wire x1="2" y1="0.5" x2="2.5" y2="1" width="0.15" layer="25"/>
-<wire x1="4" y1="-0.5" x2="4" y2="0.5" width="0.15" layer="25"/>
+<package name="1X06-PTH-2" urn="urn:adsk.eagle:footprint:6650267/1" library_version="13" library_locally_modified="yes">
+<pad name="1" x="-5" y="0" drill="0.8" diameter="1.4"/>
+<pad name="2" x="-3" y="0" drill="0.8" diameter="1.4"/>
+<pad name="3" x="-1" y="0" drill="0.8" diameter="1.4"/>
+<pad name="4" x="1" y="0" drill="0.8" diameter="1.4"/>
+<pad name="5" x="3" y="0" drill="0.8" diameter="1.4"/>
+<pad name="6" x="5" y="0" drill="0.8" diameter="1.4"/>
+<wire x1="-5.5" y1="1" x2="-4.5" y2="1" width="0.15" layer="51"/>
+<wire x1="-4.5" y1="1" x2="-4" y2="0.5" width="0.15" layer="51"/>
+<wire x1="-4" y1="-0.5" x2="-4.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="-4.5" y1="-1" x2="-5.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="-5.5" y1="-1" x2="-6" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="-6" y1="-0.5" x2="-6" y2="0.5" width="0.15" layer="51"/>
+<wire x1="-6" y1="0.5" x2="-5.5" y2="1" width="0.15" layer="51"/>
+<wire x1="-3.5" y1="1" x2="-2.5" y2="1" width="0.15" layer="51"/>
+<wire x1="-2.5" y1="1" x2="-2" y2="0.5" width="0.15" layer="51"/>
+<wire x1="-2" y1="-0.5" x2="-2.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="-2.5" y1="-1" x2="-3.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="-3.5" y1="-1" x2="-4" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="-4" y1="0.5" x2="-3.5" y2="1" width="0.15" layer="51"/>
+<wire x1="-1.5" y1="1" x2="-0.5" y2="1" width="0.15" layer="51"/>
+<wire x1="-0.5" y1="1" x2="0" y2="0.5" width="0.15" layer="51"/>
+<wire x1="0" y1="-0.5" x2="-0.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="-0.5" y1="-1" x2="-1.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="-1.5" y1="-1" x2="-2" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="-2" y1="0.5" x2="-1.5" y2="1" width="0.15" layer="51"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="1" width="0.15" layer="51"/>
+<wire x1="1.5" y1="1" x2="2" y2="0.5" width="0.15" layer="51"/>
+<wire x1="2" y1="-0.5" x2="1.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="1.5" y1="-1" x2="0.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="0.5" y1="-1" x2="0" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="0" y1="0.5" x2="0.5" y2="1" width="0.15" layer="51"/>
+<wire x1="2.5" y1="1" x2="3.5" y2="1" width="0.15" layer="51"/>
+<wire x1="3.5" y1="1" x2="4" y2="0.5" width="0.15" layer="51"/>
+<wire x1="4" y1="-0.5" x2="3.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="3.5" y1="-1" x2="2.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="2.5" y1="-1" x2="2" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="2" y1="0.5" x2="2.5" y2="1" width="0.15" layer="51"/>
+<wire x1="4.5" y1="1" x2="5.5" y2="1" width="0.15" layer="51"/>
+<wire x1="5.5" y1="-1" x2="4.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="6" y1="-0.5" x2="5.5" y2="-1" width="0.15" layer="51"/>
+<wire x1="5.5" y1="1" x2="6" y2="0.5" width="0.15" layer="51"/>
+<wire x1="6" y1="-0.5" x2="6" y2="0.5" width="0.15" layer="51"/>
+<wire x1="4" y1="0.5" x2="4.5" y2="1" width="0.15" layer="51"/>
+<wire x1="4.5" y1="-1" x2="4" y2="-0.5" width="0.15" layer="51"/>
 <text x="0" y="1.6" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-<package name="1X04-PTH-2-FEMALE" urn="urn:adsk.eagle:footprint:6503392/1" library_version="11">
-<pad name="1" x="-3" y="0" drill="0.8" diameter="1.4"/>
-<pad name="2" x="-1" y="0" drill="0.8" diameter="1.4"/>
-<pad name="3" x="1" y="0" drill="0.8" diameter="1.4"/>
-<pad name="4" x="3" y="0" drill="0.8" diameter="1.4"/>
-<text x="0" y="1.6" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<wire x1="-2.5" y1="-1" x2="4" y2="-1" width="0.15" layer="21"/>
-<wire x1="4" y1="-1" x2="4" y2="1" width="0.15" layer="21"/>
-<wire x1="4" y1="1" x2="-4" y2="1" width="0.15" layer="21"/>
-<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.15" layer="21"/>
-<wire x1="-4" y1="-1" x2="-2.5" y2="-1" width="0.15" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -688,19 +550,14 @@ DIN A3, landscape with location and doc. field</description>
 <packageinstance name="1X02-PTH-2-FEMALE"/>
 </packageinstances>
 </package3d>
-<package3d name="1X04-PTH-2.54" urn="urn:adsk.eagle:package:2540383/2" type="model" library_version="11">
+<package3d name="1X06-PTH-2.54" urn="urn:adsk.eagle:package:2540381/1" type="box" library_version="13" library_locally_modified="yes">
 <packageinstances>
-<packageinstance name="1X04-PTH-2.54"/>
+<packageinstance name="1X06-PTH-2.54"/>
 </packageinstances>
 </package3d>
-<package3d name="1X04-PTH-2" urn="urn:adsk.eagle:package:4854340/3" type="model" library_version="11">
+<package3d name="1X06-PTH-2" urn="urn:adsk.eagle:package:6650269/2" type="model" library_version="13" library_locally_modified="yes">
 <packageinstances>
-<packageinstance name="1X04-PTH-2"/>
-</packageinstances>
-</package3d>
-<package3d name="1X04-PTH-2-FEMALE" urn="urn:adsk.eagle:package:6503396/2" type="model" library_version="11">
-<packageinstances>
-<packageinstance name="1X04-PTH-2-FEMALE"/>
+<packageinstance name="1X06-PTH-2"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -745,7 +602,7 @@ DIN A3, landscape with location and doc. field</description>
 <pin name="1" x="7.62" y="2.54" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="5.08" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="M04" urn="urn:adsk.eagle:symbol:2540348/1" library_version="11">
+<symbol name="M06" urn="urn:adsk.eagle:symbol:2540346/1" library_version="13" library_locally_modified="yes">
 <wire x1="6.35" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="7.62" x2="5.08" y2="7.62" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="5.08" x2="5.08" y2="5.08" width="0.6096" layer="94"/>
@@ -753,18 +610,22 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="0" y1="10.16" x2="0" y2="0" width="0.4064" layer="94"/>
 <wire x1="6.35" y1="0" x2="6.35" y2="10.16" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="10.16" x2="5.08" y2="10.16" width="0.6096" layer="94"/>
-<wire x1="0" y1="12.7" x2="0" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="6.35" y1="2.54" x2="6.35" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="0" y1="12.7" x2="6.35" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="6.35" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="0" y1="17.78" x2="6.35" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="12.7" x2="5.08" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="15.24" x2="5.08" y2="15.24" width="0.6096" layer="94"/>
 <pin name="1" x="7.62" y="2.54" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="5.08" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="7.62" y="7.62" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="7.62" y="10.16" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="2.54" y="13.97" size="1.778" layer="95" font="vector" ratio="15" align="center">&gt;NAME</text>
+<pin name="5" x="7.62" y="12.7" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="7.62" y="15.24" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="2.54" y="19.05" size="1.778" layer="95" font="vector" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHEAD_1X10" urn="urn:adsk.eagle:component:6503374/2" locally_modified="yes" prefix="CON" library_version="9" library_locally_modified="yes">
+<deviceset name="PINHEAD_1X10" urn="urn:adsk.eagle:component:6503374/3" prefix="CON" library_version="13" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="M10" x="0" y="0"/>
 </gates>
@@ -855,48 +716,39 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD_1X04" urn="urn:adsk.eagle:component:2540404/6" prefix="CON" library_version="11">
+<deviceset name="PINHEAD_1X06" urn="urn:adsk.eagle:component:2540402/3" prefix="CON" library_version="13" library_locally_modified="yes">
+<description>pinheader 6P</description>
 <gates>
-<gate name="G$1" symbol="M04" x="0" y="0"/>
+<gate name="G$1" symbol="M06" x="-5.08" y="-7.62"/>
 </gates>
 <devices>
-<device name="-2.54" package="1X04-PTH-2.54">
+<device name="-2.54" package="1X06-PTH-2.54">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2540383/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2540381/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-2" package="1X04-PTH-2">
+<device name="-2" package="1X06-PTH-2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4854340/3"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-2-FEMALE" package="1X04-PTH-2-FEMALE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6503396/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6650269/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1227,7 +1079,7 @@ DIN A3, landscape with location and doc. field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="MITOHONDRIQUE" urn="urn:adsk.eagle:package:4410646/9" type="model" library_version="7">
+<package3d name="MITOHONDRIQUE" urn="urn:adsk.eagle:package:4410646/10" type="model" library_version="8" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="MITOHONDRIQUE"/>
 </packageinstances>
@@ -1286,7 +1138,7 @@ DIN A3, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MITOHONDRIQUE" urn="urn:adsk.eagle:component:5014900/5" prefix="MODULE" library_version="7">
+<deviceset name="MITOHONDRIQUE" urn="urn:adsk.eagle:component:5014900/5" locally_modified="yes" prefix="MODULE" library_version="8" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="MITOHONDRIQUE" x="-22.86" y="-27.94"/>
 </gates>
@@ -1337,7 +1189,7 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="VDC" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4410646/9"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4410646/10"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -1369,15 +1221,14 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="+P15" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
-<part name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="1K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="1K"/>
-<part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="CON1" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X10" device="-2" package3d_urn="urn:adsk.eagle:package:6503373/2"/>
 <part name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X10" device="-2" package3d_urn="urn:adsk.eagle:package:6503373/2"/>
-<part name="MODULE2" library="zubax_modules" library_urn="urn:adsk.eagle:library:5014895" deviceset="MITOHONDRIQUE" device="-TH" package3d_urn="urn:adsk.eagle:package:4410646/9"/>
+<part name="MODULE2" library="zubax_modules" library_urn="urn:adsk.eagle:library:5014895" deviceset="MITOHONDRIQUE" device="-TH" package3d_urn="urn:adsk.eagle:package:4410646/10"/>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
 <part name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
-<part name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X04" device="-2" package3d_urn="urn:adsk.eagle:package:4854340/3"/>
+<part name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X06" device="-2" package3d_urn="urn:adsk.eagle:package:6650269/2"/>
+<part name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -1398,15 +1249,6 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="+P15" gate="G$1" x="86.36" y="175.26" smashed="yes">
 <attribute name="VALUE" x="86.36" y="178.816" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="R7" gate="G$1" x="182.88" y="114.3" smashed="yes">
-<attribute name="NAME" x="182.88" y="114.3" size="1.27" layer="95" align="center"/>
-<attribute name="VALUE" x="182.626" y="112.268" size="0.762" layer="96" align="bottom-right"/>
-<attribute name="PACKAGE" x="179.07" y="114.808" size="0.508" layer="95" align="center"/>
-<attribute name="TOLERANCE" x="183.134" y="112.268" size="0.762" layer="96"/>
-</instance>
-<instance part="GND5" gate="1" x="190.5" y="109.22" smashed="yes">
-<attribute name="VALUE" x="190.5" y="107.95" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
-</instance>
 <instance part="CON1" gate="G$1" x="53.34" y="129.54" smashed="yes">
 <attribute name="NAME" x="55.88" y="158.75" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
 </instance>
@@ -1426,8 +1268,11 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="CON5" gate="G$1" x="243.84" y="63.5" smashed="yes">
 <attribute name="NAME" x="246.38" y="72.39" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="CON6" gate="G$1" x="243.84" y="91.44" smashed="yes">
-<attribute name="NAME" x="246.38" y="105.41" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
+<instance part="CON3" gate="G$1" x="243.84" y="109.22" smashed="yes">
+<attribute name="NAME" x="246.38" y="128.27" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="CON6" gate="G$1" x="243.84" y="137.16" smashed="yes">
+<attribute name="NAME" x="246.38" y="146.05" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -1442,12 +1287,6 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="CON1" gate="G$1" pin="10"/>
 <wire x1="93.98" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
 <junction x="93.98" y="154.94"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="190.5" y1="111.76" x2="190.5" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="114.3" x2="190.5" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PHASE_A_GND" class="0">
@@ -1606,13 +1445,6 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="86.36" y="152.4"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="114.3" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="MODULE2" gate="G$1" pin="OVERCURRENT_PROTECT_ADJ"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="MODULE2" gate="G$1" pin="PHASE_B_CURRENT_SHUNT_N"/>
@@ -1661,6 +1493,27 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="MODULE2" gate="G$1" pin="PHASE_C_GND"/>
 <wire x1="99.06" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADJ" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="OVERCURRENT_PROTECT_ADJ"/>
+<wire x1="165.1" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
+<label x="170.18" y="114.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO1" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="GPIO1"/>
+<wire x1="165.1" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
+<label x="167.64" y="109.22" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="MODULE2" gate="G$1" pin="GPIO2"/>
+<wire x1="165.1" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
+<label x="167.64" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

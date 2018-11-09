@@ -3,13 +3,13 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="43" fill="3" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="43" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -160,7 +160,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA3MTU4OTYxMDMx" f3durn="urn:adsk.wipprod:dm.lineage:_zUJdTBaRLCD_-5DP9al2w" pcbguid="2e9e703c-97ce-42ce-bfdd-90fc51a98e88" lastpulledtime="" lastsyncedchangeguid="23c065a5-5e05-092b-9a2e-3891d8aefaed"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:v92O1HPQSzG6kzokTBHcyQ" pcbguid="17a23a6a-8844-4dc0-923b-d1b5f92025ee" lastpulledtime="" lastsyncedchangeguid="d625cac7-7f53-5feb-f88b-46cc0c7f94fd"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
@@ -1796,11 +1796,11 @@
 <attribute name="VALUE" x="-8.7" y="15.3" size="0.5" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VOLTAGE" value="25V" x="59.3" y="340.2" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="CON2" library="Connectors" library_urn="urn:adsk.eagle:library:3750510" package="XT30-RA" package3d_urn="urn:adsk.eagle:package:6285131/3" value="BATTERY_CON-2P-XT30-RA" x="0" y="-11.25" smashed="yes" rot="R180">
-<attribute name="LINK" value="https://www.tme.eu/en/details/xt30pw-m/dc-power-connectors/amass/" x="0" y="-11.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANF" value="AMASS" x="0" y="-11.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANF#" value="XT30PW-M" x="0" y="-11.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="0" y="-16.33" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="CON2" library="Connectors" library_urn="urn:adsk.eagle:library:3750510" package="XT30-RA" package3d_urn="urn:adsk.eagle:package:6285131/3" value="BATTERY_CON-2P-XT30-RA" x="0" y="-11.25" locked="yes" smashed="yes" rot="MR180">
+<attribute name="LINK" value="https://www.tme.eu/en/details/xt30pw-m/dc-power-connectors/amass/" x="0" y="-11.25" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANF" value="AMASS" x="0" y="-11.25" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANF#" value="XT30PW-M" x="0" y="-11.25" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="0" y="-16.33" size="1.27" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="Q2" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" package="SOT-1205" package3d_urn="urn:adsk.eagle:package:6302219/2" value="BUK7K6R2-40EX" x="6.5" y="11.75" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="568-11626-1-ND" x="6.5" y="11.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1852,29 +1852,17 @@
 <attribute name="NAME" x="10.1" y="-15.9" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="PACKAGE" value="RADIAL_6.3x12.5" x="10.1" y="-14.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" package="SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" value="PTVS36VP1UP,115-36V-SOD128" x="0.25" y="-18.5" smashed="yes" rot="MR180">
-<attribute name="DIGIKEY#" value="1727-4439-2-ND" x="0.25" y="-18.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANF" value="Nexperia USA Inc" x="0.25" y="-18.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANF#" value="PTVS36VP1UP,115" x="0.25" y="-18.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="0.25" y="-18.5" size="0.6" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<element name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" package="SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" value="PTVS36VP1UP,115-36V-SOD128" x="0.25" y="-18.5" smashed="yes" rot="R180">
+<attribute name="DIGIKEY#" value="1727-4439-2-ND" x="0.25" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANF" value="Nexperia USA Inc" x="0.25" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANF#" value="PTVS36VP1UP,115" x="0.25" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="0.25" y="-18.5" size="0.6" layer="25" font="vector" ratio="15" align="center"/>
 </element>
-<element name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" package="SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" value="PTVS36VP1UP,115-36V-SOD128" x="0.25" y="-14.75" smashed="yes" rot="MR180">
-<attribute name="DIGIKEY#" value="1727-4439-2-ND" x="0.25" y="-14.75" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANF" value="Nexperia USA Inc" x="0.25" y="-14.75" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANF#" value="PTVS36VP1UP,115" x="0.25" y="-14.75" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="0.25" y="-14.75" size="0.6" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
-</element>
-<element name="D3" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" package="SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" value="PTVS36VP1UP,115-36V-SOD128" x="7.3" y="-11" smashed="yes" rot="R180">
-<attribute name="DIGIKEY#" value="1727-4439-2-ND" x="7.3" y="-11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANF" value="Nexperia USA Inc" x="7.3" y="-11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANF#" value="PTVS36VP1UP,115" x="7.3" y="-11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.3" y="-11" size="0.6" layer="25" font="vector" ratio="15" align="center"/>
-</element>
-<element name="D4" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" package="SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" value="PTVS36VP1UP,115-36V-SOD128" x="-7.3" y="-11" smashed="yes" rot="R180">
-<attribute name="DIGIKEY#" value="1727-4439-2-ND" x="-7.3" y="-11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANF" value="Nexperia USA Inc" x="-7.3" y="-11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANF#" value="PTVS36VP1UP,115" x="-7.3" y="-11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-7.3" y="-11" size="0.6" layer="25" font="vector" ratio="15" align="center"/>
+<element name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" package="SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" value="PTVS36VP1UP,115-36V-SOD128" x="0.25" y="-14.75" smashed="yes" rot="R180">
+<attribute name="DIGIKEY#" value="1727-4439-2-ND" x="0.25" y="-14.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANF" value="Nexperia USA Inc" x="0.25" y="-14.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANF#" value="PTVS36VP1UP,115" x="0.25" y="-14.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="0.25" y="-14.75" size="0.6" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U$13" library="pixhawk_esc_1.5_master_lib" package="ZUBAX_LOGO_5X10" value="" x="-6.225" y="-5.475" smashed="yes"/>
 <element name="U$1" library="pixhawk_esc_1.5_master_lib" package="ZUBAX_LOGO_5X10" value="" x="5.2" y="-2.6" smashed="yes" rot="MR0"/>
@@ -1990,11 +1978,11 @@
 <vertex x="3.825" y="3.275"/>
 <vertex x="3.825" y="4.875"/>
 </polygon>
-<polygon width="0.25" layer="16" thermals="no">
-<vertex x="3.725" y="-19.425"/>
-<vertex x="0.9" y="-19.425"/>
-<vertex x="0.9" y="-9.95"/>
-<vertex x="3.725" y="-9.95"/>
+<polygon width="0.25" layer="1" thermals="no">
+<vertex x="-0.525" y="-19.425"/>
+<vertex x="-3.85" y="-19.425"/>
+<vertex x="-3.85" y="-9.95"/>
+<vertex x="-0.525" y="-9.95"/>
 </polygon>
 <polygon width="0.15" layer="1" thermals="no" rank="2">
 <vertex x="-7.1" y="13.5"/>
@@ -2018,29 +2006,6 @@
 <vertex x="-10.25" y="10.35"/>
 <vertex x="6.3" y="10.35"/>
 </polygon>
-<contactref element="D3" pad="C"/>
-<contactref element="D4" pad="C"/>
-<polygon width="0.2" layer="1" thermals="no">
-<vertex x="-10.075" y="-10.05"/>
-<vertex x="-7.55" y="-10.05"/>
-<vertex x="-7.55" y="-11.575"/>
-<vertex x="-7.55" y="-11.925"/>
-<vertex x="-10.1" y="-11.925"/>
-<vertex x="-10.1" y="-10.05"/>
-</polygon>
-<polygon width="0.2" layer="1" thermals="no">
-<vertex x="1.325" y="-10.05"/>
-<vertex x="5.7" y="-10.05"/>
-<vertex x="5.7" y="-12.425"/>
-<vertex x="1.325" y="-12.425"/>
-</polygon>
-<wire x1="-9.5" y1="-11" x2="-9.5" y2="-10.425" width="0.2" layer="1"/>
-<via x="-7.775" y="-11" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-8.425" y="-11" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-7.775" y="-11.65" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-8.425" y="-11.65" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-7.775" y="-10.35" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-8.425" y="-10.35" extent="1-16" drill="0.3" diameter="0.6"/>
 </signal>
 <signal name="PHASE_A_GND">
 <contactref element="CON3" pad="5"/>
@@ -2654,7 +2619,6 @@
 <via x="-4.875" y="-1.75" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="5.425" y="-6.4" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-14.1" y="-10.85" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-3.525" y="-15.675" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="6.9" y="-17.65" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="10.05" y="-9.275" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="1.975" y="-1.325" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -2664,8 +2628,6 @@
 <via x="-8.325" y="2.375" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-8.25" y="0.8" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-6.625" y="0.75" extent="1-16" drill="0.3" diameter="0.6"/>
-<contactref element="D3" pad="A"/>
-<contactref element="D4" pad="A"/>
 </signal>
 <signal name="N$3">
 <contactref element="R15" pad="2"/>
