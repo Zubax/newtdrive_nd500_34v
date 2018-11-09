@@ -3,10 +3,10 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="17.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -163,7 +163,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:_TkHep1GTMWsDCtoLhAClw" pcbguid="c7165b28-e24e-489a-b595-1ddecda9438c" lastpulledtime="" lastsyncedchangeguid="1b245db1-53e4-07b8-1d43-444b8befaec7"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:lsvsUq1SRlGOMfbgtklUsg" pcbguid="c3b5b2e2-1a19-4295-a55b-9dd98556ae45" lastpulledtime="2018-11-09T15:26:44Z" lastsyncedchangeguid="9c5c1cd4-338a-4eff-8588-996fee6bc4df"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash"/>
@@ -192,23 +192,26 @@
 <text x="-7.575" y="8.7" size="1.5" layer="16" font="vector" ratio="15" rot="MR315" align="center">SadullliL</text>
 <circle x="0" y="0" radius="21" width="0.01" layer="49"/>
 <circle x="-10.1" y="-14.4" radius="3.4" width="0.01" layer="49"/>
-<wire x1="13.4993" y1="-14.4671" x2="13.4993" y2="-14.9814" width="0.01" layer="20"/>
-<wire x1="13.4993" y1="-14.9814" x2="14.3409" y2="-15.3466" width="0.01" layer="20" curve="133.087784"/>
-<wire x1="14.3409" y1="-15.3466" x2="18.7" y2="-9.556" width="0.01" layer="20" curve="19.880009"/>
-<wire x1="18.7" y1="-9.556" x2="18.7" y2="9.54" width="0.01" layer="20"/>
-<wire x1="18.7" y1="9.54" x2="14.6817" y2="15" width="0.01" layer="20" curve="18.577554"/>
-<wire x1="14.6817" y1="15" x2="-14.683" y2="15" width="0.01" layer="20"/>
-<wire x1="-14.683" y1="15" x2="-18.7" y2="9.5426" width="0.01" layer="20" curve="18.569608"/>
-<wire x1="-18.7" y1="9.5426" x2="-18.7" y2="-9.556" width="0.01" layer="20"/>
-<wire x1="-18.7" y1="-9.556" x2="-17.888" y2="-11" width="0.01" layer="20" curve="4.521"/>
-<wire x1="-17.888" y1="-11" x2="-14.3471" y2="-15.3352" width="0.01" layer="20" curve="15.317892"/>
-<wire x1="-14.3471" y1="-15.3352" x2="-13.5007" y2="-14.9477" width="0.01" layer="20" curve="136.888795"/>
-<wire x1="-13.5007" y1="-14.9477" x2="-13.5007" y2="-14.4" width="0.01" layer="20"/>
-<wire x1="-13.5007" y1="-14.4" x2="-6.7" y2="-14.4" width="0.01" layer="20" curve="-180"/>
-<wire x1="-6.7" y1="-14.4" x2="-6.7" y2="-17.5" width="0.01" layer="20"/>
-<wire x1="-6.7" y1="-17.5" x2="6.7" y2="-17.5" width="0.01" layer="20"/>
-<wire x1="6.7" y1="-17.5" x2="6.7" y2="-14.4" width="0.01" layer="20"/>
-<wire x1="6.7" y1="-14.4" x2="13.4993" y2="-14.4671" width="0.01" layer="20" curve="-181.131218"/>
+<wire x1="13.5" y1="-14.975" x2="14.3415" y2="-15.3402" width="0.01" layer="20" curve="133.072781" locked="yes"/>
+<wire x1="14.3415" y1="-15.3402" x2="18.7" y2="-9.5556" width="0.01" layer="20" curve="19.860365" locked="yes"/>
+<wire x1="18.7" y1="-9.5556" x2="18.7" y2="9.5556" width="0.01" layer="20" locked="yes"/>
+<wire x1="18.7" y1="9.5556" x2="15.315" y2="14.3684" width="0.01" layer="20" curve="16.106697" locked="yes"/>
+<wire x1="15.315" y1="14.3684" x2="13.8564" y2="15" width="0.01" layer="20" curve="46.826449" locked="yes"/>
+<wire x1="13.8564" y1="15" x2="-13.8564" y2="15" width="0.01" layer="20" locked="yes"/>
+<wire x1="-13.8564" y1="15" x2="-15.315" y2="14.3684" width="0.01" layer="20" curve="46.826449" locked="yes"/>
+<wire x1="-15.315" y1="14.3684" x2="-18.7" y2="9.5556" width="0.01" layer="20" curve="16.106697" locked="yes"/>
+<wire x1="-18.7" y1="9.5556" x2="-18.7" y2="-9.5556" width="0.01" layer="20" locked="yes"/>
+<wire x1="-18.7" y1="-9.5556" x2="-14.3415" y2="-15.3402" width="0.01" layer="20" curve="19.860365" locked="yes"/>
+<wire x1="-14.3415" y1="-15.3402" x2="-13.5" y2="-14.975" width="0.01" layer="20" curve="133.072781" locked="yes"/>
+<wire x1="-13.5" y1="-14.975" x2="-13.5" y2="-14.4" width="0.01" layer="20" locked="yes"/>
+<wire x1="-13.5" y1="-14.4" x2="-6.7" y2="-14.4" width="0.01" layer="20" curve="-180" locked="yes"/>
+<wire x1="-6.7" y1="-14.4" x2="-6.7" y2="-17" width="0.01" layer="20" locked="yes"/>
+<wire x1="-6.7" y1="-17" x2="-6.2" y2="-17.5" width="0.01" layer="20" curve="90" locked="yes"/>
+<wire x1="-6.2" y1="-17.5" x2="6.2" y2="-17.5" width="0.01" layer="20" locked="yes"/>
+<wire x1="6.2" y1="-17.5" x2="6.7" y2="-17" width="0.01" layer="20" curve="90" locked="yes"/>
+<wire x1="6.7" y1="-17" x2="6.7" y2="-14.4" width="0.01" layer="20" locked="yes"/>
+<wire x1="6.7" y1="-14.4" x2="13.5" y2="-14.4" width="0.01" layer="20" curve="-180" locked="yes"/>
+<wire x1="13.5" y1="-14.4" x2="13.5" y2="-14.975" width="0.01" layer="20" locked="yes"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:2540341">
@@ -2192,6 +2195,10 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="8.5" severity="warning">
+Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons. 
+The locking property on all objects of these types will not be understood in this version. 
 </note>
 </compatibility>
 </eagle>
