@@ -3074,6 +3074,12 @@ as close as possible to the power transistors.</text>
 <text x="78.74" y="243.84" size="1.27" layer="97">Place ground and power ground junction
 as close to negative supply pad as possible</text>
 <text x="142.24" y="149.86" size="2.54" layer="97">Place close to power mosfets</text>
+<text x="38.1" y="25.4" size="1.778" layer="91">1727-7274-1-ND  MOSFET 2N-CH 40V 40A LFPAK56D
+1727-2462-1-ND  MOSFET 2N-CH 60V 40A LFPAK56</text>
+<text x="35.56" y="45.72" size="1.778" layer="91">the only difference between 
+8S and 10S versions is MOSFET 
+and capacitor selection</text>
+<text x="38.1" y="15.24" size="1.778" layer="91">732-8860-1-ND 68uF 50V capacitor</text>
 </plain>
 <instances>
 <instance part="A" gate="G$1" x="241.3" y="210.82" smashed="yes" rot="MR0">

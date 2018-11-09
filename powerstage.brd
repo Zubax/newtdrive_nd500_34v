@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="43" fill="3" visible="yes" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -2012,9 +2012,9 @@
 <vertex x="-10.25" y="10.35"/>
 <vertex x="6.3" y="10.35"/>
 </polygon>
-<polygon width="0.1524" layer="1" thermals="no" rank="3">
-<vertex x="6.3" y="15.15"/>
-<vertex x="-10.25" y="15.15"/>
+<polygon width="0.1524" layer="1" thermals="no" rank="4">
+<vertex x="6.3" y="15.175"/>
+<vertex x="-10.25" y="15.175"/>
 <vertex x="-10.25" y="10.35"/>
 <vertex x="6.3" y="10.35"/>
 </polygon>
@@ -2340,7 +2340,7 @@
 <contactref element="Q3" pad="EP-5-6" route="any" routetag="T2.D"/>
 <contactref element="Q3" pad="5" route="any" routetag="T2.D"/>
 <contactref element="Q3" pad="1"/>
-<polygon width="0.1524" layer="1" thermals="no" rank="2">
+<polygon width="0.1524" layer="1" thermals="no" rank="3">
 <vertex x="0.2" y="9.8"/>
 <vertex x="0.2" y="15.8"/>
 <vertex x="-2.5" y="15.8"/>
@@ -2441,7 +2441,7 @@
 <contactref element="Q1" pad="5" route="any" routetag="T2.D"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="B" pad="P$1"/>
-<polygon width="0.1524" layer="1" thermals="no">
+<polygon width="0.1524" layer="1" thermals="no" rank="2">
 <vertex x="-6.45" y="9.8"/>
 <vertex x="-6.45" y="19.4"/>
 <vertex x="-2.9" y="19.4"/>
