@@ -3,10 +3,10 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="21" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="43" fill="3" visible="no" active="yes"/>
@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -48,16 +48,16 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
@@ -121,7 +121,7 @@
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
 <layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
 <layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
 <layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
@@ -161,6 +161,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:WMvf5TlhTr-rsM2oKWPy9g" pcbguid="d1d67abc-637e-4fcf-8898-076f957fbd4c" lastpulledtime="2018-11-11T10:26:16Z" lastsyncedchangeguid="7b521676-cce6-4d0c-938e-80afe84c0ae0"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
@@ -172,12 +173,6 @@
 <wire x1="20" y1="0" x2="20" y2="-20" width="0.01" layer="48" locked="yes"/>
 <wire x1="20" y1="-20" x2="-20" y2="-20" width="0.01" layer="48" locked="yes"/>
 <wire x1="-20" y1="-20" x2="-20" y2="0" width="0.01" layer="48" locked="yes"/>
-<wire x1="-6.7" y1="-19.9025" x2="-6.7" y2="-21.5" width="0.01" layer="20"/>
-<wire x1="-6.7" y1="-21.5" x2="-5.7" y2="-22.5" width="0.01" layer="20" curve="90"/>
-<wire x1="-5.7" y1="-22.5" x2="5.7" y2="-22.5" width="0.01" layer="20"/>
-<wire x1="5.7" y1="-22.5" x2="6.7" y2="-21.5" width="0.01" layer="20" curve="90"/>
-<wire x1="6.7" y1="-21.5" x2="6.7" y2="-19.9025" width="0.01" layer="20"/>
-<wire x1="6.7" y1="-19.9025" x2="-6.7" y2="-19.9025" width="0.01" layer="20" curve="322.789323"/>
 <wire x1="-0.725" y1="9.45" x2="1.375" y2="9.45" width="0.15" layer="41"/>
 <wire x1="1.375" y1="7.5" x2="1.375" y2="9.45" width="0.15" layer="41"/>
 <wire x1="-12.3" y1="7.225" x2="-8.85" y2="7.225" width="0.15" layer="41"/>
@@ -189,6 +184,19 @@
 <wire x1="-18.5" y1="10" x2="-18.5" y2="-10" width="0.15" layer="41"/>
 <wire x1="18.5" y1="10" x2="18.5" y2="-10" width="0.15" layer="41"/>
 <text x="0" y="-22" size="1.5" layer="16" font="vector" ratio="15" rot="MR0" align="bottom-center">SadulliP</text>
+<circle x="0" y="0" radius="21" width="0.1524" layer="49"/>
+<wire x1="7.7" y1="-19" x2="8.2462" y2="-19" width="0.01" layer="20"/>
+<wire x1="8.2462" y1="-19" x2="9.6206" y2="-18.6667" width="0.01" layer="20" curve="27.266025"/>
+<wire x1="9.6206" y1="-18.6667" x2="-9.6206" y2="-18.6667" width="0.01" layer="20" curve="305.467924"/>
+<wire x1="-9.6206" y1="-18.6667" x2="-8.2462" y2="-19" width="0.01" layer="20" curve="27.266037"/>
+<wire x1="-8.2462" y1="-19" x2="-7.7" y2="-19" width="0.01" layer="20"/>
+<wire x1="-7.7" y1="-19" x2="-6.7" y2="-20" width="0.01" layer="20" curve="-89.999995"/>
+<wire x1="-6.7" y1="-20" x2="-6.7" y2="-21.5" width="0.01" layer="20"/>
+<wire x1="-6.7" y1="-21.5" x2="-5.7" y2="-22.5" width="0.01" layer="20" curve="90.000002"/>
+<wire x1="-5.7" y1="-22.5" x2="5.7" y2="-22.5" width="0.01" layer="20"/>
+<wire x1="5.7" y1="-22.5" x2="6.7" y2="-21.5" width="0.01" layer="20" curve="90"/>
+<wire x1="6.7" y1="-21.5" x2="6.7" y2="-20" width="0.01" layer="20"/>
+<wire x1="6.7" y1="-20" x2="7.7" y2="-19" width="0.01" layer="20" curve="-89.999986"/>
 </plain>
 <libraries>
 <library name="mosfet" urn="urn:adsk.eagle:library:2640523">
@@ -5321,7 +5329,7 @@
 <wire x1="8.425" y1="5.31390625" x2="8.425" y2="3.075" width="0.25" layer="1"/>
 <wire x1="11.7" y1="-0.2" x2="16.7" y2="-0.2" width="0.25" layer="1"/>
 <wire x1="8.425" y1="3.075" x2="11.7" y2="-0.2" width="0.25" layer="1"/>
-<wire x1="6.775" y1="5.875" x2="6.05" y2="4" width="0" layer="19" extent="1-1"/>
+<wire x1="6.05" y1="4" x2="6.775" y2="5.875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_A" class="1">
 <via x="3.65" y="9.8" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -5965,6 +5973,11 @@
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
