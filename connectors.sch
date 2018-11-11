@@ -849,7 +849,7 @@
 <wire x1="3" y1="-0.5" x2="3" y2="0.5" width="0.15" layer="25"/>
 <text x="0" y="1.6" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:footprint:6650268/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:footprint:6650268/2" library_version="14" library_locally_modified="yes">
 <wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
@@ -1020,7 +1020,7 @@
 <packageinstance name="1X03-PTH-2"/>
 </packageinstances>
 </package3d>
-<package3d name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:package:6650270/2" locally_modified="yes" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:package:6650270/3" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="1X03-PTH-2.54-RA"/>
 </packageinstances>
@@ -1030,7 +1030,7 @@
 <packageinstance name="1X07-PTH-2.54"/>
 </packageinstances>
 </package3d>
-<package3d name="1X07-PTH-2" urn="urn:adsk.eagle:package:2540391/2" type="box" library_version="14">
+<package3d name="1X07-PTH-2" urn="urn:adsk.eagle:package:2540391/3" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="1X07-PTH-2"/>
 </packageinstances>
@@ -1130,7 +1130,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD_1X03" urn="urn:adsk.eagle:component:2540405/6" locally_modified="yes" prefix="CON" library_version="14" library_locally_modified="yes">
+<deviceset name="PINHEAD_1X03" urn="urn:adsk.eagle:component:2540405/7" prefix="CON" library_version="14" library_locally_modified="yes">
 <description>pinheader 3P</description>
 <gates>
 <gate name="G$1" symbol="M03" x="0" y="0"/>
@@ -1169,7 +1169,7 @@
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6650270/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6650270/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1177,7 +1177,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD_1X07" urn="urn:adsk.eagle:component:2540401/2" prefix="CON" library_version="14">
+<deviceset name="PINHEAD_1X07" urn="urn:adsk.eagle:component:2540401/3" prefix="CON" library_version="14" library_locally_modified="yes">
 <description>pinheader 7P</description>
 <gates>
 <gate name="G$1" symbol="M07" x="2.54" y="-5.08"/>
@@ -1211,7 +1211,7 @@
 <connect gate="G$1" pin="7" pad="7"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2540391/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2540391/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1889,7 +1889,7 @@
 <part name="GND1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X03" device="-2.54-RA" package3d_urn="urn:adsk.eagle:package:6650270/2" value="PINHEAD_1X03-2.54-RA"/>
+<part name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X03" device="-2.54-RA" package3d_urn="urn:adsk.eagle:package:6650270/3" value="PINHEAD_1X03-2.54-RA"/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="GND4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="1K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="1K"/>
@@ -1901,7 +1901,7 @@
 <part name="GND9" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="C7" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-25V_10%_X6S" value="4.7µF"/>
 <part name="C5" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-25V_10%_X6S" value="4.7µF"/>
-<part name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X07" device="-2" package3d_urn="urn:adsk.eagle:package:2540391/2"/>
+<part name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X07" device="-2" package3d_urn="urn:adsk.eagle:package:2540391/3"/>
 <part name="GND6" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 </parts>

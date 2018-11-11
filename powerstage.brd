@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -161,7 +161,6 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:VvqHLlV8QrG5oXj_COKgWw" pcbguid="ff29db28-3bc8-4e0e-90a2-548e6287645e" lastpulledtime="" lastsyncedchangeguid="5e2d1aac-41dd-a679-520f-711cd63c8ed2"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
@@ -173,10 +172,12 @@
 <wire x1="20" y1="0" x2="20" y2="-20" width="0.01" layer="48" locked="yes"/>
 <wire x1="20" y1="-20" x2="-20" y2="-20" width="0.01" layer="48" locked="yes"/>
 <wire x1="-20" y1="-20" x2="-20" y2="0" width="0.01" layer="48" locked="yes"/>
-<wire x1="6.7" y1="-22.5" x2="6.7" y2="-19.9025" width="0.01" layer="20"/>
+<wire x1="-6.7" y1="-19.9025" x2="-6.7" y2="-21.5" width="0.01" layer="20"/>
+<wire x1="-6.7" y1="-21.5" x2="-5.7" y2="-22.5" width="0.01" layer="20" curve="90"/>
+<wire x1="-5.7" y1="-22.5" x2="5.7" y2="-22.5" width="0.01" layer="20"/>
+<wire x1="5.7" y1="-22.5" x2="6.7" y2="-21.5" width="0.01" layer="20" curve="90"/>
+<wire x1="6.7" y1="-21.5" x2="6.7" y2="-19.9025" width="0.01" layer="20"/>
 <wire x1="6.7" y1="-19.9025" x2="-6.7" y2="-19.9025" width="0.01" layer="20" curve="322.789323"/>
-<wire x1="-6.7" y1="-19.9025" x2="-6.7" y2="-22.5" width="0.01" layer="20"/>
-<wire x1="-6.7" y1="-22.5" x2="6.7" y2="-22.5" width="0.01" layer="20"/>
 <wire x1="-0.725" y1="9.45" x2="1.375" y2="9.45" width="0.15" layer="41"/>
 <wire x1="1.375" y1="7.5" x2="1.375" y2="9.45" width="0.15" layer="41"/>
 <wire x1="-12.3" y1="7.225" x2="-8.85" y2="7.225" width="0.15" layer="41"/>
@@ -5320,7 +5321,7 @@
 <wire x1="8.425" y1="5.31390625" x2="8.425" y2="3.075" width="0.25" layer="1"/>
 <wire x1="11.7" y1="-0.2" x2="16.7" y2="-0.2" width="0.25" layer="1"/>
 <wire x1="8.425" y1="3.075" x2="11.7" y2="-0.2" width="0.25" layer="1"/>
-<wire x1="6.05" y1="4" x2="6.775" y2="5.875" width="0" layer="19" extent="1-1"/>
+<wire x1="6.775" y1="5.875" x2="6.05" y2="4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_A" class="1">
 <via x="3.65" y="9.8" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -5430,9 +5431,9 @@
 <signal name="PHASE_C_GND">
 <contactref element="S1" pad="IN"/>
 <contactref element="CON3" pad="1"/>
-<wire x1="17.5" y1="-9" x2="17.25" y2="-9.25" width="0.25" layer="1"/>
-<wire x1="13.125" y1="-9.25" x2="0.75" y2="3.125" width="0.25" layer="1"/>
-<wire x1="17.25" y1="-9.25" x2="13.125" y2="-9.25" width="0.25" layer="1"/>
+<wire x1="10.6" y1="-6.725" x2="0.75" y2="3.125" width="0.25" layer="1"/>
+<wire x1="17.5" y1="-9" x2="15.225" y2="-6.725" width="0.25" layer="1"/>
+<wire x1="15.225" y1="-6.725" x2="10.6" y2="-6.725" width="0.25" layer="1"/>
 <wire x1="0.75" y1="3.125" x2="0.75" y2="5.625" width="0.25" layer="1"/>
 </signal>
 <signal name="N$10">
@@ -5813,11 +5814,11 @@
 <contactref element="C6" pad="-"/>
 <contactref element="CON2" pad="-"/>
 <polygon width="0.1524" layer="16" rank="5">
-<vertex x="0" y="21"/>
-<vertex x="-21" y="21"/>
+<vertex x="0" y="19.4"/>
+<vertex x="-21" y="19.4"/>
 <vertex x="-21" y="-20"/>
-<vertex x="21" y="-20"/>
-<vertex x="21" y="21"/>
+<vertex x="18.5" y="-20"/>
+<vertex x="18.5" y="19.4"/>
 </polygon>
 <via x="13.55" y="6.8" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="13.55" y="6.2" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -5876,10 +5877,10 @@
 <vertex x="-21" y="-22.5"/>
 </polygon>
 <polygon width="0.3" layer="15" rank="5">
-<vertex x="-21" y="21"/>
-<vertex x="-21" y="-20"/>
-<vertex x="21" y="-20"/>
-<vertex x="21" y="21"/>
+<vertex x="-18.5" y="19.4"/>
+<vertex x="-18.5" y="-20"/>
+<vertex x="18.5" y="-20"/>
+<vertex x="18.5" y="19.4"/>
 </polygon>
 <contactref element="IC5" pad="3"/>
 <contactref element="C13" pad="1"/>
@@ -5964,11 +5965,6 @@
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports Fusion synchronisation.
-This feature will not be available in this version and saving
-the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

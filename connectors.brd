@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -163,7 +163,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:m_Cv8RsqRo2QN3PKtBZoTQ" pcbguid="73e03c74-0658-4685-9265-6dbe6e9002bf" lastpulledtime="" lastsyncedchangeguid="51abe5b6-658e-43e0-1653-035445b88489"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:lkldbuCeQk2hwkIU7sEEPA" pcbguid="1f2d4f0e-1fca-40bc-ac97-9e5dc211ef7f" lastpulledtime="" lastsyncedchangeguid="7e5efc33-aacb-24ed-9d28-60d49af5f5ba"/>
 <plain>
 <wire x1="-20" y1="0" x2="0" y2="20" width="0.01" layer="48" curve="-90"/>
 <wire x1="0" y1="20" x2="20" y2="0" width="0.01" layer="48" curve="-90"/>
@@ -328,7 +328,7 @@
 <wire x1="2" y1="-0.5" x2="2" y2="0.5" width="0.15" layer="25"/>
 <text x="0" y="1.6" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:footprint:6650268/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:footprint:6650268/2" library_version="14" library_locally_modified="yes">
 <wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
@@ -418,12 +418,12 @@
 <packageinstance name="1X02-PTH-2"/>
 </packageinstances>
 </package3d>
-<package3d name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:package:6650270/2" locally_modified="yes" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="1X03-PTH-2.54-RA" urn="urn:adsk.eagle:package:6650270/3" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="1X03-PTH-2.54-RA"/>
 </packageinstances>
 </package3d>
-<package3d name="1X07-PTH-2" urn="urn:adsk.eagle:package:2540391/2" type="box" library_version="14">
+<package3d name="1X07-PTH-2" urn="urn:adsk.eagle:package:2540391/3" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="1X07-PTH-2"/>
 </packageinstances>
@@ -846,7 +846,7 @@
 </element>
 <element name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="-5.5" y="7.6" locked="yes" smashed="yes" rot="MR90"/>
 <element name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="5.5" y="7.6" locked="yes" smashed="yes" rot="MR90"/>
-<element name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X03-PTH-2.54-RA" package3d_urn="urn:adsk.eagle:package:6650270/2" value="PINHEAD_1X03-2.54-RA" x="0" y="8" smashed="yes" rot="R180">
+<element name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X03-PTH-2.54-RA" package3d_urn="urn:adsk.eagle:package:6650270/3" value="PINHEAD_1X03-2.54-RA" x="0" y="8" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="WM19494-ND" x="0" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF" value="Molex, LLC" x="0" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF#" value="0022286030" x="0" y="8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -902,7 +902,7 @@
 <attribute name="VALUE" x="-4.65" y="5.15" size="0.5" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VOLTAGE" value="25V" x="1.05" y="4.875" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X07-PTH-2" package3d_urn="urn:adsk.eagle:package:2540391/2" value="PINHEAD_1X07-2" x="0" y="10.9" smashed="yes" rot="MR0">
+<element name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X07-PTH-2" package3d_urn="urn:adsk.eagle:package:2540391/3" value="PINHEAD_1X07-2" x="0" y="10.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="0" y="12.5" size="1" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 </elements>
