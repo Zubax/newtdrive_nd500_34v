@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -163,7 +163,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:QMM4OCQ0TyKg26ea4BdEZw" pcbguid="8785eb19-63dc-4da8-a4e4-fa14f2e90b17" lastpulledtime="" lastsyncedchangeguid="ef38ddc1-57c9-dbef-fb5f-e253ab737c7c"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:LJLY8vNCRW2qvYZ2AMl8Cw" pcbguid="1c9b89b5-822e-4613-811c-59d517ff6b5b" lastpulledtime="" lastsyncedchangeguid="b6e00251-696a-9dbb-f9b9-09aa122b3440"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash"/>
@@ -4169,7 +4169,7 @@
 <wire x1="15.9" y1="-1.7" x2="15.9" y2="-0.8" width="0.25" layer="16"/>
 <wire x1="15.9" y1="-0.8" x2="14.3" y2="0.8" width="0.25" layer="16"/>
 <wire x1="8" y1="5.5" x2="8" y2="3.85" width="0.25" layer="16"/>
-<via x="8" y="5.5" extent="1-16" drill="0.35"/>
+<via x="8" y="5.5" extent="1-16" drill="0.3" diameter="0.6"/>
 <wire x1="14.3" y1="0.8" x2="11.05" y2="0.8" width="0.25" layer="16"/>
 <wire x1="11.05" y1="0.8" x2="8" y2="3.85" width="0.25" layer="16"/>
 <wire x1="7.85" y1="5.5" x2="8" y2="5.5" width="0.25" layer="1"/>

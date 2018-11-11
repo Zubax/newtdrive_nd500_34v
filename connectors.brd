@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -163,7 +163,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:lkldbuCeQk2hwkIU7sEEPA" pcbguid="1f2d4f0e-1fca-40bc-ac97-9e5dc211ef7f" lastpulledtime="" lastsyncedchangeguid="7e5efc33-aacb-24ed-9d28-60d49af5f5ba"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTgxMTA4MTU5MTUwNTA2" f3durn="urn:adsk.wipprod:dm.lineage:ZQS02HFHRVyiMdq_vKv9Iw" pcbguid="7353c2ad-46a7-4ea5-9c06-792c71bb0b67" lastpulledtime="" lastsyncedchangeguid="7e5efc33-aacb-24ed-9d28-60d49af5f5ba"/>
 <plain>
 <wire x1="-20" y1="0" x2="0" y2="20" width="0.01" layer="48" curve="-90"/>
 <wire x1="0" y1="20" x2="20" y2="0" width="0.01" layer="48" curve="-90"/>
@@ -1170,11 +1170,11 @@
 <wire x1="-2.325" y1="4.3" x2="-2.45" y2="4.425" width="0.3" layer="16"/>
 <wire x1="-2.45" y1="4.425" x2="-2.25" y2="4.225" width="0.3" layer="16"/>
 <wire x1="-2.25" y1="4.225" x2="-2.25" y2="3.625" width="0.3" layer="16"/>
-<via x="-2.25" y="3.625" extent="1-16" drill="0.35"/>
+<via x="-2.25" y="3.625" extent="1-16" drill="0.3" diameter="0.6"/>
 <wire x1="-2.25" y1="3.625" x2="-2.25" y2="3.525" width="0.3" layer="1"/>
 <wire x1="-2.25" y1="3.525" x2="-1.875" y2="3.15" width="0.3" layer="1"/>
 <wire x1="-1.875" y1="3.15" x2="-1.875" y2="2.21" width="0.3" layer="1"/>
-<via x="-2.85" y="3.625" extent="1-16" drill="0.35"/>
+<via x="-2.85" y="3.625" extent="1-16" drill="0.3" diameter="0.6"/>
 <polygon width="0.2" layer="16" thermals="no">
 <vertex x="-3.85" y="4.6"/>
 <vertex x="-2.05" y="4.6"/>
