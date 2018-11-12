@@ -4091,8 +4091,7 @@
 <via x="1.525" y="1.65" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="5.15" y="6.675" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-10.9" y="5.175" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-15.025" y="4.3" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="-16" y="6.525" extent="1-16" drill="0.3" diameter="0.6"/>
+<via x="-15.7" y="6.675" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-15.35" y="10.9" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-11.775" y="12" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-12.375" y="-1" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -4103,24 +4102,29 @@
 <via x="15.725" y="-9.325" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="8.025" y="2.475" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="8.45" y="6.275" extent="1-16" drill="0.3" diameter="0.6"/>
+<via x="-12.625" y="7.75" extent="1-16" drill="0.3" diameter="0.6"/>
+<via x="-9.275" y="10.65" extent="1-16" drill="0.3" diameter="0.6"/>
+<via x="-15.725" y="3.8" extent="1-16" drill="0.3" diameter="0.6"/>
+<via x="-15.725" y="1.85" extent="1-16" drill="0.3" diameter="0.6"/>
 </signal>
 <signal name="VDC" class="1">
 <contactref element="MODULE2" pad="3"/>
 <contactref element="CON1" pad="9"/>
-<wire x1="15.9" y1="9.2" x2="15.9" y2="8.6" width="0.25" layer="1"/>
-<wire x1="15.9" y1="9.2" x2="14.1" y2="11" width="0.25" layer="1"/>
-<wire x1="14.1" y1="11" x2="14" y2="11" width="0.25" layer="1"/>
-<wire x1="15.9" y1="8.6" x2="17.2" y2="7" width="0.25" layer="1"/>
+<wire x1="17.2" y1="7" x2="15.7" y2="8.5" width="0.5" layer="1"/>
+<wire x1="15.7" y1="8.5" x2="15.7" y2="9.35" width="0.5" layer="1"/>
+<wire x1="15.7" y1="9.35" x2="14.05" y2="11" width="0.5" layer="1"/>
+<wire x1="14.05" y1="11" x2="14" y2="11" width="0.5" layer="1"/>
 </signal>
 <signal name="PHASE_A_GND">
 <contactref element="MODULE2" pad="7"/>
 <contactref element="CON1" pad="5"/>
 <wire x1="9.1" y1="11.4" x2="8.95" y2="11.55" width="0.25" layer="16"/>
 <wire x1="8.95" y1="11.55" x2="7" y2="13.5" width="0.25" layer="16"/>
-<wire x1="17.2" y1="-1" x2="15.372221875" y2="1.35" width="0.25" layer="16"/>
-<wire x1="15.372221875" y1="1.35" x2="12.7" y2="1.35" width="0.25" layer="16"/>
-<wire x1="12.7" y1="1.35" x2="9.1" y2="4.95" width="0.25" layer="16"/>
+<wire x1="9.1" y1="4.95" x2="12.7" y2="1.35" width="0.25" layer="16"/>
 <wire x1="9.1" y1="4.95" x2="9.1" y2="11.4" width="0.25" layer="16"/>
+<wire x1="12.7" y1="1.35" x2="14.7" y2="1.35" width="0.25" layer="16"/>
+<wire x1="17.05" y1="-1" x2="17.2" y2="-1" width="0.25" layer="16"/>
+<wire x1="14.7" y1="1.35" x2="17.05" y2="-1" width="0.25" layer="16"/>
 </signal>
 <signal name="PHASE_A" class="1">
 <contactref element="MODULE2" pad="5"/>
@@ -4131,25 +4135,24 @@
 <wire x1="11.575" y1="12.775" x2="11.575" y2="5.975" width="0.25" layer="16"/>
 <wire x1="14.55" y1="3" x2="11.575" y2="5.975" width="0.25" layer="16"/>
 </signal>
-<signal name="PHASE_C_GND">
+<signal name="PHASE_B_GND">
 <contactref element="CON2" pad="6"/>
 <contactref element="MODULE2" pad="11"/>
 <wire x1="-1" y1="13.5" x2="-10.05" y2="4.45" width="0.25" layer="16"/>
-<wire x1="-16.5" y1="0.00019375" x2="-16.5" y2="0" width="0.25" layer="16"/>
-<wire x1="-16.5" y1="0" x2="-17.2" y2="-1" width="0.25" layer="16"/>
-<wire x1="-12.05019375" y1="4.45" x2="-16.5" y2="0.00019375" width="0.25" layer="16"/>
 <wire x1="-10.05" y1="4.45" x2="-12.05019375" y2="4.45" width="0.25" layer="16"/>
+<wire x1="-17.2" y1="-0.69980625" x2="-17.2" y2="-1" width="0.25" layer="16"/>
+<wire x1="-12.05019375" y1="4.45" x2="-17.2" y2="-0.69980625" width="0.25" layer="16"/>
 </signal>
 <signal name="PHASE_A_GATE_HIGH" class="1">
 <contactref element="MODULE2" pad="4"/>
 <contactref element="CON1" pad="8"/>
-<wire x1="15.85" y1="5" x2="17.2" y2="5" width="0.25" layer="16"/>
+<wire x1="17" y1="5" x2="17.2" y2="5" width="0.25" layer="16"/>
 <wire x1="13" y1="12.1" x2="13" y2="13.5" width="0.25" layer="16"/>
 <wire x1="13" y1="12.1" x2="12.85" y2="11.95" width="0.25" layer="16"/>
 <wire x1="12.85" y1="11.95" x2="12.85" y2="6.525" width="0.25" layer="16"/>
 <wire x1="12.85" y1="6.525" x2="13.575" y2="5.8" width="0.25" layer="16"/>
-<wire x1="15.05" y1="5.8" x2="15.85" y2="5" width="0.25" layer="16"/>
-<wire x1="13.575" y1="5.8" x2="15.05" y2="5.8" width="0.25" layer="16"/>
+<wire x1="16.2" y1="5.8" x2="17" y2="5" width="0.25" layer="16"/>
+<wire x1="13.575" y1="5.8" x2="16.2" y2="5.8" width="0.25" layer="16"/>
 </signal>
 <signal name="PHASE_A_GATE_LOW">
 <contactref element="MODULE2" pad="6"/>
@@ -4161,7 +4164,7 @@
 <wire x1="9.175" y1="13.5" x2="9" y2="13.5" width="0.25" layer="16"/>
 <wire x1="10.3" y1="12.375" x2="10.3" y2="5.45" width="0.25" layer="16"/>
 </signal>
-<signal name="PHASE_B_GATE_HIGH" class="1">
+<signal name="PHASE_C_GATE_HIGH" class="1">
 <contactref element="CON1" pad="4"/>
 <contactref element="MODULE2" pad="12"/>
 <wire x1="-3" y1="13.5" x2="-2.925" y2="13.5" width="0.25" layer="1"/>
@@ -4176,7 +4179,7 @@
 <wire x1="7.85" y1="5.5" x2="5.075" y2="5.5" width="0.25" layer="1"/>
 <wire x1="-2.925" y1="13.5" x2="5.075" y2="5.5" width="0.25" layer="1"/>
 </signal>
-<signal name="PHASE_B_GATE_LOW">
+<signal name="PHASE_C_GATE_LOW">
 <contactref element="CON1" pad="2"/>
 <contactref element="MODULE2" pad="14"/>
 <wire x1="3.35" y1="3.15" x2="-7" y2="13.5" width="0.25" layer="1"/>
@@ -4185,35 +4188,35 @@
 <wire x1="15.375" y1="-5.175" x2="17.2" y2="-7" width="0.25" layer="1"/>
 <wire x1="15.375" y1="1.325" x2="15.375" y2="-5.175" width="0.25" layer="1"/>
 </signal>
-<signal name="PHASE_C" class="1">
+<signal name="PHASE_B" class="1">
 <contactref element="CON2" pad="8"/>
 <contactref element="MODULE2" pad="9"/>
 <wire x1="3" y1="13.5" x2="-8.95" y2="1.55" width="0.25" layer="16"/>
 <wire x1="-8.95" y1="1.55" x2="-13.67739375" y2="1.55" width="0.25" layer="16"/>
 <wire x1="-13.67739375" y1="1.55" x2="-15.575" y2="-0.34760625" width="0.25" layer="16"/>
-<wire x1="-15.575" y1="-3.075" x2="-17.2" y2="-5" width="0.25" layer="16"/>
-<wire x1="-15.575" y1="-0.34760625" x2="-15.575" y2="-3.075" width="0.25" layer="16"/>
+<wire x1="-15.575" y1="-3.375" x2="-17.2" y2="-5" width="0.25" layer="16"/>
+<wire x1="-15.575" y1="-0.34760625" x2="-15.575" y2="-3.375" width="0.25" layer="16"/>
 </signal>
-<signal name="PHASE_C_GATE_LOW">
+<signal name="PHASE_B_GATE_LOW">
 <contactref element="MODULE2" pad="10"/>
 <contactref element="CON2" pad="7"/>
 <wire x1="1" y1="13.5" x2="-9.5" y2="3" width="0.25" layer="16"/>
 <wire x1="-12.93450625" y1="3" x2="-16.1" y2="-0.16549375" width="0.25" layer="16"/>
 <wire x1="-9.5" y1="3" x2="-12.93450625" y2="3" width="0.25" layer="16"/>
-<wire x1="-16.1" y1="-1.6" x2="-17.2" y2="-3" width="0.25" layer="16"/>
-<wire x1="-16.1" y1="-0.16549375" x2="-16.1" y2="-1.6" width="0.25" layer="16"/>
+<wire x1="-16.1" y1="-1.9" x2="-17.2" y2="-3" width="0.25" layer="16"/>
+<wire x1="-16.1" y1="-0.16549375" x2="-16.1" y2="-1.9" width="0.25" layer="16"/>
 </signal>
-<signal name="PHASE_C_GATE_HIGH" class="1">
+<signal name="PHASE_B_GATE_HIGH" class="1">
 <contactref element="CON2" pad="9"/>
 <contactref element="MODULE2" pad="8"/>
 <wire x1="5" y1="13.5" x2="5" y2="13.05" width="0.25" layer="16"/>
 <wire x1="5" y1="13.05" x2="-7.55" y2="0.5" width="0.25" layer="16"/>
 <wire x1="-7.55" y1="0.5" x2="-14.02028125" y2="0.5" width="0.25" layer="16"/>
 <wire x1="-14.02028125" y1="0.5" x2="-15.075" y2="-0.55471875" width="0.25" layer="16"/>
-<wire x1="-15.075" y1="-4.575" x2="-17.2" y2="-7" width="0.25" layer="16"/>
-<wire x1="-15.075" y1="-0.55471875" x2="-15.075" y2="-4.575" width="0.25" layer="16"/>
+<wire x1="-15.075" y1="-4.875" x2="-17.2" y2="-7" width="0.25" layer="16"/>
+<wire x1="-15.075" y1="-0.55471875" x2="-15.075" y2="-4.875" width="0.25" layer="16"/>
 </signal>
-<signal name="PHASE_B" class="1">
+<signal name="PHASE_C" class="1">
 <contactref element="CON1" pad="3"/>
 <contactref element="MODULE2" pad="13"/>
 <wire x1="4.1" y1="4.4" x2="-5" y2="13.5" width="0.25" layer="1"/>
@@ -4290,54 +4293,11 @@
 <signal name="TEMPERATURE_SENSOR">
 <contactref element="MODULE2" pad="20"/>
 <contactref element="CON2" pad="5"/>
-<wire x1="-14" y1="4.2" x2="-17.2" y2="1" width="0.15" layer="1"/>
-<wire x1="-14" y1="7" x2="-14" y2="4.2" width="0.15" layer="1"/>
-</signal>
-<signal name="N$1">
-<contactref element="MODULE2" pad="18"/>
-<contactref element="CON2" pad="3"/>
-<wire x1="-15.4" y1="5.82426875" x2="-15.4" y2="8.15" width="0.15" layer="1"/>
-<wire x1="-16.22426875" y1="5" x2="-17.2" y2="5" width="0.15" layer="1"/>
-<wire x1="-15.4" y1="5.82426875" x2="-16.22426875" y2="5" width="0.15" layer="1"/>
-<wire x1="-15.4" y1="8.15" x2="-15.1" y2="8.45" width="0.15" layer="1"/>
-<wire x1="-15.1" y1="9.9" x2="-14" y2="11" width="0.15" layer="1"/>
-<wire x1="-15.1" y1="8.45" x2="-15.1" y2="9.9" width="0.15" layer="1"/>
-</signal>
-<signal name="N$3">
-<contactref element="CON2" pad="1"/>
-<contactref element="MODULE2" pad="16"/>
-<wire x1="-11" y1="13.5" x2="-11.4" y2="13.5" width="0.15" layer="1"/>
-<wire x1="-11.4" y1="13.5" x2="-12.5" y2="14.6" width="0.15" layer="1"/>
-<wire x1="-12.5" y1="14.6" x2="-13.45" y2="14.6" width="0.15" layer="1"/>
-<wire x1="-13.45" y1="14.6" x2="-16.3" y2="11.75" width="0.15" layer="1"/>
-<wire x1="-16.3" y1="11.75" x2="-16.3" y2="9.9" width="0.15" layer="1"/>
-<wire x1="-16.3" y1="9.9" x2="-17.2" y2="9" width="0.15" layer="1"/>
-</signal>
-<signal name="N$2">
-<contactref element="MODULE2" pad="17"/>
-<contactref element="CON2" pad="2"/>
-<wire x1="-13" y1="13.5" x2="-14.1" y2="13.5" width="0.15" layer="1"/>
-<wire x1="-14.1" y1="13.5" x2="-16" y2="11.6" width="0.15" layer="1"/>
-<wire x1="-17.2" y1="7.5" x2="-17.2" y2="7" width="0.15" layer="1"/>
-<wire x1="-16" y1="11.6" x2="-16" y2="8.7" width="0.15" layer="1"/>
-<wire x1="-16" y1="8.7" x2="-17.2" y2="7.5" width="0.15" layer="1"/>
-</signal>
-<signal name="N$4">
-<contactref element="MODULE2" pad="19"/>
-<contactref element="CON2" pad="4"/>
-<wire x1="-15.1" y1="7.9" x2="-15.1" y2="5.5" width="0.15" layer="1"/>
-<wire x1="-15.1" y1="7.9" x2="-14" y2="9" width="0.15" layer="1"/>
-<wire x1="-15.1" y1="5.5" x2="-17.2" y2="3.4" width="0.15" layer="1"/>
-<wire x1="-17.2" y1="3.4" x2="-17.2" y2="3" width="0.15" layer="1"/>
-</signal>
-<signal name="N$5">
-<contactref element="CON1" pad="1"/>
-<contactref element="MODULE2" pad="15"/>
-<wire x1="13.1788625" y1="1.85" x2="14.975" y2="0.0538625" width="0.25" layer="1"/>
-<wire x1="2.65" y1="1.85" x2="-9" y2="13.5" width="0.25" layer="1"/>
-<wire x1="13.1788625" y1="1.85" x2="2.65" y2="1.85" width="0.25" layer="1"/>
-<wire x1="14.975" y1="-6.775" x2="17.2" y2="-9" width="0.25" layer="1"/>
-<wire x1="14.975" y1="0.0538625" x2="14.975" y2="-6.775" width="0.25" layer="1"/>
+<wire x1="-14" y1="7" x2="-15" y2="6" width="0.2" layer="1"/>
+<wire x1="-17.85" y1="6" x2="-18.3" y2="5.55" width="0.2" layer="1"/>
+<wire x1="-18.3" y1="5.55" x2="-18.3" y2="2.1" width="0.2" layer="1"/>
+<wire x1="-18.3" y1="2.1" x2="-17.2" y2="1" width="0.2" layer="1"/>
+<wire x1="-15" y1="6" x2="-17.85" y2="6" width="0.2" layer="1"/>
 </signal>
 <signal name="ADJ">
 <contactref element="MODULE2" pad="29"/>
@@ -4405,6 +4365,49 @@
 <wire x1="-2" y1="-10.2" x2="-2" y2="-9.1" width="0.15" layer="1"/>
 <wire x1="-2" y1="-9.1" x2="-3.1" y2="-8" width="0.15" layer="1"/>
 <wire x1="-3.1" y1="-8" x2="-13" y2="-8" width="0.15" layer="1"/>
+</signal>
+<signal name="PHASE_C_GND">
+<contactref element="CON1" pad="1"/>
+<contactref element="MODULE2" pad="15"/>
+<wire x1="13.1788625" y1="1.85" x2="14.975" y2="0.0538625" width="0.25" layer="1"/>
+<wire x1="2.65" y1="1.85" x2="-9" y2="13.5" width="0.25" layer="1"/>
+<wire x1="13.1788625" y1="1.85" x2="2.65" y2="1.85" width="0.25" layer="1"/>
+<wire x1="14.975" y1="-6.775" x2="17.2" y2="-9" width="0.25" layer="1"/>
+<wire x1="14.975" y1="0.0538625" x2="14.975" y2="-6.775" width="0.25" layer="1"/>
+</signal>
+<signal name="PHASE_B_CURRENT_SHUNT_N">
+<contactref element="CON2" pad="1"/>
+<contactref element="MODULE2" pad="18"/>
+<wire x1="-17.2" y1="9" x2="-16" y2="9" width="0.25" layer="1"/>
+<wire x1="-16" y1="9" x2="-14" y2="11" width="0.25" layer="1"/>
+</signal>
+<signal name="PHASE_B_CURRENT_SHUNT_P">
+<contactref element="CON2" pad="2"/>
+<contactref element="MODULE2" pad="19"/>
+<wire x1="-17.2" y1="7" x2="-15.2" y2="9" width="0.25" layer="1"/>
+<wire x1="-15.2" y1="9" x2="-14" y2="9" width="0.25" layer="1"/>
+</signal>
+<signal name="PHASE_A_CURRENT_SHUNT_N">
+<contactref element="MODULE2" pad="16"/>
+<contactref element="CON2" pad="3"/>
+<wire x1="-11" y1="13.5" x2="-10.45" y2="12.95" width="0.25" layer="1"/>
+<wire x1="-10.45" y1="12.95" x2="-10.45" y2="8.5" width="0.25" layer="1"/>
+<wire x1="-13.95" y1="5" x2="-17.2" y2="5" width="0.25" layer="1"/>
+<wire x1="-10.45" y1="8.5" x2="-13.95" y2="5" width="0.25" layer="1"/>
+</signal>
+<signal name="PHASE_A_CURRENT_SHUNT_P">
+<contactref element="MODULE2" pad="17"/>
+<contactref element="CON2" pad="4"/>
+<wire x1="-13" y1="13.5" x2="-12.5" y2="13.5" width="0.25" layer="1"/>
+<wire x1="-12.5" y1="13.5" x2="-11.45" y2="14.55" width="0.25" layer="1"/>
+<wire x1="-11.45" y1="14.55" x2="-10.55" y2="14.55" width="0.25" layer="1"/>
+<wire x1="-10.55" y1="14.55" x2="-10" y2="14" width="0.25" layer="1"/>
+<wire x1="-10" y1="14" x2="-10" y2="8.8" width="0.25" layer="1"/>
+<wire x1="-16.1" y1="4.55" x2="-13.7843125" y2="4.55" width="0.25" layer="1"/>
+<wire x1="-17.2" y1="3.45" x2="-17.2" y2="3" width="0.25" layer="1"/>
+<wire x1="-16.1" y1="4.55" x2="-17.2" y2="3.45" width="0.25" layer="1"/>
+<wire x1="-13.7843125" y1="4.55" x2="-10" y2="8.3343125" width="0.25" layer="1"/>
+<wire x1="-10" y1="8.3343125" x2="-10" y2="8.8" width="0.25" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

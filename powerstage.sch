@@ -166,11 +166,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:5017787/1" library_version="1">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="VDC" urn="urn:adsk.eagle:symbol:5017760/1" library_version="1">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -194,21 +189,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:5017818/1" prefix="GND" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="GND" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VDC" urn="urn:adsk.eagle:component:5017792/1" prefix="+P" library_version="1">
 <gates>
 <gate name="G$1" symbol="VDC" x="0" y="0"/>
@@ -2943,11 +2923,11 @@ http://www.bccomponents.com/</description>
 <part name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
-<part name="GND1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="D3" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="D4" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
+<part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -3166,8 +3146,8 @@ and capacitor selection</text>
 <attribute name="NAME" x="358.14" y="201.93" size="1.27" layer="95" font="vector" ratio="15" align="center-right"/>
 <attribute name="PACKAGE" x="358.14" y="198.882" size="0.762" layer="96" font="vector" ratio="15" align="center-right"/>
 </instance>
-<instance part="CON1" gate="G$1" x="175.26" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="172.72" y="125.73" size="1.778" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+<instance part="CON1" gate="G$1" x="142.24" y="124.46" smashed="yes" rot="MR180">
+<attribute name="NAME" x="144.78" y="95.25" size="1.778" layer="95" font="vector" ratio="15" rot="MR180" align="center"/>
 </instance>
 <instance part="CON3" gate="G$1" x="193.04" y="96.52" smashed="yes">
 <attribute name="NAME" x="195.58" y="125.73" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
@@ -3212,11 +3192,8 @@ and capacitor selection</text>
 <attribute name="NAME" x="68.58" y="228.6" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="MANF#" x="73.66" y="228.6" size="1.016" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="+P1" gate="G$1" x="165.1" y="99.06" smashed="yes" rot="R90">
-<attribute name="VALUE" x="161.544" y="99.06" size="1.27" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
-</instance>
-<instance part="GND1" gate="1" x="208.28" y="121.92" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="209.55" y="121.92" size="1.27" layer="96" font="vector" ratio="15" rot="MR270" align="center"/>
+<instance part="+P1" gate="G$1" x="152.4" y="124.46" smashed="yes">
+<attribute name="VALUE" x="152.4" y="128.016" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 <instance part="+P2" gate="G$1" x="213.36" y="121.92" smashed="yes">
 <attribute name="VALUE" x="213.36" y="125.476" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
@@ -3232,18 +3209,13 @@ and capacitor selection</text>
 <attribute name="NAME" x="114.3" y="226.06" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="MANF#" x="119.38" y="226.06" size="1.016" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
+<instance part="GND7" gate="G$1" x="208.28" y="121.92" smashed="yes" rot="R90">
+<attribute name="VALUE" x="209.55" y="121.92" size="1.27" layer="97" font="vector" ratio="15" rot="R90" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
-<segment>
-<pinref part="CON3" gate="G$1" pin="10"/>
-<wire x1="200.66" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="203.2" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PHASE_A_GND" class="0">
 <segment>
 <pinref part="CON3" gate="G$1" pin="5"/>
@@ -3287,8 +3259,8 @@ and capacitor selection</text>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="8"/>
-<wire x1="167.64" y1="116.84" x2="165.1" y2="116.84" width="0.1524" layer="91"/>
-<label x="165.1" y="116.84" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="104.14" x2="152.4" y2="104.14" width="0.1524" layer="91"/>
+<label x="152.4" y="104.14" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="PHASE_A_CURRENT_SHUNT_P" class="0">
@@ -3300,8 +3272,8 @@ and capacitor selection</text>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="7"/>
-<wire x1="167.64" y1="114.3" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
-<label x="165.1" y="114.3" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
+<label x="152.4" y="106.68" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="PHASE_C_GND" class="0">
@@ -3369,8 +3341,8 @@ and capacitor selection</text>
 <net name="PHASE_B_GATE_HIGH" class="1">
 <segment>
 <pinref part="CON1" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="101.6" x2="165.1" y2="101.6" width="0.1524" layer="91"/>
-<label x="165.1" y="101.6" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="119.38" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
+<label x="152.4" y="119.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -3381,8 +3353,8 @@ and capacitor selection</text>
 <net name="PHASE_B_GATE_LOW" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="4"/>
-<wire x1="167.64" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
-<label x="165.1" y="106.68" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
+<label x="152.4" y="114.3" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -3393,8 +3365,8 @@ and capacitor selection</text>
 <net name="PHASE_B_GND" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="5"/>
-<wire x1="167.64" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
-<label x="165.1" y="109.22" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
+<label x="152.4" y="111.76" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="185.42" x2="302.26" y2="185.42" width="0.1524" layer="91"/>
@@ -3415,8 +3387,8 @@ and capacitor selection</text>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="10"/>
-<wire x1="167.64" y1="121.92" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
-<label x="165.1" y="121.92" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="99.06" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
+<label x="152.4" y="99.06" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="PHASE_B_CURRENT_SHUNT_P" class="0">
@@ -3428,8 +3400,8 @@ and capacitor selection</text>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="9"/>
-<wire x1="167.64" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
-<label x="165.1" y="119.38" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="101.6" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
+<label x="152.4" y="101.6" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="N$12" class="1">
@@ -3491,8 +3463,8 @@ and capacitor selection</text>
 <net name="PHASE_B" class="1">
 <segment>
 <pinref part="CON1" gate="G$1" pin="3"/>
-<wire x1="167.64" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
-<label x="165.1" y="104.14" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="116.84" x2="152.4" y2="116.84" width="0.1524" layer="91"/>
+<label x="152.4" y="116.84" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="302.26" y1="205.74" x2="302.26" y2="208.28" width="0.1524" layer="91"/>
@@ -3514,8 +3486,9 @@ and capacitor selection</text>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="+P1" gate="G$1" pin="VDD_5V"/>
+<wire x1="149.86" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="121.92" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TEMPERATURE_SENSOR" class="0">
@@ -3530,8 +3503,8 @@ and capacitor selection</text>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="6"/>
-<wire x1="167.64" y1="111.76" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
-<label x="165.1" y="111.76" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="149.86" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
+<label x="152.4" y="109.22" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="PGND" class="0">
@@ -3652,6 +3625,12 @@ and capacitor selection</text>
 <junction x="167.64" y="162.56"/>
 <pinref part="GND5" gate="G$1" pin="PGND"/>
 <wire x1="167.64" y1="162.56" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="10"/>
+<wire x1="200.66" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="G$1" pin="PGND"/>
 </segment>
 </net>
 <net name="VDC" class="1">
