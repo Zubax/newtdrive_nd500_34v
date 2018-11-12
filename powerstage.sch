@@ -604,7 +604,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BUK9K6R2-40E,115" prefix="Q" library_version="14" library_locally_modified="yes">
+<deviceset name="BUK9K6R2-40E,115" urn="urn:adsk.eagle:component:6688065/1" prefix="Q" library_version="14">
 <description>Mosfet Array 2 N-Channel (Dual) 40V 40A 68W Surface Mount LFPAK56D</description>
 <gates>
 <gate name="T1" symbol="MOSFET-N" x="0" y="7.62"/>
@@ -669,11 +669,6 @@
 </package>
 <package name="0.5X0.5" urn="urn:adsk.eagle:footprint:3188699/1" library_version="3">
 <smd name="P$1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100"/>
-</package>
-<package name="HOLE_1" urn="urn:adsk.eagle:footprint:3188698/2" library_version="4" library_locally_modified="yes">
-<pad name="P$1" x="0" y="0" drill="0.8" diameter="1.4"/>
-<text x="1" y="0" size="1.27" layer="25" font="vector" ratio="15" align="center-left">&gt;NAME</text>
-<circle x="0" y="0" radius="0.3" width="0.4" layer="21"/>
 </package>
 <package name="2х2" urn="urn:adsk.eagle:footprint:3188697/1" library_version="3">
 <smd name="P$1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100"/>
@@ -792,6 +787,11 @@
 <package name="HOLE_0.6" urn="urn:adsk.eagle:footprint:6513717/1" library_version="8">
 <pad name="P$1" x="0" y="0" drill="0.6" shape="octagon"/>
 </package>
+<package name="HOLE_1" urn="urn:adsk.eagle:footprint:3188698/2" locally_modified="yes" library_version="8">
+<pad name="P$1" x="0" y="0" drill="0.8" diameter="1.4" shape="square"/>
+<text x="1" y="0" size="1.27" layer="25" font="vector" ratio="15" align="center-left">&gt;NAME</text>
+<circle x="0" y="0" radius="0.3" width="0.4" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="4X3" urn="urn:adsk.eagle:package:3188709/1" type="box" library_version="3">
@@ -812,11 +812,6 @@
 <package3d name="0.5X0.5" urn="urn:adsk.eagle:package:3188706/1" type="box" library_version="3">
 <packageinstances>
 <packageinstance name="0.5X0.5"/>
-</packageinstances>
-</package3d>
-<package3d name="HOLE_1" urn="urn:adsk.eagle:package:3188705/3" type="box" library_version="4" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="HOLE_1"/>
 </packageinstances>
 </package3d>
 <package3d name="2х2" urn="urn:adsk.eagle:package:3188704/1" type="box" library_version="3">
@@ -896,6 +891,11 @@
 <packageinstance name="HOLE_0.6"/>
 </packageinstances>
 </package3d>
+<package3d name="HOLE_1" urn="urn:adsk.eagle:package:3188705/3" locally_modified="yes" type="box" library_version="8">
+<packageinstances>
+<packageinstance name="HOLE_1"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="PAD" urn="urn:adsk.eagle:symbol:3188703/1" library_version="3">
@@ -906,7 +906,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PAD" urn="urn:adsk.eagle:component:3188710/8" prefix="PAD" library_version="8">
+<deviceset name="PAD" urn="urn:adsk.eagle:component:3188710/8" locally_modified="yes" prefix="PAD" library_version="8">
 <gates>
 <gate name="G$1" symbol="PAD" x="-20.32" y="7.62"/>
 </gates>
@@ -2571,15 +2571,19 @@ http://www.bccomponents.com/</description>
 <text x="0" y="-1.5" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="-0.8" y="2" size="1.27" layer="21" font="vector" ratio="15" align="center">+</text>
 </package>
-<package name="RADIAL_6.3X12.5-RA" urn="urn:adsk.eagle:footprint:6513885/2" library_version="22">
+<package name="RADIAL_6.3X12.5-RA" urn="urn:adsk.eagle:footprint:6513885/2" locally_modified="yes" library_version="22" library_locally_modified="yes">
 <pad name="+" x="-1.25" y="0" drill="0.8"/>
 <pad name="-" x="1.25" y="0" drill="0.8"/>
 <text x="0" y="7" size="2" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="-1.8" y="3" size="1.27" layer="21" font="vector" ratio="15" align="center">+</text>
-<wire x1="-3.15" y1="2" x2="3.15" y2="2" width="0.127" layer="51"/>
+<wire x1="-3.15" y1="2" x2="-1.25" y2="2" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="2" x2="1.25" y2="2" width="0.127" layer="51"/>
+<wire x1="1.25" y1="2" x2="3.15" y2="2" width="0.127" layer="51"/>
 <wire x1="3.15" y1="2" x2="3.15" y2="14.5" width="0.127" layer="51"/>
 <wire x1="3.15" y1="14.5" x2="-3.15" y2="14.5" width="0.127" layer="51"/>
 <wire x1="-3.15" y1="14.5" x2="-3.15" y2="2" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="0" x2="-1.25" y2="2" width="0.2" layer="51"/>
+<wire x1="1.25" y1="0" x2="1.25" y2="2" width="0.2" layer="51"/>
 </package>
 </packages>
 <packages3d>
@@ -2629,7 +2633,7 @@ http://www.bccomponents.com/</description>
 <packageinstance name="RADIAL_6.3X12.5"/>
 </packageinstances>
 </package3d>
-<package3d name="RADIAL_6.3X12.5-RA" urn="urn:adsk.eagle:package:6513894/3" type="model" library_version="22">
+<package3d name="RADIAL_6.3X12.5-RA" urn="urn:adsk.eagle:package:6513894/3" locally_modified="yes" type="model" library_version="22" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="RADIAL_6.3X12.5-RA"/>
 </packageinstances>
@@ -2953,8 +2957,12 @@ http://www.bccomponents.com/</description>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
-<part name="D3" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
-<part name="D4" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
+<part name="D3" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="D4" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V">
+<variant name="BASIC" populate="no"/>
+</part>
 <part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="U$8" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
 <variant name="BASIC" populate="no"/>
