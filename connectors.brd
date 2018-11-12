@@ -24,16 +24,16 @@
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -777,7 +777,7 @@
 <attribute name="DIGIKEY#" value="511-1652-1-ND" x="193.5" y="-20.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="Rohm Semiconductor" x="193.5" y="-20.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="SML-P11MTT86" x="193.5" y="-20.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="5.5" y="-0.8" size="0.5" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="6.4" y="-0.8" size="0.5" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R11" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0402" package3d_urn="urn:adsk.eagle:package:2539512/2" value="1K" x="-3.75" y="4.2" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" x="195.25" y="-42.8" size="1.778" layer="27" rot="R90" display="off"/>
@@ -819,7 +819,7 @@
 <attribute name="DIGIKEY#" value="455-1566-1-ND" x="0" y="-0.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF" value="JST Sales America Inc" x="0" y="-0.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF#" value="SM04B-GHS-TB(LF)(SN)" x="0" y="-0.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="0" y="-0.7" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="-0.05" y="-0.75" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="IC3" library="myxa_masterlib" library_urn="urn:adsk.eagle:library:1040030" package="SOT782-1" package3d_urn="urn:adsk.eagle:package:1040194/3" value="TJA1051" x="0.625" y="5.1" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="568-8686-2-ND" x="19.125" y="42.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -845,9 +845,9 @@
 <attribute name="MANF#" value="SM04B-GHS-TB(LF)(SN)" x="-18.5" y="91.8" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="0" y="-0.7" size="1.27" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
-<element name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="-5.5" y="7.6" locked="yes" smashed="yes" rot="MR90"/>
-<element name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="5.5" y="7.6" locked="yes" smashed="yes" rot="MR90"/>
-<element name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X03-PTH-2.54-RA" package3d_urn="urn:adsk.eagle:package:6650270/3" value="PINHEAD_1X03-2.54-RA" x="0" y="8" smashed="yes" rot="R180">
+<element name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="-5.5" y="7.6" locked="yes" populate="no" smashed="yes" rot="MR90"/>
+<element name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="5.5" y="7.6" locked="yes" populate="no" smashed="yes" rot="MR90"/>
+<element name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X03-PTH-2.54-RA" package3d_urn="urn:adsk.eagle:package:6650270/3" value="PINHEAD_1X03-2.54-RA" x="0" y="8" populate="no" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="WM19494-ND" x="0" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF" value="Molex, LLC" x="0" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF#" value="0022286030" x="0" y="8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -903,7 +903,7 @@
 <attribute name="VALUE" x="-4.65" y="5.15" size="0.5" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VOLTAGE" value="25V" x="1.05" y="4.875" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X07-PTH-2" package3d_urn="urn:adsk.eagle:package:2540391/3" value="PINHEAD_1X07-2" x="0" y="10.9" smashed="yes" rot="MR0"/>
+<element name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X07-PTH-2" package3d_urn="urn:adsk.eagle:package:2540391/3" value="PINHEAD_1X07-2" x="0" y="10.9" populate="no" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
