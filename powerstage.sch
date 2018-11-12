@@ -2845,11 +2845,39 @@ http://www.bccomponents.com/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="usb2can_master_lib">
+<packages>
+<package name="FIDUCIA-MOUNT">
+<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIALMOUNT">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIA-MOUNT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="BASIC"/>
+<variantdef name="BASIC" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2928,6 +2956,18 @@ http://www.bccomponents.com/</description>
 <part name="D3" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="D4" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
+<part name="U$8" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="U$9" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="U$10" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="U$12" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="BASIC" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3212,6 +3252,10 @@ and capacitor selection</text>
 <instance part="GND7" gate="G$1" x="208.28" y="121.92" smashed="yes" rot="R90">
 <attribute name="VALUE" x="209.55" y="121.92" size="1.27" layer="97" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
+<instance part="U$8" gate="G$1" x="45.72" y="93.98" smashed="yes" rot="R270"/>
+<instance part="U$9" gate="G$1" x="35.56" y="104.14" smashed="yes" rot="R270"/>
+<instance part="U$10" gate="G$1" x="35.56" y="93.98" smashed="yes" rot="R270"/>
+<instance part="U$12" gate="G$1" x="45.72" y="104.14" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
