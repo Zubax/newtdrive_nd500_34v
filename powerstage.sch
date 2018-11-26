@@ -1392,7 +1392,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="10µF" urn="urn:adsk.eagle:component:2539394/4" locally_modified="yes" prefix="C" library_version="7" library_locally_modified="yes">
+<deviceset name="10µF" urn="urn:adsk.eagle:component:2539394/5" prefix="C" library_version="8">
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
 </gates>
@@ -1512,6 +1512,16 @@
 <attribute name="PACKAGE" value="1210" constant="no"/>
 <attribute name="TC" value="X5R" constant="no"/>
 <attribute name="TOLERANCE" value="±20%" constant="no"/>
+<attribute name="VALUE" value="10µF" constant="no"/>
+<attribute name="VOLTAGE" value="50V" constant="no"/>
+</technology>
+<technology name="-50_10%_X7S">
+<attribute name="DIGIKEY#" value="445-7004-1-ND" constant="no"/>
+<attribute name="MANF" value="TDK Corporation" constant="no"/>
+<attribute name="MANF#" value="CGA6P3X7S1H106K250AB" constant="no"/>
+<attribute name="PACKAGE" value="1210" constant="no"/>
+<attribute name="TC" value="X7S" constant="no"/>
+<attribute name="TOLERANCE" value="±10%" constant="no"/>
 <attribute name="VALUE" value="10µF" constant="no"/>
 <attribute name="VOLTAGE" value="50V" constant="no"/>
 </technology>
@@ -2881,7 +2891,7 @@ http://www.bccomponents.com/</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="BASIC" current="yes"/>
+<variantdef name="BASIC"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2915,12 +2925,12 @@ http://www.bccomponents.com/</description>
 <part name="S1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="SENSE" device="">
 <variant name="BASIC" populate="no"/>
 </part>
-<part name="C35" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50V_20%_X5R" value="10µF"/>
-<part name="C58" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50V_20%_X5R" value="10µF"/>
-<part name="C62" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50V_20%_X5R" value="10µF"/>
-<part name="C63" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50V_20%_X5R" value="10µF"/>
-<part name="C64" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50V_20%_X5R" value="10µF"/>
-<part name="C31" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50V_20%_X5R" value="10µF"/>
+<part name="C35" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
+<part name="C58" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
+<part name="C62" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
+<part name="C63" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
+<part name="C64" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
+<part name="C31" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
