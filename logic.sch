@@ -1229,7 +1229,7 @@ DIN A3, landscape with location and doc. field</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="BASIC" current="yes"/>
+<variantdef name="BASIC"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -1257,6 +1257,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="CON7" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X07" device="-2" package3d_urn="urn:adsk.eagle:package:2540391/3"/>
+<part name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="GND4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -1311,6 +1315,12 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="CON7" gate="G$1" x="233.68" y="208.28" smashed="yes" rot="R270">
 <attribute name="NAME" x="255.27" y="205.74" size="1.778" layer="95" font="vector" ratio="15" rot="R270" align="center"/>
 </instance>
+<instance part="CON3" gate="G$1" x="111.76" y="213.36" smashed="yes" rot="MR180">
+<attribute name="NAME" x="114.3" y="204.47" size="1.778" layer="95" font="vector" ratio="15" rot="MR180" align="center"/>
+</instance>
+<instance part="GND4" gate="1" x="121.92" y="203.2" smashed="yes">
+<attribute name="VALUE" x="121.92" y="201.93" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1337,6 +1347,12 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="259.08" y1="187.96" x2="259.08" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="CON5" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="190.5" x2="261.62" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="121.92" y1="208.28" x2="121.92" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="CON3" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="208.28" x2="119.38" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PHASE_A_GND" class="0">
@@ -1551,6 +1567,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="241.3" y1="200.66" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
 <label x="241.3" y="198.12" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="CON7" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="CON3" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="210.82" x2="121.92" y2="210.82" width="0.1524" layer="91"/>
+<label x="121.92" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">

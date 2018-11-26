@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -55,11 +55,11 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -212,6 +212,9 @@
 <wire x1="6.7" y1="-17" x2="6.7" y2="-14.4" width="0.01" layer="20" locked="yes"/>
 <wire x1="6.7" y1="-14.4" x2="13.5" y2="-14.4" width="0.01" layer="20" curve="-180" locked="yes"/>
 <wire x1="13.5" y1="-14.4" x2="13.5" y2="-14.975" width="0.01" layer="20" locked="yes"/>
+<circle x="0" y="0" radius="21" width="0.01" layer="48"/>
+<circle x="0" y="0" radius="20" width="0.01" layer="48"/>
+<circle x="0" y="0" radius="20.5" width="0.01" layer="48"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:2540341">
@@ -3823,7 +3826,7 @@
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="BASIC" current="yes"/>
+<variantdef name="BASIC"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -4049,11 +4052,14 @@
 <element name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="5.5" y="-15.5" locked="yes" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.5" y="-15.5" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="-15.171" y="-11.564" populate="no" smashed="yes" rot="R135"/>
+<element name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="-15.171" y="-11.564" smashed="yes" rot="R135"/>
 <element name="CON7" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X07-PTH-2" package3d_urn="urn:adsk.eagle:package:2540391/3" value="PINHEAD_1X07-2" x="0" y="-12.2" smashed="yes">
 <attribute name="NAME" x="0" y="-12.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U$2" library="logo" library_urn="urn:adsk.eagle:library:6668987" package="OSHW-10.5X11.5" value="" x="5.5" y="-7" smashed="yes" rot="MR0"/>
+<element name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X02-PTH-2" package3d_urn="urn:adsk.eagle:package:6503394/3" value="PINHEAD_1X02-2" x="15.171" y="-11.564" smashed="yes" rot="R45">
+<attribute name="NAME" x="14.03963125" y="-10.432628125" size="1" layer="25" font="vector" ratio="15" rot="R45" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -4088,7 +4094,6 @@
 <via x="-12.5" y="2.35" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-6.275" y="-0.125" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-11.725" y="-7.475" extent="1-16" drill="0.3" diameter="0.6"/>
-<via x="11.025" y="-6.725" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="11.3" y="-0.55" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="9.85" y="5.075" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="9.375" y="3.725" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -4109,7 +4114,6 @@
 <via x="-15.7" y="-7.75" extent="1-16" drill="0.3" diameter="0.6"/>
 <contactref element="CON6" pad="2"/>
 <contactref element="CON5" pad="2"/>
-<via x="14.125" y="-12.025" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="15.725" y="-9.325" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="8.025" y="2.475" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="8.45" y="6.275" extent="1-16" drill="0.3" diameter="0.6"/>
@@ -4117,6 +4121,7 @@
 <via x="-9.275" y="10.65" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-15.725" y="3.8" extent="1-16" drill="0.3" diameter="0.6"/>
 <via x="-15.725" y="1.85" extent="1-16" drill="0.3" diameter="0.6"/>
+<contactref element="CON3" pad="2"/>
 </signal>
 <signal name="VDC" class="1">
 <contactref element="MODULE1" pad="3"/>
@@ -4239,13 +4244,11 @@
 </signal>
 <signal name="CAN1_TX">
 <contactref element="MODULE1" pad="42"/>
-<wire x1="12.55" y1="-6.85" x2="11.475" y2="-7.925" width="0.2" layer="1"/>
-<wire x1="12.55" y1="-6.85" x2="12.55" y2="-2.45" width="0.2" layer="1"/>
+<wire x1="12.55" y1="-5.95" x2="10.575" y2="-7.925" width="0.2" layer="1"/>
+<wire x1="12.55" y1="-5.95" x2="12.55" y2="-2.45" width="0.2" layer="1"/>
 <wire x1="12.55" y1="-2.45" x2="14" y2="-1" width="0.2" layer="1"/>
-<wire x1="11.475" y1="-7.925" x2="8.175" y2="-7.925" width="0.2" layer="1"/>
-<wire x1="7.8" y1="-8.3" x2="6.6" y2="-8.3" width="0.2" layer="1"/>
-<wire x1="6.6" y1="-8.3" x2="6" y2="-8.9" width="0.2" layer="1"/>
-<wire x1="8.175" y1="-7.925" x2="7.8" y2="-8.3" width="0.2" layer="1"/>
+<wire x1="10.575" y1="-7.925" x2="6.975" y2="-7.925" width="0.2" layer="1"/>
+<wire x1="6.975" y1="-7.925" x2="6" y2="-8.9" width="0.2" layer="1"/>
 <wire x1="6" y1="-8.9" x2="6" y2="-10.0281" width="0.2" layer="1"/>
 <contactref element="CON7" pad="6"/>
 <wire x1="4" y1="-12.0281" x2="4" y2="-12.2" width="0.2" layer="1"/>
@@ -4255,9 +4258,9 @@
 <contactref element="MODULE1" pad="41"/>
 <wire x1="14" y1="-3" x2="13.85" y2="-3" width="0.2" layer="1"/>
 <wire x1="13.85" y1="-3" x2="12.95" y2="-3.9" width="0.2" layer="1"/>
-<wire x1="12.95" y1="-3.9" x2="12.95" y2="-7.025" width="0.2" layer="1"/>
-<wire x1="12.95" y1="-7.025" x2="11.625" y2="-8.35" width="0.2" layer="1"/>
-<wire x1="11.625" y1="-8.35" x2="8.35" y2="-8.35" width="0.2" layer="1"/>
+<wire x1="12.95" y1="-3.9" x2="12.95" y2="-6.125" width="0.2" layer="1"/>
+<wire x1="12.95" y1="-6.125" x2="10.725" y2="-8.35" width="0.2" layer="1"/>
+<wire x1="10.725" y1="-8.35" x2="8.35" y2="-8.35" width="0.2" layer="1"/>
 <wire x1="8.35" y1="-8.35" x2="8" y2="-8.7" width="0.2" layer="1"/>
 <wire x1="8" y1="-8.7" x2="8" y2="-9.9751" width="0.2" layer="1"/>
 <contactref element="CON7" pad="5"/>
@@ -4330,6 +4333,29 @@
 <wire x1="-4" y1="-10.2" x2="-4" y2="-8.8" width="0.15" layer="1"/>
 <wire x1="-4" y1="-8.8" x2="-4.5" y2="-8.3" width="0.15" layer="1"/>
 <wire x1="-4.5" y1="-8.3" x2="-7.8" y2="-8.3" width="0.15" layer="1"/>
+<contactref element="CON3" pad="1"/>
+<wire x1="-2" y1="-12.2" x2="-0.9" y2="-13.3" width="0.1524" layer="1"/>
+<wire x1="-0.9" y1="-13.3" x2="0.6" y2="-13.3" width="0.1524" layer="1"/>
+<wire x1="0.6" y1="-13.3" x2="1" y2="-12.9" width="0.1524" layer="1"/>
+<wire x1="1" y1="-12.9" x2="1" y2="-11.6" width="0.1524" layer="1"/>
+<wire x1="1" y1="-11.6" x2="1.5" y2="-11.1" width="0.1524" layer="1"/>
+<wire x1="1.5" y1="-11.1" x2="3.4" y2="-11.1" width="0.1524" layer="1"/>
+<wire x1="3.4" y1="-11.1" x2="4" y2="-10.5" width="0.1524" layer="1"/>
+<wire x1="4" y1="-10.5" x2="4" y2="-9.1" width="0.1524" layer="1"/>
+<wire x1="4" y1="-9.1" x2="4.7" y2="-8.4" width="0.1524" layer="1"/>
+<wire x1="4.7" y1="-8.4" x2="5.5" y2="-8.4" width="0.1524" layer="1"/>
+<wire x1="5.5" y1="-8.4" x2="6.5" y2="-7.4" width="0.1524" layer="1"/>
+<wire x1="10.1" y1="-7.4" x2="10.2" y2="-7.3" width="0.1524" layer="1"/>
+<via x="10.2" y="-7.3" extent="1-16" drill="0.3" diameter="0.6"/>
+<wire x1="6.5" y1="-7.4" x2="10.1" y2="-7.4" width="0.1524" layer="1"/>
+<wire x1="10.2" y1="-7.3" x2="11.1" y2="-8.2" width="0.1524" layer="16"/>
+<wire x1="11.1" y1="-8.2" x2="11.9" y2="-8.2" width="0.1524" layer="16"/>
+<via x="11.9" y="-8.2" extent="1-16" drill="0.3" diameter="0.6"/>
+<wire x1="11.9" y1="-8.2" x2="12" y2="-8.3" width="0.1524" layer="1"/>
+<wire x1="12.61635" y1="-10.4262" x2="12.618984375" y2="-10.4262" width="0.1524" layer="1"/>
+<wire x1="12.618984375" y1="-10.4262" x2="14.463890625" y2="-12.27110625" width="0.1524" layer="1"/>
+<wire x1="12" y1="-9.80985" x2="12.61635" y2="-10.4262" width="0.1524" layer="1"/>
+<wire x1="12" y1="-8.3" x2="12" y2="-9.80985" width="0.1524" layer="1"/>
 </signal>
 <signal name="GPIO2">
 <contactref element="MODULE1" pad="28"/>
