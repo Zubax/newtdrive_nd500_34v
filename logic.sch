@@ -392,23 +392,23 @@ DIN A3, landscape with location and doc. field</description>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="37"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="37"/>
 </package>
-<package name="1X02-PTH-2" urn="urn:adsk.eagle:footprint:6503390/1" library_version="11">
+<package name="1X02-PTH-2" urn="urn:adsk.eagle:footprint:6503390/2" library_version="30">
 <pad name="1" x="-1" y="0" drill="0.8" diameter="1.4"/>
 <pad name="2" x="1" y="0" drill="0.8" diameter="1.4"/>
-<wire x1="-1.5" y1="1" x2="-0.5" y2="1" width="0.15" layer="25"/>
-<wire x1="-0.5" y1="1" x2="0" y2="0.5" width="0.15" layer="25"/>
-<wire x1="0" y1="-0.5" x2="-0.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="-0.5" y1="-1" x2="-1.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="-1.5" y1="-1" x2="-2" y2="-0.5" width="0.15" layer="25"/>
-<wire x1="-2" y1="-0.5" x2="-2" y2="0.5" width="0.15" layer="25"/>
-<wire x1="-2" y1="0.5" x2="-1.5" y2="1" width="0.15" layer="25"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="1" width="0.15" layer="25"/>
-<wire x1="1.5" y1="1" x2="2" y2="0.5" width="0.15" layer="25"/>
-<wire x1="2" y1="-0.5" x2="1.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="1.5" y1="-1" x2="0.5" y2="-1" width="0.15" layer="25"/>
-<wire x1="0.5" y1="-1" x2="0" y2="-0.5" width="0.15" layer="25"/>
-<wire x1="0" y1="0.5" x2="0.5" y2="1" width="0.15" layer="25"/>
-<wire x1="2" y1="-0.5" x2="2" y2="0.5" width="0.15" layer="25"/>
+<wire x1="-1.5" y1="1" x2="-0.5" y2="1" width="0.15" layer="21"/>
+<wire x1="-0.5" y1="1" x2="0" y2="0.5" width="0.15" layer="21"/>
+<wire x1="0" y1="-0.5" x2="-0.5" y2="-1" width="0.15" layer="21"/>
+<wire x1="-0.5" y1="-1" x2="-1.5" y2="-1" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-2" y2="-0.5" width="0.15" layer="21"/>
+<wire x1="-2" y1="-0.5" x2="-2" y2="0.5" width="0.15" layer="21"/>
+<wire x1="-2" y1="0.5" x2="-1.5" y2="1" width="0.15" layer="21"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="1" width="0.15" layer="21"/>
+<wire x1="1.5" y1="1" x2="2" y2="0.5" width="0.15" layer="21"/>
+<wire x1="2" y1="-0.5" x2="1.5" y2="-1" width="0.15" layer="21"/>
+<wire x1="1.5" y1="-1" x2="0.5" y2="-1" width="0.15" layer="21"/>
+<wire x1="0.5" y1="-1" x2="0" y2="-0.5" width="0.15" layer="21"/>
+<wire x1="0" y1="0.5" x2="0.5" y2="1" width="0.15" layer="21"/>
+<wire x1="2" y1="-0.5" x2="2" y2="0.5" width="0.15" layer="21"/>
 <text x="0" y="1.6" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="1X02-PTH-2-FEMALE" urn="urn:adsk.eagle:footprint:6503391/1" library_version="11">
@@ -545,12 +545,7 @@ DIN A3, landscape with location and doc. field</description>
 <packageinstance name="1X10-PTH_2"/>
 </packageinstances>
 </package3d>
-<package3d name="1X02-PTH-2.54" urn="urn:adsk.eagle:package:2540385/1" type="box" library_version="11">
-<packageinstances>
-<packageinstance name="1X02-PTH-2.54"/>
-</packageinstances>
-</package3d>
-<package3d name="1X02-PTH-2" urn="urn:adsk.eagle:package:6503394/3" type="model" library_version="11">
+<package3d name="1X02-PTH-2" urn="urn:adsk.eagle:package:6503394/4" type="model" library_version="30">
 <packageinstances>
 <packageinstance name="1X02-PTH-2"/>
 </packageinstances>
@@ -573,6 +568,11 @@ DIN A3, landscape with location and doc. field</description>
 <package3d name="1X10-PTH_2-FEMALE" urn="urn:adsk.eagle:package:6503397/3" type="model" library_version="15">
 <packageinstances>
 <packageinstance name="1X10-PTH_2-FEMALE"/>
+</packageinstances>
+</package3d>
+<package3d name="1X02-PTH-2.54" urn="urn:adsk.eagle:package:2540385/2" type="model" library_version="30">
+<packageinstances>
+<packageinstance name="1X02-PTH-2.54"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -693,7 +693,7 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD_1X02" urn="urn:adsk.eagle:component:2540406/5" prefix="CON" library_version="11">
+<deviceset name="PINHEAD_1X02" urn="urn:adsk.eagle:component:2540406/7" prefix="CON" library_version="30">
 <description>pinheader 2P</description>
 <gates>
 <gate name="G$1" symbol="M02" x="-2.54" y="0"/>
@@ -705,7 +705,7 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2540385/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2540385/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -717,7 +717,7 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6503394/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6503394/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -783,7 +783,7 @@ DIN A3, landscape with location and doc. field</description>
 </library>
 <library name="zubax_modules" urn="urn:adsk.eagle:library:5014895">
 <packages>
-<package name="MITOHONDRIQUE" urn="urn:adsk.eagle:footprint:4410641/3" library_version="7">
+<package name="MITOHONDRIQUE-TH" urn="urn:adsk.eagle:footprint:4410641/4" library_version="10" library_locally_modified="yes">
 <wire x1="-10.95" y1="14.95" x2="10.95" y2="14.95" width="0.01" layer="21"/>
 <wire x1="10.95" y1="14.95" x2="12.45" y2="13.45" width="0.01" layer="21" curve="-90"/>
 <wire x1="12.45" y1="13.45" x2="12.45" y2="-13.45" width="0.01" layer="21"/>
@@ -1100,11 +1100,77 @@ DIN A3, landscape with location and doc. field</description>
 <pad name="42" x="3" y="14" drill="0.8" diameter="1.4"/>
 <text x="0" y="0" size="1.5" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="MITOHONDRIQUE-SMD" urn="urn:adsk.eagle:footprint:7007262/2" library_version="10" library_locally_modified="yes">
+<wire x1="-10.95" y1="14.95" x2="10.95" y2="14.95" width="0.01" layer="51"/>
+<wire x1="10.95" y1="14.95" x2="12.45" y2="13.45" width="0.01" layer="51" curve="-90"/>
+<wire x1="12.45" y1="13.45" x2="12.45" y2="-13.45" width="0.01" layer="51"/>
+<wire x1="12.45" y1="-13.45" x2="10.95" y2="-14.95" width="0.01" layer="51" curve="-90"/>
+<wire x1="10.95" y1="-14.95" x2="-10.95" y2="-14.95" width="0.01" layer="51"/>
+<wire x1="-10.95" y1="-14.95" x2="-12.45" y2="-13.45" width="0.01" layer="51" curve="-90"/>
+<wire x1="-12.45" y1="-13.45" x2="-12.45" y2="13.45" width="0.01" layer="51"/>
+<wire x1="-12.45" y1="13.45" x2="-10.95" y2="14.95" width="0.01" layer="51" curve="-90"/>
+<wire x1="10.95" y1="14.95" x2="-10.95" y2="14.95" width="0.1" layer="22"/>
+<wire x1="-10.95" y1="14.95" x2="-12.45" y2="13.45" width="0.1" layer="22" curve="90"/>
+<wire x1="-12.45" y1="13.45" x2="-12.45" y2="-13.45" width="0.1" layer="22"/>
+<wire x1="-12.45" y1="-13.45" x2="-10.95" y2="-14.95" width="0.1" layer="22" curve="90"/>
+<wire x1="-10.95" y1="-14.95" x2="10.95" y2="-14.95" width="0.1" layer="22"/>
+<wire x1="10.95" y1="-14.95" x2="12.45" y2="-13.45" width="0.1" layer="22" curve="90"/>
+<wire x1="12.45" y1="-13.45" x2="12.45" y2="13.45" width="0.1" layer="22"/>
+<wire x1="12.45" y1="13.45" x2="10.95" y2="14.95" width="0.1" layer="22" curve="90"/>
+<text x="0" y="0" size="1.5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="S1" x="5" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="S2" x="7" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="S3" x="9" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="S4" x="12.5" y="13" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S5" x="12.5" y="11" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S6" x="12.5" y="9" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S7" x="12.5" y="7" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S8" x="12.5" y="5" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S9" x="12.5" y="3" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S10" x="12.5" y="1" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S11" x="12.5" y="-1" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S12" x="12.5" y="-3" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S13" x="12.5" y="-5" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S14" x="12.5" y="-7" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S15" x="12.5" y="-9" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S16" x="12.5" y="-11" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S17" x="12.5" y="-13" dx="1.2" dy="2" layer="1" rot="R270"/>
+<smd name="S18" x="9" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S19" x="7" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S20" x="5" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S21" x="-3" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S22" x="-5" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S23" x="-7" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S24" x="-9" y="-15" dx="1.2" dy="2" layer="1"/>
+<smd name="S25" x="-12.5" y="-13" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S26" x="-12.5" y="-11" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S27" x="-12.5" y="-9" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S28" x="-12.5" y="-7" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S29" x="-12.5" y="-5" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S30" x="-12.5" y="-3" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S31" x="-12.5" y="-1" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S32" x="-12.5" y="1" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S33" x="-12.5" y="3" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S34" x="-12.5" y="5" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S35" x="-12.5" y="7" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S36" x="-12.5" y="9" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S37" x="-12.5" y="11" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S38" x="-12.5" y="13" dx="1.2" dy="2" layer="1" rot="R90"/>
+<smd name="S39" x="-9" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="S40" x="-7" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="S41" x="-5" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="S42" x="-3" y="15" dx="1.2" dy="2" layer="1" rot="R180"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="MITOHONDRIQUE" urn="urn:adsk.eagle:package:4410646/10" type="model" library_version="8" library_locally_modified="yes">
+<package3d name="MITOHONDRIQUE" urn="urn:adsk.eagle:package:4410646/11" type="model" library_version="10" library_locally_modified="yes">
 <packageinstances>
-<packageinstance name="MITOHONDRIQUE"/>
+<packageinstance name="MITOHONDRIQUE-TH"/>
+</packageinstances>
+</package3d>
+<package3d name="MITOHONDRIQUE-SMD" urn="urn:adsk.eagle:package:7007264/4" type="model" library_version="10" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="MITOHONDRIQUE-SMD"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1161,12 +1227,12 @@ DIN A3, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MITOHONDRIQUE" urn="urn:adsk.eagle:component:5014900/5" locally_modified="yes" prefix="MODULE" library_version="8" library_locally_modified="yes">
+<deviceset name="MITOHONDRIQUE" urn="urn:adsk.eagle:component:5014900/7" locally_modified="yes" prefix="MODULE" library_version="10" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="MITOHONDRIQUE" x="-22.86" y="-27.94"/>
 </gates>
 <devices>
-<device name="-TH" package="MITOHONDRIQUE">
+<device name="-TH" package="MITOHONDRIQUE-TH">
 <connects>
 <connect gate="G$1" pin="5V_OUT" pad="1"/>
 <connect gate="G$1" pin="BEC_ENABLE_OUT" pad="24"/>
@@ -1212,13 +1278,65 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="VDC" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4410646/10"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4410646/11"/>
 </package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MANF" value="Zubax Robotics" constant="no"/>
 <attribute name="MANF#" value="Mitochondrik" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="" package="MITOHONDRIQUE-SMD">
+<connects>
+<connect gate="G$1" pin="5V_OUT" pad="S1"/>
+<connect gate="G$1" pin="BEC_ENABLE_OUT" pad="S24"/>
+<connect gate="G$1" pin="CAN1_LED" pad="S36"/>
+<connect gate="G$1" pin="CAN1_RX" pad="S41"/>
+<connect gate="G$1" pin="CAN1_TX" pad="S42"/>
+<connect gate="G$1" pin="CAN2_LED" pad="S37"/>
+<connect gate="G$1" pin="CAN2_RX" pad="S39"/>
+<connect gate="G$1" pin="CAN2_TX" pad="S40"/>
+<connect gate="G$1" pin="GAIN_OUT" pad="S25"/>
+<connect gate="G$1" pin="GATE_ENABLE_OUT" pad="S26"/>
+<connect gate="G$1" pin="GND" pad="S2"/>
+<connect gate="G$1" pin="GPIO1" pad="S27"/>
+<connect gate="G$1" pin="GPIO2" pad="S28"/>
+<connect gate="G$1" pin="NC" pad="S38"/>
+<connect gate="G$1" pin="OVERCURRENT_PROTECT_ADJ" pad="S29"/>
+<connect gate="G$1" pin="PHASE_A" pad="S5"/>
+<connect gate="G$1" pin="PHASE_A_CURRENT_SHUNT_N" pad="S16"/>
+<connect gate="G$1" pin="PHASE_A_CURRENT_SHUNT_P" pad="S17"/>
+<connect gate="G$1" pin="PHASE_A_GATE_HIGH" pad="S4"/>
+<connect gate="G$1" pin="PHASE_A_GATE_LOW" pad="S6"/>
+<connect gate="G$1" pin="PHASE_A_GND" pad="S7"/>
+<connect gate="G$1" pin="PHASE_B" pad="S9"/>
+<connect gate="G$1" pin="PHASE_B_CURRENT_SHUNT_N" pad="S18"/>
+<connect gate="G$1" pin="PHASE_B_CURRENT_SHUNT_P" pad="S19"/>
+<connect gate="G$1" pin="PHASE_B_GATE_HIGH" pad="S8"/>
+<connect gate="G$1" pin="PHASE_B_GATE_LOW" pad="S10"/>
+<connect gate="G$1" pin="PHASE_B_GND" pad="S11"/>
+<connect gate="G$1" pin="PHASE_C" pad="S13"/>
+<connect gate="G$1" pin="PHASE_C_GATE_HIGH" pad="S12"/>
+<connect gate="G$1" pin="PHASE_C_GATE_LOW" pad="S14"/>
+<connect gate="G$1" pin="PHASE_C_GND" pad="S15"/>
+<connect gate="G$1" pin="POWER_ENABLE_IN" pad="S21"/>
+<connect gate="G$1" pin="RGB_LED_B" pad="S32"/>
+<connect gate="G$1" pin="RGB_LED_G" pad="S31"/>
+<connect gate="G$1" pin="RGB_LED_R" pad="S30"/>
+<connect gate="G$1" pin="TEMPERATURE_SENSOR" pad="S20"/>
+<connect gate="G$1" pin="UART_RX" pad="S23"/>
+<connect gate="G$1" pin="UART_TX" pad="S22"/>
+<connect gate="G$1" pin="USB+" pad="S35"/>
+<connect gate="G$1" pin="USB-" pad="S34"/>
+<connect gate="G$1" pin="USB_VBUS" pad="S33"/>
+<connect gate="G$1" pin="VDC" pad="S3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7007264/4"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1246,18 +1364,14 @@ DIN A3, landscape with location and doc. field</description>
 <part name="+P15" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="CON1" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X10" device="-2" package3d_urn="urn:adsk.eagle:package:6503373/2"/>
 <part name="CON2" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X10" device="-2" package3d_urn="urn:adsk.eagle:package:6503373/2"/>
-<part name="MODULE1" library="zubax_modules" library_urn="urn:adsk.eagle:library:5014895" deviceset="MITOHONDRIQUE" device="-TH" package3d_urn="urn:adsk.eagle:package:4410646/10"/>
+<part name="MODULE1" library="zubax_modules" library_urn="urn:adsk.eagle:library:5014895" deviceset="MITOHONDRIQUE" device="-TH" package3d_urn="urn:adsk.eagle:package:4410646/11"/>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
-<part name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
-<part name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3"/>
-<part name="CON6" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3">
-<variant name="BASIC" populate="no"/>
-</part>
-<part name="GND2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
+<part name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/4"/>
+<part name="CON5" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/4"/>
 <part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="CON7" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X07" device="-2" package3d_urn="urn:adsk.eagle:package:2540391/3"/>
-<part name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/3">
+<part name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2" package3d_urn="urn:adsk.eagle:package:6503394/4">
 <variant name="BASIC" populate="no"/>
 </part>
 <part name="GND4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
@@ -1300,12 +1414,6 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="CON5" gate="G$1" x="269.24" y="195.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="266.7" y="186.69" size="1.778" layer="95" font="vector" ratio="15" rot="R180" align="center"/>
 </instance>
-<instance part="CON6" gate="G$1" x="111.76" y="198.12" smashed="yes" rot="MR180">
-<attribute name="NAME" x="114.3" y="189.23" size="1.778" layer="95" font="vector" ratio="15" rot="MR180" align="center"/>
-</instance>
-<instance part="GND2" gate="1" x="121.92" y="187.96" smashed="yes">
-<attribute name="VALUE" x="121.92" y="186.69" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
-</instance>
 <instance part="GND3" gate="1" x="259.08" y="185.42" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="259.08" y="184.15" size="1.27" layer="96" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
@@ -1335,12 +1443,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="93.98" y1="154.94" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
 <junction x="93.98" y="154.94"/>
 <label x="50.8" y="154.94" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="121.92" y1="193.04" x2="121.92" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="CON6" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="193.04" x2="119.38" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -1557,11 +1659,6 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="MODULE1" gate="G$1" pin="GPIO1"/>
 <wire x1="165.1" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
 <label x="167.64" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="CON6" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="195.58" x2="121.92" y2="195.58" width="0.1524" layer="91"/>
-<label x="121.92" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="241.3" y1="200.66" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
