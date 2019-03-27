@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -777,7 +777,7 @@
 <attribute name="DIGIKEY#" value="511-1652-1-ND" x="193.5" y="-20.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="Rohm Semiconductor" x="193.5" y="-20.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="SML-P11MTT86" x="193.5" y="-20.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="6.4" y="-0.8" size="0.5" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="5.5" y="-0.75" size="0.5" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R3" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0402" package3d_urn="urn:adsk.eagle:package:2539512/2" value="1K" x="-3.75" y="4.2" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" x="195.25" y="-42.8" size="1.778" layer="27" rot="R90" display="off"/>
