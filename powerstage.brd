@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="43" fill="3" visible="no" active="yes"/>
@@ -121,7 +121,7 @@
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
 <layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
 <layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
 <layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
@@ -161,7 +161,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ZAJHTluVSR69FIREnNfqcQ" pcbguid="7c6f9a56-3587-45a7-8229-92f35c80dc4b" lastpulledtime="" lastsyncedchangeguid="23cae763-0e7c-6782-396c-fa785399b2ba"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ZAJHTluVSR69FIREnNfqcQ" pcbguid="7c6f9a56-3587-45a7-8229-92f35c80dc4b" lastpulledtime="" lastsyncedchangeguid="72de28a5-7bf0-bc42-2327-0a8f38e2b9e8"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
@@ -5195,8 +5195,8 @@ P2</text>
 <element name="U$1" library="pixhawk_esc_1.5_master_lib" package="ZUBAX_LOGO_5X10" value="" x="12.7" y="-3.5" smashed="yes" rot="MR0"/>
 <element name="U$2" library="logo" library_urn="urn:adsk.eagle:library:6668987" package="DUCK-8.5X7.5-MASK" value="" x="-4.5" y="-22.475" smashed="yes"/>
 <element name="U$4" library="logo" library_urn="urn:adsk.eagle:library:6668987" package="OSHW-10.5X11.5" value="" x="-1.525" y="-5.525" smashed="yes" rot="MR0"/>
-<element name="U$8" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="-13.5" y="-20" populate="no" smashed="yes"/>
-<element name="U$9" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="12.5" y="-22" populate="no" smashed="yes"/>
+<element name="U$8" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="-16.6" y="-11.3" populate="no" smashed="yes" rot="MR0"/>
+<element name="U$9" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="11.3" y="16.6" populate="no" smashed="yes" rot="MR0"/>
 <element name="U$10" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="11.3" y="16.6" populate="no" smashed="yes"/>
 <element name="U$12" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="-16.6" y="-11.3" populate="no" smashed="yes"/>
 </elements>
@@ -5359,7 +5359,7 @@ P2</text>
 <wire x1="8.425" y1="3.075" x2="11.65" y2="-0.15" width="0.25" layer="1"/>
 <wire x1="16.35" y1="-0.15" x2="17.2" y2="-1" width="0.25" layer="1"/>
 <wire x1="11.65" y1="-0.15" x2="16.35" y2="-0.15" width="0.25" layer="1"/>
-<wire x1="6.05" y1="4" x2="6.775" y2="5.875" width="0" layer="19" extent="1-1"/>
+<wire x1="6.775" y1="5.875" x2="6.05" y2="4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_A" class="1">
 <via x="3.65" y="9.8" extent="1-16" drill="0.3" diameter="0.6"/>
