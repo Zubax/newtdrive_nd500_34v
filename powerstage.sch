@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2979,12 +2979,6 @@ http://www.bccomponents.com/</description>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
-<part name="D3" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V">
-<variant name="BASIC" populate="no"/>
-</part>
-<part name="D4" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V">
-<variant name="BASIC" populate="no"/>
-</part>
 <part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="U$8" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
 <variant name="BASIC" populate="no"/>
@@ -3270,14 +3264,6 @@ and capacitor selection</text>
 </instance>
 <instance part="GND5" gate="G$1" x="167.64" y="157.48" smashed="yes">
 <attribute name="VALUE" x="167.64" y="156.21" size="1.27" layer="97" font="vector" ratio="15" align="center"/>
-</instance>
-<instance part="D3" gate="G$1" x="109.22" y="226.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="106.68" y="226.06" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="MANF#" x="111.76" y="226.06" size="1.016" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
-</instance>
-<instance part="D4" gate="G$1" x="116.84" y="226.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="114.3" y="226.06" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="MANF#" x="119.38" y="226.06" size="1.016" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
 <instance part="GND7" gate="G$1" x="208.28" y="121.92" smashed="yes" rot="R90">
 <attribute name="VALUE" x="209.55" y="121.92" size="1.27" layer="97" font="vector" ratio="15" rot="R90" align="center"/>
@@ -3667,14 +3653,6 @@ and capacitor selection</text>
 <wire x1="40.64" y1="226.06" x2="45.72" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="226.06" x2="45.72" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="220.98" x2="48.26" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="220.98" x2="109.22" y2="220.98" width="0.1524" layer="91"/>
-<junction x="104.14" y="220.98"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="109.22" y1="220.98" x2="109.22" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="220.98" x2="116.84" y2="220.98" width="0.1524" layer="91"/>
-<junction x="109.22" y="220.98"/>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="116.84" y1="220.98" x2="116.84" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="CON3" gate="G$1" pin="PAD1"/>
 <wire x1="35.56" y1="223.52" x2="35.56" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="220.98" x2="45.72" y2="220.98" width="0.1524" layer="91"/>
@@ -3784,16 +3762,6 @@ and capacitor selection</text>
 <wire x1="40.64" y1="228.6" x2="45.72" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="228.6" x2="45.72" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="233.68" x2="48.26" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="233.68" x2="109.22" y2="233.68" width="0.1524" layer="91"/>
-<junction x="104.14" y="233.68"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="109.22" y1="231.14" x2="109.22" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="116.84" y1="231.14" x2="116.84" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="233.68" x2="109.22" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="233.68" x2="116.84" y2="233.68" width="0.1524" layer="91"/>
-<junction x="109.22" y="233.68"/>
-<wire x1="116.84" y1="233.68" x2="116.84" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="T1" pin="D"/>
