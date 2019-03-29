@@ -161,6 +161,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ZAJHTluVSR69FIREnNfqcQ" pcbguid="7c6f9a56-3587-45a7-8229-92f35c80dc4b" lastpulledtime="" lastsyncedchangeguid="23cae763-0e7c-6782-396c-fa785399b2ba"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
@@ -180,7 +181,8 @@
 <wire x1="9.225" y1="5.8" x2="9.225" y2="7.25" width="0.15" layer="41"/>
 <wire x1="9.475" y1="3.35" x2="12.925" y2="3.35" width="0.15" layer="41"/>
 <wire x1="12.925" y1="3.35" x2="12.925" y2="2.9" width="0.15" layer="41"/>
-<text x="19.5" y="-21.5" size="1.5" layer="16" font="vector" ratio="15" rot="MR0" align="bottom-center">SadulliP</text>
+<text x="0" y="-10.25" size="1.6" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">Sadulli
+P2</text>
 <circle x="0" y="0" radius="21" width="0.1524" layer="49"/>
 <wire x1="-14.2555" y1="-13.6583" x2="-15.2205" y2="-14.468" width="0.01" layer="20"/>
 <wire x1="-15.2205" y1="-14.468" x2="-9.5491" y2="-18.7028" width="0.01" layer="20" curve="19.404066"/>
@@ -6020,10 +6022,19 @@
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
