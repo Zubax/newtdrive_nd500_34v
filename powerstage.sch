@@ -66,6 +66,7 @@
 <layer number="57" name="tCAD" color="12" fill="1" visible="no" active="no"/>
 <layer number="58" name="bCAD" color="9" fill="1" visible="no" active="no"/>
 <layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
@@ -106,6 +107,7 @@
 <layer number="126" name="_bnames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tvalues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bvalues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="130" name="bLogo" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
@@ -2062,8 +2064,8 @@ DIN A3, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PTVS36VP1UP,115" urn="urn:adsk.eagle:component:6533207/2" prefix="D" library_version="7">
-<description>TVS DIODE CFP5</description>
+<deviceset name="PTVS33VP1UTP,115" prefix="D" library_version="12" library_locally_modified="yes">
+<description>53.3V Clamp 11.3A Ipp Tvs Diode Surface Mount CFP5</description>
 <gates>
 <gate name="G$1" symbol="TVS" x="0" y="0"/>
 </gates>
@@ -2078,9 +2080,9 @@ DIN A3, landscape with location and doc. field</description>
 </package3dinstances>
 <technologies>
 <technology name="-36V">
-<attribute name="DIGIKEY#" value="1727-4439-2-ND" constant="no"/>
+<attribute name="DIGIKEY#" value="1727-1411-1-ND" constant="no"/>
 <attribute name="MANF" value="Nexperia USA Inc" constant="no"/>
-<attribute name="MANF#" value="PTVS36VP1UP,115" constant="no"/>
+<attribute name="MANF#" value="PTVS33VP1UTP,115" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2974,8 +2976,8 @@ http://www.bccomponents.com/</description>
 <attribute name="DIGIKEY#" value="732-8860-1-ND"/>
 <attribute name="PACKAGE" value="RADIAL"/>
 </part>
-<part name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
-<part name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
+<part name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS33VP1UTP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
+<part name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS33VP1UTP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
