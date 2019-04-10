@@ -105,7 +105,7 @@ Zubax Sadulli can be used with the following accessories:
 
 Please contact your supplier for ordering information.
 
-\begin{figure}[hb]
+\begin{figure}[b]
 	\centering
 	\includegraphics[width=0.45\textwidth]{1555propeller}
 	\caption{Propellers.\label{propellers}}
@@ -224,8 +224,6 @@ The CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to
 joined in parallel.
 The power rails of the connector pair is connected via switch to the device's BEC.
 
-
-
 \begin{ZubaxSimpleTable}{CAN bus connectors pinout}{|c X X X[3]|}
 	Pin no. & Type         & Name      & Comment \\
 	1       & Power        & PWR       & Not connected to the device's circuits internally.\\
@@ -258,43 +256,36 @@ This LEDs are located on the pcb near the UAVCAN connectors.
 
 \section{Mechanical characteristics}
 
-The drawing \ref{drawing} documents the basic mechanical characteristics of Zubax Sadulli,
-such as the placement of connectors and mounting holes.
+The drawings \ref{Sadulli_grosso_drawing} and \ref{Sadulli_piccino_drawing} document the basic mechanical characteristics of Zubax Sadulli,
+such as dimensions and mounting holes placement.
 
 \begin{figure}[hb]
-    \includegraphics[width=0.45\textwidth]{Sadulli_grosso_Drawing} \includegraphics[width=0.45\textwidth]{Sadulli_piccino_Drawing}
-   \left
-   \caption{Sadulli-grosso.}
-   \right\
-   \caption{Sadulli-piccino.}
-   
-	\label{Sadulli_drawings}}
+    \centering    
+    \includegraphics[width=0.45\textwidth]{Sadulli_grosso_Drawing}
+    \caption{Sadulli-grosso drawing.} \label{Sadulli_grosso_drawing} 
 \end{figure}
 
-\begin{ZubaxSimpleTable}{Mechanical characteristics}{|c X|l|c|c|с|}
-    Symbol & Parameter & Note                 &Grosso &Piccino  & Unit \\
-	$m$    & Weight    & Cables not included & 207  &  & g \\
+\begin{figure}[hb]
+    \centering    
+    \includegraphics[width=0.45\textwidth]{Sadulli_piccino_Drawing}
+    \caption{Sadulli-piccino drawing.}\label{Sadulli_piccino_drawing}}
+\end{figure}
+
+
+\begin{ZubaxSimpleTable}{Mechanical characteristics}{|c|l|c|c|с|X|}
+    Symbol & Parameter & Grosso &Piccino  & Unit & Note                 \\
+	$m$    & Weight   & 207  & 128 & g  & Cables not included  \\
+	IP     & Ptotection & 65 & 65 & - & The ESC is conformally coated to protect from wet conditions \\                        
 \end{ZubaxSimpleTable}
 
 \chapter{Operation}\label{operation}
 \section{System connection}\label{sec:system_connection}
 
 No soldering is required to connect Zubax Sadulli to the application system. 
-It is ready to use right out of the box. Just connect battery via XT30 power connector and CAN interface (RCPWM optionally) via UAVCAN microconnectors. 
-Zubax Sadulli is a single supply device, which means that the device does
-not expose any power supply inputs except for the high power supply.
-The 5 V rails of the CAN interfaces are not used by the device; rather,
-they connect the 5 V rails of their respective CAN connector pairs directly together.
+It is ready to use right out of the box. Just plug in battery XT30 power connector and CAN interface (RCPWM optionally) UAVCAN microconnectors as shown on the Figure \ref{Sadulli_connectors}. 
 
 Application-specific integration documentation is available on the Zubax Knowledge Base at
 \mbox{\url{https://kb.zubax.com}}.
-
-\begin{figure}[hb]
-    \centering
-	\includegraphics[width=\textwidth]{can_daisy_chain}
-	\caption{Connection of CAN nodes in non-redundant CAN bus configuration.
-	\label{can_daisy_chain_non_redundant}}
-\end{figure}
 
 \begin{figure}[hb]
     \includegraphics[width=0.45\textwidth]{sadulli-connectors} \includegraphics[width=0.45\textwidth]{connectors}
