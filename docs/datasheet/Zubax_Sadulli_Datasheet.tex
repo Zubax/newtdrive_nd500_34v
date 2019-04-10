@@ -17,6 +17,8 @@ Zubax Sadulli is a tightly integrated unit that contains an electric motor with 
 
 \begin{itemize}
     \item 550 W continuous power output.
+    \item 3S - 6S wide power voltage range.
+    \item 5v, 0.5 A BEC.
     \item High efficiency sensorles FOC algorithms.
     \item Self diagnostics and health status reporting.
     \item Built-in motor temperature sensor for enhanced \allowbreak{}self-diagnostics.
@@ -67,7 +69,7 @@ This datasheet is focused only on the Sadulli hardware.
 The ESC is cooled by the motor. This allows for increasing the maximum ESC power in the same frame. Compact and tightly integrated design minimizes motor wiring and hence internal resistance. This, in turn, means fewer power losses and EMI. 
 
 There are two versions of Sadulli: Sadulli Piccino and Sadulli Grosso. 
-Sadulli Piccino can be applied for light multirotor aircraft with takeoff weight 500 - 600  g/rotor. While Sadulli Grosso can be applied for multirotor aircraft with  takeoff weight 1300-1800 g/rotor. 
+Sadulli Piccino can be applied for light multirotor aircraft with takeoff weight 500 - 800  g/rotor. While Sadulli Grosso can be applied for multirotor aircraft with  takeoff weight 1300 g/rotor. 
 
 \section{Quality assurance}
 
@@ -145,15 +147,18 @@ Please contact Zubax Robotics for additional reliability and safety information.
 \section{Motor specification}
 
 \begin{ZubaxSimpleTable}{Motor}{|c X|c|c|c|}
-    Symbol & Parameter & Sadulli Grosso & Sadulli Piccino & Unit \\
-	N   & Number of rotor poles & 24 & 24 & - \\
-	Kv  & Voltage coefficient   & 330 & 330 & rpm/V\\
-	    & Weight                & 166 &     & g\\
+    Symbol & Parameter                                & Sadulli Grosso & Sadulli Piccino & Unit \\
+	N                   & Number of rotor poles       & 24             & 24              & - \\
+	Kv                & Constant velocity           & 330            & 380             & rpm/V \\
+	$I_\text{noload}$   & No load current             & 0.7            & 0.3             & A/10V \\
+	$I_\text{motor max}$ & Motor phase maximum current & 30             & 16              & A(30sec)\\
+	$P_\text{motor max}$ & Motor maximum continious power & 750         & 450             & W \\
+	   -                 & Weight                       & 166           & 66              & g\\
 \end{ZubaxSimpleTable}
 
-\section{Power characteristics of the Sadulli ESC}
+\section{ESC characteristics}
 
-\begin{ZubaxTableWrapper}{Power characteristics}
+\begin{ZubaxTableWrapper}{ESC characteristics}
     \begin{ZubaxWrappedTable}{|c X|c c c|c|}
         Symbol & Parameter & Min & Typ & Max & Unit \\
     	$P$                 & Continuous power                    &      &      & 500  & W \\
@@ -168,14 +173,17 @@ Please contact Zubax Robotics for additional reliability and safety information.
                               dissipation                         &      & 1000 &      & W \\
         $E_\text{TVS}$      & TVS circuit energy absorption
                               capability\tnote{c}                 &      & 5    &      & J \\
-    	$\theta_\text{JA}$  & Junction-to-air thermal resistance  &      & 50   &      & K/W \\
-        $R_\text{DS-on}$    & FET drain-source on-state resistance&      & 6  &   & $\text{m}\Omega$ \\
+    	$R_\text{DS-on}$    & FET drain-source on-state resistance&      & 6  &   & $\text{m}\Omega$ \\
         $R_\text{phase}$    & Cumulative resistance of the
                               inverter per phase                  &      & 6    &      & $\text{m}\Omega$ \\
                             & Inverter temperature measurement
                               error                               & -6   &      & +6   & \degree{}C \\
                             & Inverter temperature measurement
                               range                               & -55  &      & 125  & \degree{}C \\
+                            & Motor temperature measurement error  & -2         & +2   & \degree{}C \\
+                            & Motor temperature measurement
+                              range                               & -50  &      & 175  & \degree{}C \\
+        
     \end{ZubaxWrappedTable}
 
 \end{ZubaxTableWrapper}
@@ -207,13 +215,12 @@ during braking.
 \subsection{CAN bus}
 
 The device is equipped with a ISO 11898-2 CAN 2.0A/B interface.
-Each CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to
+The CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to
 \url{http://uavcan.org} for more information on UAVCAN.}
 joined in parallel.
-The power rails of the connector pairs are not connected to the device's internal circuitry.
-The device does not terminate the CAN bus internally.
+The power rails of the connector pair is connected via switch to the device's BEC.
 
-Connector of the unused CAN bus interface should be left empty.
+
 
 \begin{ZubaxSimpleTable}{CAN bus connectors pinout}{|c X X X[3]|}
 	Pin no. & Type         & Name      & Comment \\
@@ -264,22 +271,6 @@ such as the placement of connectors and mounting holes.
     Symbol & Parameter & Note                 &Grosso &Piccino  & Unit \\
 	$m$    & Weight    & Cables not included & 207  &  & g \\
 \end{ZubaxSimpleTable}
-
-\chapter{Device identification}
-
-\section{Hardware version number}
-
-Zubax Sadulli reports to the Telega firmware the following hardware version number
-(in the form major.minor): 1.7. It actually is the Mitochondrik hardware version number because Sadulli is based on the Mitochondrik module. 
-
-\section{Certificate of authenticity}\label{sec:certificate_of_authenticity}
-
-The Telega firmware can report the certificate of authenticity (CoA),
-if one is found installed on the hardware that the firmware is running on.
-The details covering how to request the CoA from Telega fall outside of the scope of this document;
-the reader is advised to refer to the Sapog Reference Manual for explanations.
-
-Every manufactured instance of Zubax Mitochondrik contains a valid CoA, which is an RSA-1024 digital signature
 
 \chapter{Operation}\label{operation}
 \section{System connection}\label{sec:system_connection}
@@ -346,6 +337,24 @@ It is specified in the tables \ref{table:status_led} and \ref{table:status_led_b
        \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX\LEDO\LEDX\LEDX\LEDX} & Idle, Invalid motor parameters & Some motor parameters are not properly initialized or the motor identification hasn't been performed\\
 
 \end{ZubaxSimpleTable}
+
+\section{Device identification}
+
+\subsection{Hardware version number}
+
+Zubax Sadulli reports to the Telega firmware the following hardware version number
+(in the form major.minor): 1.7. It actually is the Mitochondrik hardware version number because Sadulli is based on the Mitochondrik module. 
+
+\subsection{Certificate of authenticity}\label{sec:certificate_of_authenticity}
+
+The Telega firmware can report the certificate of authenticity (CoA),
+if one is found installed on the hardware that the firmware is running on.
+The details covering how to request the CoA from Telega fall outside of the scope of this document;
+the reader is advised to refer to the Sapog Reference Manual for explanations.
+
+Every manufactured instance of Zubax Mitochondrik contains a valid CoA, which is an RSA-1024 digital signature
+
+
 
 
 \end{document}
