@@ -179,14 +179,16 @@ Please contact Zubax Robotics for additional reliability and safety information.
                               capability\tnote{c}                 &      &  5    &      & J \\
         $R_\text{DS-on}$    & FET drain-source on-state resistance &      &  6  &   & $\text{m}\Omega$ \\
         $R_\text{phase}$    & Cumulative resistance of the
-                              inverter per phase                  &      & 6    &      & $\text{m}\Omega$ \\
+                              inverter per phase                  &      & 9   &      & $\text{m}\Omega$ \\
                             & Inverter temperature measurement
                               error                               & -6   &      & +6   & \degree{}C \\
                             & Inverter temperature measurement
                               range                               & -55  &      & 125  & \degree{}C \\
-                            & Motor temperature measurement error  & -2         & +2   & \degree{}C \\
+                            & Motor temperature measurement error & -2   &      & +2   &\degree{}C \\
                             & Motor temperature measurement
                               range                               & -50  &      & 175  & \degree{}C \\
+                            & BEC output voltage                  &  4.8 & 5.0  & 5.1  & V \\
+                            & BEC maximum output current          &      &      & 500  & mA \\
         
     \end{ZubaxWrappedTable}
 
@@ -230,7 +232,7 @@ The power rails of the connector pair are connected via a switch to the device's
 
 \begin{ZubaxSimpleTable}{CAN bus connectors pinout}{|c X X X[3]|}
     Pin no. & Type         & Name      & Comment \\
-    1       & Power        & PWR       & Not connected to the device's circuits internally.\\
+    1       & Power        & PWR       & Connected to the BEC via the switch.\\
     2       & Input/Output & CAN H     & \\
     3       & Input/Output & CAN L     & \\
     4       & Ground       & GND       & \\
@@ -288,6 +290,7 @@ such as dimensions and mounting holes placement.
 No soldering is required to connect Zubax Sadulli to the application system. 
 It is ready to use right out of the box. Just plug in battery XT30 power connector and CAN interface (RCPWM optionally) UAVCAN microconnectors as shown in Figure \ref{Sadulli_connectors}. 
 
+The BEC can be activated in the firmware and is applied to the power rails of the UAVCAN connectors.
 Application-specific integration documentation is available on the Zubax Knowledge Base at
 \mbox{\url{https://kb.zubax.com}}.
 
