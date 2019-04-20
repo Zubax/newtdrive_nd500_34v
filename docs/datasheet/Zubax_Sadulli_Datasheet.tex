@@ -67,7 +67,8 @@ Zubax Sadulli is a tightly integrated unit that contains an electric motor with 
 \chapter{Overview}
 Zubax Sadulli is an open hardware reference design for Mitochondrik. It is a tightly integrated unit that contains an electric motor with sensorless electronic speed controller in a single monolithic package. 
 
-Mitochondrik \footnote{Refer to \url{zubax.com/products/mitochondrik} for more information} is an integrated module (like an integrated circuit) that enables third-party hardware engineers to design sophisticated custom motor controllers using motor control technology -Telega\footnote{Reefer to \url{zubax.com/technologies/telega} for more information}, which integrates advanced control algorithms.   
+Mitochondrik \footnote{% 
+Refer to \url{zubax.com/products/mitochondrik} for more information} is an integrated module (like an integrated circuit) that enables third-party hardware engineers to design sophisticated custom motor controllers using motor control technology -Telega\footnote{Reefer to \url{zubax.com/technologies/telega} for more information}, which integrates advanced control algorithms.   
 This datasheet is focused only on the Sadulli hardware.
   
 The ESC is cooled by the motor. This allows for increasing the maximum ESC power in the same frame. Compact and tightly integrated design minimizes motor wiring and hence internal resistance. This, in turn, means fewer power losses and EMI. 
@@ -191,7 +192,7 @@ Please contact Zubax Robotics for additional reliability and safety information.
         $I_\text{inv}$      & Continuous DC current               &      &      & 20   & A \\
         $I_\text{inv-peak}$ & Peak DC current                     &      &      & 55   & A \\
         $I_\text{idle}$     & Idle current consumption            &      & 50   &      & mA \\
-        $V_\text{inv}$      & Supply voltage\tnote{a}             & 12   & 25.2 & 36.0 & V \\
+        $V_\text{inv}$      & Supply voltage\tnote{a}             & 12   &      & 36.0 & V \\
         $V_\text{TVS}$      & TVS\tnote{b}\space{} circuit
                               activation voltage                  & 37   &      & 40   & V \\
         $P_\text{TVS}$      & TVS circuit maximum power
@@ -199,13 +200,11 @@ Please contact Zubax Robotics for additional reliability and safety information.
         $E_\text{TVS}$      & TVS circuit energy absorption
                               capability\tnote{c}                 &      &  5    &      & J \\
         $R_\text{DS-on}$    & FET drain-source on-state resistance &      &  6  &   & $\text{m}\Omega$ \\
-        $R_\text{phase}$    & Cumulative resistance of the
-                              inverter per phase                  &      & 9   &      & $\text{m}\Omega$ \\
                             & Inverter temperature measurement
                               error                               & -6   &      & +6   & \degree{}C \\
                             & Inverter temperature measurement
                               range                               & -55  &      & 125  & \degree{}C \\
-                            & Motor temperature measurement error & -2   &      & +2   &\degree{}C \\
+                            & Motor temperature measurement error & -8   &      & +8   &\degree{}C \\
                             & Motor temperature measurement
                               range                               & -50  &      & 175  & \degree{}C \\
                             & BEC output voltage                  &  4.8 & 5.0  & 5.1  & V \\
@@ -246,7 +245,8 @@ during braking.
 \subsection{CAN bus}
 
 The device is equipped with an ISO 11898-2 CAN 2.0A/B interface.
-The CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to
+The CAN interface has two standard UAVCAN Micro connectors\footnote{%
+Refer to
 \url{http://uavcan.org} for more information on UAVCAN.}
 joined in parallel.
 The power rails of the connector pair are connected via a switch to the device's BEC.
