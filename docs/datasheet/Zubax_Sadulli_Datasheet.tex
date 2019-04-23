@@ -15,9 +15,10 @@
 \SetWatermarkLightness{0.9}
 
 \begin{document}
+\frontmatter
 \begin{titlepage}
 \section*{Overview}
-Zubax Sadulli is a tightly integrated unit that contains an electric motor with electronic speed controller. 
+Zubax Sadulli is a tightly integrated unit that contains an electric motor with electronic speed controller (ESC). 
 This sensorless propeller drive is an open hardware reference design for Mitochondrik module
 \footnote{Refer to \url{https://zubax.com//products/mitochondrik} for more information}.
 \section*{Features}
@@ -30,10 +31,10 @@ This sensorless propeller drive is an open hardware reference design for Mitocho
     \item Self-diagnostics and health status reporting.
     \item Built-in motor temperature sensor for enhanced \allowbreak{}self-diagnostics.
     \item Ready right out of the box. All parameters are tuned for high dynamic response and high-efficiency work.      
-    \item Highly configurable. All parameters can be changed. The Firmware can be upgraded by the user.     
+    \item Highly configurable. All parameters can be changed. The firmware can be upgraded by the user.     
     \item Regenerative braking and active freewheeling. 
     \item Solder-free design facilitates in-field maintenance.
-    \item Low noise and high efficiency due to the sinusoidal motor currents and high-frequency PWM.
+    \item Low noise and high efficiency due to the sinusoidal motor currents and \allowbreak{}high-frequency PWM.
     \item Supported interfaces:
     \begin{itemize}
         \item UAVCAN\footnote{Refer to \url{https://uavcan.org/} for more information}.
@@ -68,6 +69,7 @@ This sensorless propeller drive is an open hardware reference design for Mitocho
 \mainmatter
 
 \chapter{Overview}
+
 Zubax Sadulli is an open hardware reference design for Mitochondrik. It is a tightly integrated unit that contains 
 an electric motor with sensorless electronic speed controller in a single monolithic package. 
 
@@ -181,10 +183,10 @@ Please contact Zubax Robotics for additional reliability and safety information.
 \section{Motor specification}
 
 \begin{ZubaxSimpleTable}{Motor}{|c X|c|c|c|}
-    Symbol & Parameter                                & Sadulli Grosso & Sadulli Piccino & Unit \\
-    N                   & Number of rotor poles       & 24             & 24              & - \\
-    Kv                & Constant velocity           & 330            & 380             & rpm/V \\
-    $I_\text{noload}$   & No load current             & 0.7            & 0.3             & A/10V \\
+    Symbol & Parameter                                 & Sadulli Grosso & Sadulli Piccino & Unit \\
+    N                    & Number of rotor poles       & 24             & 24              & - \\
+    Kv                   & Constant velocity           & 330            & 380             & rpm/V \\
+    $I_\text{noload}$    & No load current             & 0.7            & 0.3             & A/10V \\
     $I_\text{motor max}$ & Motor phase maximum current & 30             & 16              & A(30sec)\\
     $P_\text{motor max}$ & Motor maximum continious power & 750         & 450             & W \\
        -                 & Weight                       & 166           & 66              & g\\
@@ -206,13 +208,13 @@ Please contact Zubax Robotics for additional reliability and safety information.
         $P_\text{TVS}$      & TVS circuit maximum power
                               dissipation                         &      & 1000 &      & W \\
         $E_\text{TVS}$      & TVS circuit energy absorption
-                              capability\tnote{c}                 &      &  5    &      & J \\
+                              capability\tnote{c}                 &      &  5   &      & J \\
         $R_\text{DS-on}$    & FET drain-source on-state resistance &      &  6  &   & $\text{m}\Omega$ \\
                             & Inverter temperature measurement
                               error                               & -6   &      & +6   & \degree{}C \\
                             & Inverter temperature measurement
                               range                               & -55  &      & 125  & \degree{}C \\
-                            & Motor temperature measurement error & -8   &      & +8   &\degree{}C \\
+                            & Motor temperature measurement error & -8   &      & +8   & \degree{}C \\
                             & Motor temperature measurement
                               range                               & -50  &      & 175  & \degree{}C \\
                             & BEC output voltage                  &  4.8 & 5.0  & 5.1  & V \\
@@ -225,11 +227,14 @@ Please contact Zubax Robotics for additional reliability and safety information.
 \subsection{Power connectors}
 
 Zubax Sadulli is equipped with XT30 battery power connector. 
-The motor phases are connected internally direct to the power board. This minimizes motor wiring and hence internal resistance. 
+The motor phases are connected internally direct to the power board. This minimizes motor wiring and 
+hence internal resistance. 
 
 \subsection{Motor temperature measurement}
 
-Zubax Sadulli measures the temperature of motor windings by means of the KTY84/130 PTC thermistor. It converts and translates measured data via UAVCAN bus\footnote{Not all versions of Telega support motor temperature measurement. Refer for Telega documentation for more information}.  
+Zubax Sadulli measures the temperature of motor windings by means of the KTY84/130 PTC thermistor. 
+It converts and translates measured data via UAVCAN bus\footnote{Not all versions of Telega support 
+motor temperature measurement. Refer for Telega documentation for more information}.  
 
 \subsection{Regenerative braking}
 
@@ -253,11 +258,9 @@ during braking.
 \subsection{CAN bus}
 
 The device is equipped with an ISO 11898-2 CAN 2.0A/B interface.
-The CAN interface has two standard UAVCAN Micro connectors\footnote{%
-Refer to
-\url{http://uavcan.org} for more information on UAVCAN.}
-joined in parallel.
-The power rails of the connector pair are connected via a switch to the device's BEC.
+The CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to \url{http://uavcan.org} 
+for more information on UAVCAN.} joined in parallel. The power rails of the connector pair are connected via 
+a switch to the device's BEC.
 
 \begin{ZubaxSimpleTable}{CAN bus connectors pinout}{|c X X X[3]|}
     Pin no. & Type         & Name      & Comment \\
@@ -286,39 +289,41 @@ The power rails of the connector pair are connected via a switch to the device's
 
 \section{Indication}
 
-Zubax Sadulli is equipped with a single RGB LED indicator for purposes of status indication and single Green LED for CAN bus transfer indication. 
-These LEDs are located on the PCB near the UAVCAN connectors.
+Zubax Sadulli is equipped with a single RGB LED indicator for purposes of status indication and single Green LED for 
+CAN bus transfer indication. These LEDs are located on the PCB near the UAVCAN connectors.
 
 \section{Mechanical characteristics}
 
-The drawings \ref{Sadulli_grosso_drawing} and \ref{Sadulli_piccino_drawing} document the basic mechanical characteristics of Zubax Sadulli,
-such as dimensions and propeller mounting holes placement.
+The drawings \ref{Sadulli_grosso_drawing} and \ref{Sadulli_piccino_drawing} document the basic mechanical 
+characteristics of Zubax Sadulli, such as dimensions and propeller mounting holes placement.
 
-Sadulli is mounting on the chassis like a standard motor. It has standard  19x25 and 25x25 mounting patterns (see Figure \ref{Sadulli_mounting_drawing}).
+Sadulli is mounting on the chassis like a motor. It has standard  19x25 and 25x25 mounting patterns. These patterns are
+shown on the drawing \ref{Sadulli_mounting_drawing}).
 
 \begin{figure}[tb]
     \centering    
     \includegraphics[width=0.65\textwidth]{sadulli-grosso_drawing}
-    \caption{Sadulli-grosso drawing.} \label{Sadulli_grosso_drawing} 
+    \caption{Sadulli-grosso drawing.\label{Sadulli_grosso_drawing}} 
 \end{figure}
 
 \begin{figure}[b]
     \centering    
     \includegraphics[width=0.65\textwidth]{sadulli-piccino_drawing}
-    \caption{Sadulli-piccino drawing.}\label{Sadulli_piccino_drawing}}
+    \caption{Sadulli-piccino drawing.\label{Sadulli_piccino_drawing}}
 \end{figure}
 
 \begin{figure}[b]
     \centering    
     \includegraphics[width=0.45\textwidth]{mounting_drawing}
-    \caption{Sadulli mounting drawing.}\label{Sadulli_mounting_drawing}}
+    \caption{Sadulli mounting drawing.\label{Sadulli_mounting_drawing}}
 \end{figure}
 
 
 \begin{ZubaxSimpleTable}{Mechanical characteristics}{|c|l|c|c|с|X|}
-    Symbol & Parameter & Grosso &Piccino  & Unit & Note                 \\
-    $m$    & Weight   & 207  & 128 & g  & Cables not included  \\
-    IP     & Ptotection & 65 & 65 & - & The ESC is conformally coated to protect from wet conditions \\                        
+    Symbol & Parameter   & Grosso  &Piccino  & Unit & Note                 \\
+    $m$    & Weight      & 207     & 128     & g    & Cables not included  \\
+    IP     & Ptotection  & 65      & 65      & -    & The ESC is conformally coated to protect 
+                                                      from wet conditions \\                        
 \end{ZubaxSimpleTable}
 
 \chapter{Operation}\label{operation}
@@ -334,8 +339,7 @@ Application-specific integration documentation is available on the Zubax Knowled
 
 \begin{figure}[hb]
     \includegraphics[width=0.45\textwidth]{sadulli-connectors} \includegraphics[width=0.45\textwidth]{connectors}
-    \caption{Connection of Sadulli.
-    \label{Sadulli_connectors}}
+    \caption{Connection of Sadulli.\label{Sadulli_connectors}}
 \end{figure}
 
 
@@ -358,7 +362,7 @@ It is specified in the tables \ref{table:status_led} and \ref{table:status_led_b
 \begin{ZubaxSimpleTable}{Status LED during boot}{|l l X|}\label{table:status_led}
     Color                     & Status                          & Description \\
     \ShowColor{yellow} Yellow & No application to boot          & The firmware haven't been flashed to the ESC
-     or FLASH has been damaged. \\
+                                                                  or FLASH has been damaged. \\
     \ShowColor{blue} Blue     & Application upgrade is in progress. &            \\
     \ShowColor{green} Green   & Boot canceled                   & The device firmware has not been properly signed \\
     \ShowColor{magenta} Magenta & Ready to boot                 & Glows after power up or restart the device until 
@@ -372,13 +376,17 @@ It is specified in the tables \ref{table:status_led} and \ref{table:status_led_b
        \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX} & Idle, ready to run & The ESC is ready and waiting for the setpoint\\
     
     {\color{red}
-       \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDX\LEDX} & Idle, Hardware fault & The power stage is not ready or current is tripped\\
+       \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDX\LEDX} & Idle, Hardware fault & The power stage is not ready or current is 
+       tripped\\
 
     {\color{red}
-       \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX} & Idle, Hardware test fault & The motor is not connected or there is a short circuit on the output od the ESC\\
+       \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX} & Idle, Hardware test fault & The motor is not connected or 
+       there is a short circuit on the output of the ESC\\
 
     {\color{red}
-       \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX\LEDO\LEDX\LEDX\LEDX} & Idle, Invalid motor parameters & Some motor parameters are not properly initialized or the motor identification hasn't been performed\\
+       \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX\LEDO\LEDX
+       \LEDX\LEDX} & Idle, Invalid motor parameters & Some motor parameters are not properly initialized or the motor 
+       identification hasn't been performed\\
 
 \end{ZubaxSimpleTable}
 
@@ -387,7 +395,8 @@ It is specified in the tables \ref{table:status_led} and \ref{table:status_led_b
 \subsection{Hardware version number}
 
 Zubax Sadulli reports to the Telega firmware the following hardware version number
-(in the form major.minor): 1.7. It actually is the Mitochondrik hardware version number because Sadulli is based on the Mitochondrik module. 
+(in the form major.minor): 1.7. It actually is the Mitochondrik hardware version number because Sadulli is based on 
+the Mitochondrik module. 
 
 \subsection{Certificate of authenticity}\label{sec:certificate_of_authenticity}
 
