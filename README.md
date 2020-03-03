@@ -10,16 +10,16 @@ The main design goal is to create a compact yet sophisticated motor controller t
 
 - Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (15-34 V)
 - Maximum continuous power 500 W
-- UAVCAN hardware recommendations following
+- [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
 - Absence of necessity to invoke soldering to setup the device
 
 Sadulli consists of two main parts:  COTS motor and the ESC.  This repository contains the ESC hardware source files only.  There are three design variants of the Sadulli drive. All of them share the same ESC design.
 
-| Variant | Motor                                                        | Propeller type | Optimum thrust (kg) | Max thrust (kg) | Mass (g) |
-| ------- | ------------------------------------------------------------ | -------------- | ------------------- | --------------- | -------- |
-| Grosso  | [V4014](http://en.rcsunnysky.com/v-multi-rotorefficiencytype/1083.html) | 17*62          | 1.5                 | 4               | 207      |
-| Piccino | [V4006](http://en.rcsunnysky.com/v-multi-rotorefficiencytype/1081.html) | 15*55          | 0.7                 | 1.5             | 128      |
-| Nudo    | N/A                                                          | N/A            | N/A                 | N/A             | 62       |
+| Variant | Motor                                                        | Propeller diameter (inch) | Propeller pitch (inch) | Optimum thrust (kg) | Max thrust (kg) | Mass (g) |
+| ------- | ------------------------------------------------------------ | ------------------------- | ---------------------- | ------------------- | --------------- | -------- |
+| Grosso  | [V4014](http://en.rcsunnysky.com/v-multi-rotorefficiencytype/1083.html) | 17                        | 6.2                    | 1.5                 | 4               | 207      |
+| Piccino | [V4006](http://en.rcsunnysky.com/v-multi-rotorefficiencytype/1081.html) | 15                        | 5.5                    | 0.7                 | 1.5             | 128      |
+| Nudo    | N/A                                                          | N/A                       | N/A                    | N/A                 | N/A             | 62       |
 
 <img src="pics/nudo.png" alt="nudo" style="zoom: 33%;" />
 
