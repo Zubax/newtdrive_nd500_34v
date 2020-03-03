@@ -21,20 +21,28 @@ Sadulli consists of two main parts:  COTS motor and the ESC.  This repository co
 | Piccino | [V4006](http://en.rcsunnysky.com/v-multi-rotorefficiencytype/1081.html) | 15                        | 5.5                    | 0.7                 | 1.5             | 128      |
 | Nudo    | N/A                                                          | N/A                       | N/A                    | N/A                 | N/A             | 62       |
 
+<p align="center">
 <img src="pics/nudo.png" alt="nudo" width = "40%" />
-
+<\p>
+<p align="center">
 <img src="pics/piccino.png" alt="piccino"  width = "40%" />
-
+<\p>
+<p align="center">
 <img src="pics/grosso.png" alt="grosso"  width = "40%" />
+<\p>
 
 Sadulli is equipped with one CAN bus. The power is supplied through standard XT30 male connector.
 
+<p align="center">
 <img src="pics/Sadulli connectors drawing.png" alt="grosso"  width = "100%" />
-
+<\p>
+  
 Under the hood Sadulli represents a construction of three PCBs (excluding Mitochondrik).
 
+<p align="center">
 <img src="pics/Sadulli PCB.png" alt="grosso"  width = "60%" />
-
+<\p>
+  
 The main PCB that determines most of SADULLI properties is the power stage PCB. The power stage is composed from three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND) MOSFET arrays. 
 
 | Parameter                                               | Value               |
