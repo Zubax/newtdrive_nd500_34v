@@ -8,7 +8,7 @@ The main design goal is to create a compact yet sophisticated motor controller t
 
 ## Brief specs
 
-- Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (15-34 V)
+- Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (12-34 V)
 - Maximum continuous power 500 W
 - [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
 - Absence of necessity to invoke soldering to setup the device
