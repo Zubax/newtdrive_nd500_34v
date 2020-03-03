@@ -23,7 +23,6 @@ Sadulli consists of two main parts:  COTS motor and the ESC.  This repository co
 
 <p align="center">
 <img src="pics/nudo.png" alt="nudo" width = "40%" />
-<\p>
 <p align="center">
 <img src="pics/piccino.png" alt="piccino"  width = "40%" />
 <\p>
