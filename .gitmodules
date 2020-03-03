@@ -1,0 +1,3 @@
+[submodule "datasheet/document_templates"]
+	path = datasheet/document_templates
+	url = https://github.com/Zubax/document_templates
