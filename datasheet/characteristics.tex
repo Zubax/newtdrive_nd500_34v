@@ -42,10 +42,11 @@ Proper operation of the device within the limits specified in this section is no
 \end{tablenotes}
 \end{ZubaxTableWrapper}
 
-\begin{ZubaxSimpleTable}{Mechanical characteristics}{|l|c|c|c|X|}
-    Parameter       & Grosso  & Piccino  & Nudo  & Unit & Note                 \\
-    Weight          & 228     & 128      & 62    & g    & Cables not included  \\
-    IP Protection   & 54      & 54       & 54    & -    & Liquid damage protection is achieved by conformal \mbox{coating} of the PCB \\                        
+\begin{ZubaxSimpleTable}{Mechanical characteristics}{|l|c|c|c|c|X|}
+    Parameter       & Grosso  & Piccino  & Nudo  & Unit & Note                                    \\
+    Mass            & 228     & 128      & 62    & g    & Cables and propellers not included      \\
+    IP Protection   & 54      & 54       & 54    & -    & Liquid damage protection is achieved 
+                                                          by conformal \mbox{coating} of the PCB  \\                       
 \end{ZubaxSimpleTable}
 
 \begin{ZubaxTableWrapper}{Characteristics of CAN bus interfaces}
@@ -122,13 +123,13 @@ Glows steadily when the intensity of CAN traffic is higher than 40 frames per se
 The behaviour of the status LED is specified in the table below.
 
 \begin{ZubaxSimpleTable}{Status LED during boot}{|l l X|}\label{table:status_led}
-             Color              & Status                              & Description                                  \\
+             Color              & Status                              & Description                                      \\
     \ShowColor{yellow} Yellow   & No application to boot              & The firmware has not been flashed to the ESC
-                                                                        or FLASH has been damaged.                   \\
-    \ShowColor{blue} Blue       & Application upgrade is in progress  &                                              \\
+                                                                        or FLASH has been damaged.                       \\
+    \ShowColor{blue} Blue       & Application upgrade is in progress  &                                                  \\
     \ShowColor{green} Green     & Boot canceled                       & The device firmware has not been properly signed \\
     \ShowColor{magenta} Magenta & Ready to boot                       & Glows after the device power-up or restart event
-                                                                        until the application starts. \\
+                                                                        until the application starts.                    \\
 \end{ZubaxSimpleTable}
 
 \begin{ZubaxSimpleTable}{Status LED behavior}{|l X X|}\label{table:status_led_behavior}
