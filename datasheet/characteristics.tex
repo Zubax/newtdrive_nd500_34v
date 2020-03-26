@@ -15,6 +15,21 @@ Proper operation of the device within the limits specified in this section is no
 \end{ZubaxWrappedTable}
 \end{ZubaxTableWrapper}
 
+\section{Electrical characteristics}
+
+\begin{ZubaxTableWrapper}{Electrical characteristics}
+    \begin{ZubaxWrappedTable}{| X | c  c  c | c |}
+    Parameter                               & Min   & Typ   & Max   & Unit            \\
+    Supply voltage                          & 12    &       & 33.6    & V               \\
+    Idle current consumption                & 3     &       & 10    & mA              \\
+    FET drain-source on-state resistance    &       & 6     &       & $\text{m}\Omega$\\
+    Inverter temperature measurement range  & -55   &       & 125   & \degree{}C      \\
+    Inverter temperature measurement error  & -6    &       & 6     & \degree{}C      \\
+    Motor temperature measurement range     & -55   &       & 150   & \degree{}C      \\
+    Motor temperature measurement error     & -5    &       & 5     & \degree{}C      \\
+\end{ZubaxWrappedTable}
+\end{ZubaxTableWrapper}
+
 \section{Environmental conditions}
 
 \begin{ZubaxTableWrapper}{Environmental conditions}
@@ -30,7 +45,7 @@ Proper operation of the device within the limits specified in this section is no
 \section{Operational characteristics}
 
 \begin{ZubaxTableWrapper}{Power characteristics}
-\begin{ZubaxWrappedTable}{| l | X | X | c |}\label{table:Power characteristics}
+\begin{ZubaxWrappedTable}{| l | X | X | c |}
     Parameter                           & Sadulli Piccino   & Sadulli Grosso    & Unit  \\
     Continuous power                    & 500               & 500               &   W   \\
     Peak power (30sec)                  & 700               & 700               &   W   \\
@@ -89,8 +104,9 @@ The mating XT30U-F connector may be provided as connector only or as a connector
 \section{CAN bus}
 
 The device is equipped with a single ISO 11898-2 CAN 2.0A/B interface. 
-CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to \url{http://uavcan.org} for more information on UAVCAN.} 
-joined in parallel. The device does not terminate the CAN bus internally.
+CAN interface has two standard UAVCAN Micro connectors\footnote{Refer to \url{http://uavcan.org} 
+for more information on UAVCAN.} joined in parallel. 
+The device does not terminate the CAN bus internally.
 
 \begin{ZubaxSimpleTable}{CAN bus connectors pinout}{| c | X | X | }
     Pin no. & Type         & Name   \\   
@@ -122,17 +138,17 @@ Glows steadily when the intensity of CAN traffic is higher than 40 frames per se
 \textbf{STATUS} RGB LED indicates the status of the firmware. 
 The behaviour of the status LED is specified in the table below.
 
-\begin{ZubaxSimpleTable}{Status LED during boot}{|l l X|}\label{table:status_led}
+\begin{ZubaxSimpleTable}{Status LED during boot}{|l l X|}
              Color              & Status                              & Description                                      \\
     \ShowColor{yellow} Yellow   & No application to boot              & The firmware has not been flashed to the ESC
                                                                         or FLASH has been damaged.                       \\
     \ShowColor{blue} Blue       & Application upgrade is in progress  &                                                  \\
-    \ShowColor{green} Green     & Boot canceled                       & The device firmware has not been properly signed \\
+    \ShowColor{green} Green     & Boot canceled                       & The device firmware has not been properly signed.\\
     \ShowColor{magenta} Magenta & Ready to boot                       & Glows after the device power-up or restart event
                                                                         until the application starts.                    \\
 \end{ZubaxSimpleTable}
 
-\begin{ZubaxSimpleTable}{Status LED behavior}{|l X X|}\label{table:status_led_behavior}
+\begin{ZubaxSimpleTable}{Status LED behavior}{|l X X|}
     LED pattern (step 80 ms)                     & Status                    & Description\\
 
     {\color{blue}
@@ -160,21 +176,21 @@ The behaviour of the status LED is specified in the table below.
 
 \section{Mechanical characteristics}
 
-The drawing \ref{connecotrs} documents the placement of connectors and status LEDs on all variants of Zubax Sadulli.
+The drawing \ref{fig:characteristics_connectors_placement} documents the placement of connectors and status LEDs on all variants of Zubax Sadulli.
 
 \begin{figure}[!hbt]
     \centerline{\includegraphics[width=0.8\textwidth]{figures/connectors_leds}}
-    \caption{Connectors and LEDs drawing\label{connecotrs}}
+    \caption{Connectors and LEDs drawing\label{fig:characteristics_connectors_placement}}
 \end{figure}
 
 \subsection{Mounting pattern}
 
 All versions of Zubax Sadulli share the same mounting pattern. 
-It is specified in the drawing \ref{mounting_pattern} All linear dimensions are in mm.
+It is specified in the drawing \ref{fig:characteristics_mounting_pattern}. All linear dimensions are in mm.
 
 \begin{figure}[!hbt]
     \centerline{\includegraphics[width=0.7\textwidth]{figures/mounting_pattern}}
-    \caption{Mounting pattern\label{mounting_pattern}}
+    \caption{Mounting pattern\label{fig:characteristics_mounting_pattern}}
 \end{figure}
 
 \newpage
@@ -184,7 +200,7 @@ All linear dimensions are in mm.
 
 \begin{figure}[!hbt]
     \centerline{\includegraphics[width=0.8\textwidth]{figures/sadulli_nudo}}
-    \caption{Sadulli Nudo drawing\label{Nudo_drawing}}
+    \caption{Sadulli Nudo drawing}
 \end{figure}
 
 \newpage
@@ -194,7 +210,7 @@ All linear dimensions are in mm. Propeller not shown.
 
 \begin{figure}[!hbt]
     \centerline{\includegraphics[width=0.6\textwidth]{figures/sadulli_piccino}}
-    \caption{Sadulli Piccino drawing\label{Piccino_drawing}}
+    \caption{Sadulli Piccino drawing}
 \end{figure}
 
 \newpage
@@ -204,5 +220,5 @@ All linear dimensions are in mm. Propeller not shown.
 
 \begin{figure}[!hbt]
     \centerline{\includegraphics[width=0.6\textwidth]{figures/sadulli_grosso}}
-    \caption{Sadulli Grosso drawing\label{Grosso_drawing}}
+    \caption{Sadulli Grosso drawing}
 \end{figure}
