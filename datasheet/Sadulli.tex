@@ -4,7 +4,7 @@
 %
 
 \documentclass{document_templates/documentation_template_latex/zubaxdoc}
-\graphicspath{{document_templates/documentation_template_latex/}}
+\graphicspath{{document_templates/documentation_template_latex/}{figures/}}
 \title{Zubax Sadulli Datasheet}
 
 \hbadness=10000
@@ -45,7 +45,7 @@ All hardware is open source and available on Github\footnote{\url{https://github
 \end{itemize}
 
 \centering
-\includegraphics[width=0.42\textwidth]{figures/sadulli_grosso_pic}
+\includegraphics[width=0.42\textwidth]{sadulli_grosso_pic}
 \end{titlepage}
 
 \tableofcontents
@@ -57,6 +57,8 @@ All hardware is open source and available on Github\footnote{\url{https://github
 
 \input{overview.tex}
 \input{characteristics.tex}
+\input{led indication.tex}
+\input{mechanical characteristics.tex}
 \input{thrust_characteristics.tex}
 
 \end{document}
