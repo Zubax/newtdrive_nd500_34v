@@ -6,11 +6,11 @@
 
 Zubax Sadulli is equipped with two separate LED indicators that reflect its status.
 
-\textbf{CAN} green LED indicates data transfer through the CAN bus. 
-Blinks once if at least one CAN frame was successfully transmitted or successfully received in the last 25 milliseconds. 
+\textbf{CAN} green LED indicates data transfer through the CAN bus.
+Blinks once if at least one CAN frame was successfully transmitted or successfully received in the last 25 milliseconds.
 Glows steadily when the intensity of CAN traffic is higher than 40 frames per second.
 
-\textbf{STATUS} RGB LED indicates the status of the firmware. 
+\textbf{STATUS} RGB LED indicates the status of the firmware.
 The behaviour of the status LED is specified in the table below.
 
 \begin{ZubaxSimpleTable}{Status LED during boot}{|l l X|}
@@ -24,26 +24,26 @@ The behaviour of the status LED is specified in the table below.
 \end{ZubaxSimpleTable}
 
 \begin{ZubaxSimpleTable}{Status LED behavior}{|l X X|}
-    LED pattern (step 80 ms)                     & Status                    & Description\\
+    LED pattern (step 80 ms)                     & Status                    & Description \\
 
     {\color{blue}
        \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX}           & Idle, ready to run        & The ESC is ready and waiting for the
-                                                                               setpoint.\\
+                                                                               setpoint. \\
     
     {\color{red}
        \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDX\LEDX} & Idle, hardware fault      & The power stage is not ready or current
-                                                                               is tripped.\\
+                                                                               is tripped. \\
 
     {\color{red}
        \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX}
                                                  & Idle, hardware test fault & The motor is not connected or there is a
                                                                                short circuit on the output of the
-                                                                               ESC.\\
+                                                                               ESC. \\
 
     {\color{red}
        \LEDX\LEDO\LEDO\LEDO\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDO\LEDX\LEDX\LEDX\LEDO\LEDX
        \LEDX\LEDX}                          & Idle, invalid motor parameters & Some motor parameters are not properly
                                                                                initialized or the motor identification
-                                                                               hasn't been performed.\\
+                                                                               hasn't been performed. \\
 \end{ZubaxSimpleTable}
 

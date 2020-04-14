@@ -20,7 +20,7 @@ Proper operation of the device within the limits specified in this section is no
 \begin{ZubaxTableWrapper}{Electrical characteristics}
     \begin{ZubaxWrappedTable}{| X | c  c  c | c |}
     Parameter                               & Min   & Typ   & Max   & Unit            \\
-    Supply voltage                          & 12    &       & 33.6    & V               \\
+    Supply voltage                          & 12    &       & 33.6    & V             \\
     Idle current consumption                & 3     &       & 10    & mA              \\
     FET drain-source on-state resistance    &       & 6     &       & $\text{m}\Omega$\\
     Inverter temperature measurement range  & -55   &       & 125   & \degree{}C      \\
@@ -82,16 +82,16 @@ Proper operation of the device within the limits specified in this section is no
 \end{ZubaxTableWrapper}
 
 \subsection{Regenerative braking}
-During regenerative braking, the device performs energy transfer from the motor to the power supply network. 
-If the self-resistance of the power supply network is not sufficiently low, 
-the regenerative energy transfer may lead to an increase of the supply voltage beyond the safe operating limits. 
-Generally, batteries are capable of absorbing the energy recovered during braking without issues. 
-Problems may arise if the device is powered from a source that does not permit high reverse currents, 
-such as laboratory power supplies. 
+During regenerative braking, the device performs energy transfer from the motor to the power supply network.
+If the self-resistance of the power supply network is not sufficiently low,
+the regenerative energy transfer may lead to an increase of the supply voltage beyond the safe operating limits.
+Generally, batteries are capable of absorbing the energy recovered during braking without issues.
+Problems may arise if the device is powered from a source that does not permit high reverse currents,
+such as laboratory power supplies.
 In that case, it is advised to install additional buffer capacitors to act as energy storage during braking.
 
 \subsection{Power connectors}
-Zubax Sadulli is equipped with an XT30PW-M power connector. 
+Zubax Sadulli is equipped with an XT30PW-M power connector.
 The mating XT30U-F connector may be provided as connector only or as a connector with pre-soldered 100 mm 16 AWG wires.
 
 \section{CAN bus}
@@ -110,7 +110,6 @@ The device does not terminate the CAN bus internally.
 \end{ZubaxSimpleTable}
 
 \section{BEC output}
-Zubax Sadulli features software-controllable BEC output. It is available on bus power supply pin of UAVCAN connectors. 
-BEC output is protected against short circuit, maximum output current is 500 mA.  
-It is also protected against the reverse current flow with an ideal diode. 
-
+Zubax Sadulli features software-controllable BEC output. It is available on bus power supply pin of UAVCAN connectors.
+BEC output is protected against short circuit, maximum output current is 500 mA.
+It is also protected against the reverse current flow with an ideal diode.
