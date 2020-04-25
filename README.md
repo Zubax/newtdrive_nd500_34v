@@ -4,7 +4,7 @@
 
 Sadulli is a 500 W integrated drive for unmanned aerial applications that contains a motor and its control electronics in a compact enclosure. 
 
-The main design goal is to create a compact yet sophisticated motor controller that can be used with relatively small BLDC motors (about 40-45 mm in diameter) and can form an integrated drive together with the motor. This integrated drive should be possible to use as a direct replacement for just a motor alone without any major modifications to the aircraft it is used on. 
+The main design goal is to create a compact yet sophisticated motor controller that can be used with relatively small BLDC and PMSM motors (about 40-45 mm in diameter) and can form an integrated drive together with the motor. This integrated drive should be possible to use as a direct replacement for just a motor alone without any major modifications to the aircraft it is used on. 
 
 ## Brief specs
 
@@ -38,7 +38,7 @@ Under the hood Sadulli represents a construction of three PCBs (excluding Mitoch
 <p align="center">
 <img src="pics/Sadulli PCB.png" alt="grosso"  width = "60%" />
   
-The main PCB that determines most of SADULLI properties is the power stage PCB. The power stage is composed from three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND) MOSFET arrays. 
+The main PCB that determines most of Sadulli properties is the power stage PCB. The power stage is composed from three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND) MOSFET arrays. 
 
 | Parameter                                               | Value               |
 | :------------------------------------------------------ | ------------------- |
