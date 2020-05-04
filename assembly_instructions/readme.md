@@ -18,7 +18,7 @@ Prior to starting the assembly make sure that all the  items from the list below
 
 * A set of screws for the housing itself
 
-  ![](C:\Users\Admin\Desktop\post\BOM.png)
+  ![](BOM.png)
 
 Motor should be slightly modified to assemble the device: 
 
