@@ -25,9 +25,9 @@ Motor should be slightly modified to assemble the device:
 * Phase wires should be rerouted straight down and trimmed to ~30-40 mm (measuring from the bottom of the motor). 
 * The thermistor should be glued directly to the motor windings with epoxy resin (care must be taken to avoid ingress of epoxy to the motor bearing).
 
-Thermal pad has the shape of a circle with a diameter of 40-42 mm. Its thickness is 1 mm. [Arctic thermal pad](https://www.arctic.ac/worldwide_en/thermal-pad.html) is recommended
+Thermal pad has the shape of a circle with a diameter of 40-42 mm, 1 mm thickness. [Arctic thermal pad](https://www.arctic.ac/worldwide_en/thermal-pad.html) is recommended.
 
-Motor is mounted with  4 [DIN 7984 4 mm screws](https://www.mcmaster.com/92855a301).
+Motor is mounted with 4 [DIN 7984 4 mm screws](https://www.mcmaster.com/92855a301).
 
 Housing is held together with 4 [DIN 965 20 mm screws](https://www.mcmaster.com/91420a026).
 
