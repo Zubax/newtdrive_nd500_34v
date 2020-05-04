@@ -3,12 +3,12 @@ Prior to starting the assembly make sure that all the items from the list below 
 * Appropriate motor (for actual motor model check readme in the root of this repository )
 * Thermistor with pre-soldered extension wires
 * A set of PCBs:
-	* Connectors PCB
-	* Logic PCB
-	* Power stage PCB
+    * Connectors PCB
+    * Logic PCB
+    * Power stage PCB
 * Housing:
-  * Top part
-  * Bottom part
+    * Top part
+    * Bottom part
 * Thermal pad
 * A set of screws for the motor
 * A set of screws for the housing itself
