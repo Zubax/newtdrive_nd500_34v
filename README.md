@@ -8,12 +8,15 @@ The main design goal is to create a compact yet sophisticated motor controller t
 
 ## Brief specs
 
-- Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (12-34 V)
-- Maximum continuous power 500 W
-- [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
-- Absence of necessity to invoke soldering to setup the device
+- Operating voltage range: 4-8S Li-ion LiCoO<sub>2</sub>, 12-34 V
 
-Sadulli consists of two main parts:  COTS motor and the ESC.  This repository contains the ESC hardware source files only.  There are three design variants of the Sadulli drive. All of them share the same ESC design.
+- Maximum continuous power 500 W
+
+- Compatible with [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) 
+
+- Solderless integration
+
+  Sadulli consists of two main parts:  COTS motor and the ESC.  This repository contains the ESC hardware source files only.  There are three design variants of the Sadulli drive. All of them share the same ESC design.
 
 | Variant | Motor                                                        | Propeller diameter (inch) | Propeller pitch (inch) | Optimum thrust (kg) | Max thrust (kg) | Mass (g) |
 | ------- | ------------------------------------------------------------ | ------------------------- | ---------------------- | ------------------- | --------------- | -------- |
@@ -22,22 +25,23 @@ Sadulli consists of two main parts:  COTS motor and the ESC.  This repository co
 | Nudo    | N/A                                                          | N/A                       | N/A                    | N/A                 | N/A             | 62       |
 
 <p align="center">
-<img src="pics/nudo.png" alt="nudo" width = "40%" />
-<p align="center">
-<img src="pics/piccino.png" alt="piccino"  width = "40%" />
-<p align="center">
-<img src="pics/grosso.png" alt="grosso"  width = "40%" />
+<img src="pics/piccino.png" alt="piccino" width="40%" />
+<img src="pics/grosso.png" alt="grosso" width="40%" />
+<img src="pics/nudo.png" alt="nudo" width="40%" />
+</p>
+
 
 Sadulli is equipped with one CAN bus. The power is supplied through standard XT30 male connector.
 
 <p align="center">
 <img src="pics/Sadulli connectors drawing.png" alt="grosso"  width = "100%" />
-  
+
 Under the hood Sadulli represents a construction of three PCBs (excluding Mitochondrik).
 
 <p align="center">
-<img src="pics/Sadulli PCB.png" alt="grosso"  width = "60%" />
-  
+<img src="pics/Sadulli PCB.png" alt="Sadulli PCB"  width = "60%" />
+
+
 The main PCB that determines most of Sadulli properties is the power stage PCB. The power stage is composed from three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND) MOSFET arrays. 
 
 | Parameter                                               | Value               |
@@ -47,11 +51,11 @@ The main PCB that determines most of Sadulli properties is the power stage PCB. 
 | R<sub>ds on</sub> (Max) @ I<sub>d</sub>, V<sub>gs</sub> | 6 mOhm @ 25 A, 10 V |
 | Gate Charge (Q<sub>g</sub>) (Max) @ V<sub>gs</sub>      | 35.4 nC @ 10 V      |
 
-Current shunt value is 3 mOhm.
+The current shunts value is 3 mOhm.
 
-Bulk capacitor bank is formed with 6 [68µF  aluminum electrolytic capacitors](https://www.digikey.com/product-detail/en/w-rth-elektronik/860020673014/732-8860-3-ND/5727097).
+The bulk capacitor bank is formed with 6 [68µF  aluminum electrolytic capacitors](https://www.digikey.com/product-detail/en/w-rth-elektronik/860020673014/732-8860-3-ND/5727097).
 
-Overcurrent protection trip value is set to ~47A using 1K resistor on OC_adj pin (R1 on the connector PCB). 
+The overcurrent protection is configured to trigger at ~47 A using a 1k resistor on the `OC_adj` pin (R1 on the connector PCB).
 
 ## License
 
