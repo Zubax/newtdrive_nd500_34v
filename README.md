@@ -1,11 +1,13 @@
 # Zubax Sadulli
 
-Sadulli is a 500 W integrated drive for unmanned aerial applications that contains a motor and its control electronics
-in a compact enclosure.
+Sadulli is an open-hardware reference design of a 500 W integrated propeller drive based on the
+[Mitochondrik LV](http://zubax.com/mitochondrik-lv) motor control chip.
+It includes a motor and its control electronics in a single compact unit.
 
 The main design goal is to create a compact yet sophisticated motor controller that can be integrated with relatively
 small BLDC and PMSM motors (about 40-45 mm in diameter) in a single unit.
-Such integrated drive is a drop-in replacement of a regular standalone motor.
+Being equipped with a standard mounting hole pattern,
+Sadulli can be used as a drop-in replacement for regular standalone motors in various UAV applications.
 
 ## Brief specs
 
@@ -33,14 +35,12 @@ Sadulli is equipped with a single non-redundant UAVCAN/CAN interface.
 The input power is supplied through standard XT30 male connector.
 The device can deliver 5V to the UAVCAN/CAN power delivery network if the respective configuration option is enabled.
 
-<p align="center">
-<img src="pics/Sadulli connectors drawing.png" alt="grosso"  width = "100%" />
-</p>
+<img src="pics/Sadulli connectors drawing.png" />
 
 Under the hood Sadulli represents a construction of three PCBs (excluding Mitochondrik).
 
 <p align="center">
-<img src="pics/Sadulli PCB.png" alt="Sadulli PCB"  width = "60%" />
+<img src="pics/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
 </p>
 
 The main PCB that determines most of Sadulli properties is the power stage PCB.
