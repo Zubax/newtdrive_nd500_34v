@@ -15,7 +15,7 @@ Logic PCB                     | 1     |                                         
 Power stage PCB               | 1     |                                                                 | 
 Thermistor                    | 1     |                                                                 | PTC thermistor (KTY84/130, KTY81/120 or KTY83/130) with pre-soldered extension wires.
 
-  ![](BOM.png)
+![](BOM.png)
 
 Motor should be slightly modified to assemble the device: 
 
