@@ -28,6 +28,9 @@ The wires' length should be ~35-45 mm. The ends of the wires (3-5 mm) should be 
 * The thermistor should be glued directly to the motor windings with epoxy resin
 (care must be taken to avoid ingress of epoxy into the motor bearing).
 
+**The phase wires shall be soldered such that a positive setpoint drives the motor clockwise (viewed from the top).**
+If the observed direction is different, any two phase wires of the three are to be swapped.
+
 The thermal pad has the shape of a circle with a diameter of 40-42 mm, 1 mm thickness.
 
 For the detailed assembly process of Sadulli v1.0 please check the video: https://youtu.be/bqTBei1wUUw
