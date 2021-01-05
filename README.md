@@ -29,18 +29,18 @@ Nudo    | N/A                   | N/A                       | N/A               
 
 Grosso | Piccino | Nudo
 --|--|--
-<img src="pics/grosso.png" /> | <img src="pics/piccino.png" /> | <img src="pics/nudo.png" />
+<img src="figures/grosso.png" /> | <img src="figures/piccino.png" /> | <img src="figures/nudo.png" />
 
 Sadulli is equipped with a single non-redundant UAVCAN/CAN interface.
 The input power is supplied through standard XT30 male connector.
 The device can deliver 5V to the UAVCAN/CAN power delivery network if the respective configuration option is enabled.
 
-<img src="pics/Sadulli connectors drawing.png" />
+<img src="figures/Sadulli connectors drawing.png" />
 
 Under the hood Sadulli represents a construction of three PCBs (excluding Mitochondrik).
 
 <p align="center">
-<img src="pics/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
+<img src="figures/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
 </p>
 
 The main PCB that determines most of Sadulli properties is the power stage PCB.
