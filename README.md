@@ -37,7 +37,7 @@ The device can deliver 5V to the UAVCAN/CAN power delivery network if the respec
 
 <img src="figures/Sadulli connectors drawing.png" />
 
-Under the hood Sadulli represents a construction of three PCBs (excluding Mitochondrik).
+Under the hood Sadulli represents a construction of three PCBs (excluding the Mitochondrik).
 
 <p align="center">
 <img src="figures/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
@@ -61,6 +61,12 @@ The bulk capacitor bank is formed with 6
 
 The overcurrent protection is configured to trigger at
 ~47 A using a 1k resistor connected to the `OC_adj` pin (R1 on the connector PCB).
+
+## Release notes
+
+### Sadulli v1.0 (January 2021)
+
+First stable release. There have been no substantial changes compared to the pre-production revision.
 
 ## License
 
