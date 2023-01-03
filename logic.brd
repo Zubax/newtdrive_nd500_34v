@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -166,7 +166,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:FcUeiIdSRHSVEx6qgR7Bzg" pcbguid="14ad4a3f-f7a3-488d-8bc6-f827a596bdbd" lastpulledtime="" lastsyncedchangeguid="0b3212f2-fb44-a968-cc2d-cddf9dde6f39"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:FcUeiIdSRHSVEx6qgR7Bzg" pcbguid="14ad4a3f-f7a3-488d-8bc6-f827a596bdbd" lastpulledtime="" lastsyncedchangeguid="0b3212f2-fb44-a968-cc2d-cddf9dde6f39" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="" lastpushedtime="" linktopcb3d="false"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash"/>
@@ -231,6 +231,7 @@
 <wire x1="10.70710625" y1="-1.70710625" x2="11" y2="-2.4142125" width="0.01" layer="20" curve="-45"/>
 <wire x1="11" y1="-2.4142125" x2="11" y2="-3.5857875" width="0.01" layer="20"/>
 <wire x1="11" y1="-3.5857875" x2="10.70710625" y2="-4.29289375" width="0.01" layer="20" curve="-45"/>
+<text x="15" y="3" size="1.778" layer="21" rot="SR270">U</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:2540341">
