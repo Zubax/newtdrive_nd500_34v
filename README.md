@@ -21,10 +21,10 @@ This repository contains the ESC hardware source files only.
 There are two design variants of the Sadulli drive.
 All of them share the same ESC design.
 
-Variant  | Motor                 | Propeller diameter [inch] | Propeller pitch [inch] | Optimum thrust [N] | Max thrust [N]  | Mass [g]
--------- | --------------------- | ------------------------- | ---------------------- | ------------------ | --------------- | --------
-Alakdan  | Scorpion MII-4010     | 00                        | 000                    | 00                 | 00              | 193
-Nudo     | N/A                   | N/A                       | N/A                    | N/A                | N/A             | 62
+Variant  | Motor                 | Propeller diameter [inch] | Propeller pitch [inch] | Mass [g]
+-------- | --------------------- | ------------------------- | ---------------------- | --------
+Alakdan  | Scorpion MII-4010     | 17                        | 6.2                    | 193
+Nudo     | N/A                   | N/A                       | N/A                    | 62
 
 Alakdan | Nudo
 --|--
