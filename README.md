@@ -18,33 +18,32 @@ Sadulli can be used as a drop-in replacement for regular standalone motors in va
 
 Sadulli consists of two main parts: a COTS motor and the ESC.
 This repository contains the ESC hardware source files only.
-There are three design variants of the Sadulli drive.
+There are two design variants of the Sadulli drive.
 All of them share the same ESC design.
 
-Variant | Motor                 | Propeller diameter [inch] | Propeller pitch [inch] | Optimum thrust [N] | Max thrust [N]  | Mass [g]
-------- | --------------------- | ------------------------- | ---------------------- | ------------------ | --------------- | --------
-Grosso  | SunnySky V4014        | 17                        | 6.2                    | 15                 | 39              | 207
-Piccino | SunnySky V4006        | 15                        | 5.5                    | 7                  | 15              | 128
-Nudo    | N/A                   | N/A                       | N/A                    | N/A                | N/A             | 62
+Variant  | Motor                 | Propeller diameter [inch] | Propeller pitch [inch] | Optimum thrust [N] | Max thrust [N]  | Mass [g]
+-------- | --------------------- | ------------------------- | ---------------------- | ------------------ | --------------- | --------
+Alakdan  | Scorpion MII-4010     | 00                        | 000                    | 00                 | 00              | 193
+Nudo     | N/A                   | N/A                       | N/A                    | N/A                | N/A             | 62
 
-Grosso | Piccino | Nudo
---|--|--
-<img src="figures/grosso.png" /> | <img src="figures/piccino.png" /> | <img src="figures/nudo.png" />
+Alakdan | Nudo
+--|--
+<img src="figures/alakdan.png" width="743"/> | <img src="figures/nudo.png" />
 
 Sadulli is equipped with a single non-redundant UAVCAN/CAN interface.
-The input power is supplied through standard XT30 male connector.
+The input power is supplied through a standard XT30 male connector.
 The device can deliver 5V to the UAVCAN/CAN power delivery network if the respective configuration option is enabled.
 
 <img src="figures/Sadulli connectors drawing.png" />
 
-Under the hood Sadulli represents a construction of three PCBs (excluding the Mitochondrik).
+Under the hood, Sadulli represents the construction of three PCBs (excluding the Mitochondrik).
 
 <p align="center">
 <img src="figures/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
 </p>
 
-The main PCB that determines most of Sadulli properties is the power stage PCB.
-The power stage is composed from three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND)
+The main PCB that determines most of Sadulli's properties is the power stage PCB.
+The power stage is composed of three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND)
 MOSFET arrays.
 
 Parameter                                               | Value
@@ -63,6 +62,17 @@ The overcurrent protection is configured to trigger at
 ~47 A using a 1k resistor connected to the `OC_adj` pin (R1 on the connector PCB).
 
 ## Release notes
+
+### Sadulli v1.5 (April 2023)
+
+* Added Alakdan variant using Scorpion MII-4010 motor.
+* Removed Grosso and Piccino variants using SunnySky motors.
+* Updated assembly guide.
+* Added thermistor alternatives:
+
+Original  | Alternatives
+--------- | -----------------
+KTY81/120 | KTY81/110, KTY81/121, KTY81/122, or KTY81/150
 
 ### Sadulli v1.0 (January 2021)
 
