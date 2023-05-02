@@ -13,7 +13,7 @@ Thermal pad                   | Dia 42 mm | Arctic Cooling ACTPD00018A, ACTPD000
 Connectors PCB                | 1     |                                                                        |
 Logic PCB                     | 1     |                                                                        |
 Power stage PCB               | 1     |                                                                        |
-Thermistor                    | 1     | KTY81/120; Alternatives: KTY81/110, KTY81/121, KTY81/122, or KTY81/150 | PTC thermistor with pre-soldered extension wires.
+Thermistor                    | 1     | NXP KTY81/120, NXP KTY81/110, NXP KTY81/121, NXP KTY81/122, NXP KTY81/150, Littelfuse 102PS1J, or Littelfuse 102PS1G | PTC thermistor with pre-soldered extension wires.
 
 ![](figures/BOM.png)
 
