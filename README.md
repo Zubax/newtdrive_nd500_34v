@@ -13,7 +13,7 @@ Sadulli can be used as a drop-in replacement for regular standalone motors in va
 
 - Operating voltage range: 4-8S Li-ion LiCoO<sub>2</sub>, 12-34 V
 - Maximum continuous power 500 W
-- UAVCAN/CAN interface compatible with the DS-015 drone standard
+- [Cyphal](https://telega.zubax.com/) (formerly UAVCAN)/CAN interface compatible with the DS-015 drone standard
 - Solderless integration
 
 Sadulli consists of two main parts: a COTS motor and the ESC.
@@ -30,9 +30,9 @@ Alakdan | Nudo
 --|--
 <img src="figures/alakdan.png" width="743"/> | <img src="figures/nudo.png" />
 
-Sadulli is equipped with a single non-redundant UAVCAN/CAN interface.
+Sadulli is equipped with a single non-redundant Cyphal/CAN interface.
 The input power is supplied through a standard XT30 male connector.
-The device can deliver 5V to the UAVCAN/CAN power delivery network if the respective configuration option is enabled.
+The device can deliver 5V to the Cyphal/CAN power delivery network if the respective configuration option is enabled.
 
 <img src="figures/Sadulli connectors drawing.png" />
 
