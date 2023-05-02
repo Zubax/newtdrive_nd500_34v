@@ -72,7 +72,7 @@ The overcurrent protection is configured to trigger at
 
 Original  | Alternatives
 --------- | -----------------
-KTY81/120 | KTY81/110, KTY81/121, KTY81/122, or KTY81/150
+KTY81/120 | KTY81/110, KTY81/121, KTY81/122, KTY81/150, 102PS1J, 102PS1G
 
 ### Sadulli v1.0 (January 2021)
 
