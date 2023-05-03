@@ -69,7 +69,7 @@ Use a cotton bud to apply more glue carefully.
 
 5. Housing Attachment. See photos for reference.
     * Insert the motor phase wires and the thermistor wires through the housing holes. Ensure proper placement.
-    * Get 4 pieces of DIN 7984 4 mm (motor screws). Attach the motor to the top housing. Use threadlock. 
+    * Get 4 pieces of DIN 7984 4 mm (motor screws). Attach the motor to the top housing. Use threadlock glue.
 Ensure that the screws don't touch the coils and that no moving part of the motor is touching the enclosure.
     * Trim the motor phase wires to ~30-35 mm (measuring from the bottom of the motor).
     * Remove the insulation. Twist the wires. Add solder to the ends of each wire (3-5 mm).
