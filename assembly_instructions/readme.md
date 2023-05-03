@@ -38,7 +38,7 @@ To simplify the process, solder 1 pin first then adjust the angle before solderi
 </p>
 
 3. Motor modification. 
-    * Remove the motor stopper.
+    * Remove the motor retainer ring.
     * The phase wires should be rerouted straight down.
 
 <p align="center">
