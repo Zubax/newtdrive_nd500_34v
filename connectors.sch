@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1924,6 +1924,67 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="RC0402FR-0727KL">
+<description>&lt;YAGEO - RC0402FR-0727KL - SMD Chip Resistor, 27 kohm, +/- 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="RESC1005X40N">
+<description>&lt;b&gt;0402 (1005)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.55" y="0" dx="0.75" dy="0.6" layer="1"/>
+<smd name="2" x="0.55" y="0" dx="0.75" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.175" y1="0.55" x2="1.175" y2="0.55" width="0.05" layer="51"/>
+<wire x1="1.175" y1="0.55" x2="1.175" y2="-0.55" width="0.05" layer="51"/>
+<wire x1="1.175" y1="-0.55" x2="-1.175" y2="-0.55" width="0.05" layer="51"/>
+<wire x1="-1.175" y1="-0.55" x2="-1.175" y2="0.55" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RC0402FR-0727KL">
+<wire x1="5.08" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<text x="13.97" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="13.97" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="17.78" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RC0402FR-0727KL" prefix="R">
+<description>&lt;b&gt;YAGEO - RC0402FR-0727KL - SMD Chip Resistor, 27 kohm, +/- 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RC0402FR-0727KL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESC1005X40N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="YAGEO - RC0402FR-0727KL - SMD Chip Resistor, 27 kohm, +/- 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose" constant="no"/>
+<attribute name="HEIGHT" value="0.4mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="YAGEO" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR-0727KL" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1969,7 +2030,6 @@
 </part>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="GND4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="1K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="1K"/>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="IC2" library="myxa_masterlib" library_urn="urn:adsk.eagle:library:1040030" deviceset="TPD3S014DBVR" device="-SOT23-6" package3d_urn="urn:adsk.eagle:package:1040217/3"/>
 <part name="GND13" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
@@ -1985,6 +2045,12 @@
 <part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="CON1" library="Connectors" library_urn="urn:adsk.eagle:library:3750510" deviceset="CON-4P-TABS" device="-RA" package3d_urn="urn:adsk.eagle:package:1040150/6" technology="-JST_GH"/>
 <part name="CON2" library="Connectors" library_urn="urn:adsk.eagle:library:3750510" deviceset="CON-4P-TABS" device="-RA" package3d_urn="urn:adsk.eagle:package:1040150/6" technology="-JST_GH"/>
+<part name="R1" library="RC0402FR-0727KL" deviceset="RC0402FR-0727KL" device="" value="27K">
+<attribute name="DESCRIPTION" value="YAGEO - AF0402FR-0727KL - SMD Chip Resistor, 27 kohm, +/- 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose"/>
+<attribute name="HEIGHT" value="0.32mm"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AF0402FR-0727KL"/>
+<attribute name="PACKAGE" value="0402"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2087,14 +2153,8 @@
 <instance part="GND4" gate="1" x="38.1" y="12.7" smashed="yes">
 <attribute name="VALUE" x="38.1" y="11.43" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="R1" gate="G$1" x="63.5" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="50.8" size="1.27" layer="95" rot="R180" align="center"/>
-<attribute name="VALUE" x="63.754" y="52.832" size="0.762" layer="96" rot="R180" align="bottom-right"/>
-<attribute name="PACKAGE" x="67.31" y="50.292" size="0.508" layer="95" rot="R180" align="center"/>
-<attribute name="TOLERANCE" x="63.246" y="52.832" size="0.762" layer="96" rot="R180"/>
-</instance>
-<instance part="GND5" gate="1" x="71.12" y="45.72" smashed="yes">
-<attribute name="VALUE" x="71.12" y="44.45" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="GND5" gate="1" x="78.62" y="45.72" smashed="yes">
+<attribute name="VALUE" x="78.62" y="44.45" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 <instance part="IC2" gate="G$1" x="137.16" y="58.42" smashed="yes">
 <attribute name="NAME" x="143.51" y="74.93" size="2.54" layer="97" font="vector" ratio="15" align="center"/>
@@ -2141,6 +2201,11 @@
 <instance part="CON2" gate="G$1" x="170.18" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="176.53" y="92.71" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
+<instance part="R1" gate="G$1" x="58.4" y="50.8" smashed="yes">
+<attribute name="NAME" x="64.37" y="50.85" size="1.27" layer="95" align="center-left"/>
+<attribute name="VALUE" x="68.67" y="51.41" size="0.508" layer="96" align="center-left"/>
+<attribute name="PACKAGE" x="68.6" y="50.2" size="0.508" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2182,9 +2247,10 @@
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="71.12" y1="48.26" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="78.62" y1="48.26" x2="78.62" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="78.62" y1="50.8" x2="76.18" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="76.18" y1="50.8" x2="76.08" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
@@ -2407,10 +2473,11 @@
 </net>
 <net name="ADJ" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="50.8" x2="58.4" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.27" layer="95"/>
 <pinref part="CON6" gate="G$1" pin="6"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="58.4" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN1_VDD" class="0">
