@@ -13,38 +13,37 @@ Sadulli can be used as a drop-in replacement for regular standalone motors in va
 
 - Operating voltage range: 4-8S Li-ion LiCoO<sub>2</sub>, 12-34 V
 - Maximum continuous power 500 W
-- UAVCAN/CAN interface compatible with the DS-015 drone standard
+- [Cyphal](https://telega.zubax.com/)/CAN (formerly UAVCAN) interface compatible with the DS-015 drone standard
 - Solderless integration
 
 Sadulli consists of two main parts: a COTS motor and the ESC.
 This repository contains the ESC hardware source files only.
-There are three design variants of the Sadulli drive.
+There are two design variants of the Sadulli drive.
 All of them share the same ESC design.
 
-Variant | Motor                 | Propeller diameter [inch] | Propeller pitch [inch] | Optimum thrust [N] | Max thrust [N]  | Mass [g]
-------- | --------------------- | ------------------------- | ---------------------- | ------------------ | --------------- | --------
-Grosso  | SunnySky V4014        | 17                        | 6.2                    | 15                 | 39              | 207
-Piccino | SunnySky V4006        | 15                        | 5.5                    | 7                  | 15              | 128
-Nudo    | N/A                   | N/A                       | N/A                    | N/A                | N/A             | 62
+Variant  | Motor                 | Propeller diameter [inch] | Propeller pitch [inch] | Mass [g]
+-------- | --------------------- | ------------------------- | ---------------------- | --------
+Alakdan  | Scorpion MII-4010     | 17                        | 6.2                    | 193
+Nudo     | N/A                   | N/A                       | N/A                    | 62
 
-Grosso | Piccino | Nudo
---|--|--
-<img src="figures/grosso.png" /> | <img src="figures/piccino.png" /> | <img src="figures/nudo.png" />
+Alakdan | Nudo
+--|--
+<img src="figures/alakdan.png" width="743"/> | <img src="figures/nudo.png" />
 
-Sadulli is equipped with a single non-redundant UAVCAN/CAN interface.
-The input power is supplied through standard XT30 male connector.
-The device can deliver 5V to the UAVCAN/CAN power delivery network if the respective configuration option is enabled.
+Sadulli is equipped with a single non-redundant Cyphal/CAN interface.
+The input power is supplied through a standard XT30 male connector.
+The device can deliver 5V to the Cyphal/CAN power delivery network if the respective configuration option is enabled.
 
 <img src="figures/Sadulli connectors drawing.png" />
 
-Under the hood Sadulli represents a construction of three PCBs (excluding the Mitochondrik).
+Under the hood, Sadulli represents the construction of three PCBs (excluding the Mitochondrik).
 
 <p align="center">
 <img src="figures/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
 </p>
 
-The main PCB that determines most of Sadulli properties is the power stage PCB.
-The power stage is composed from three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND)
+The main PCB that determines most of Sadulli's properties is the power stage PCB.
+The power stage is composed of three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND)
 MOSFET arrays.
 
 Parameter                                               | Value
@@ -59,10 +58,19 @@ The resistance of the phase current shunts is 3 mOhm.
 The bulk capacitor bank is formed with 6
 [68µF aluminum electrolytic capacitors](https://www.digikey.com/product-detail/en/w-rth-elektronik/860020673014/732-8860-3-ND/5727097).
 
-The overcurrent protection is configured to trigger at
-~47 A using a 1k resistor connected to the `OC_adj` pin (R1 on the connector PCB).
-
 ## Release notes
+
+### Sadulli v1.5 (April 2023)
+
+* Added Alakdan variant using Scorpion MII-4010 motor.
+* Removed Grosso and Piccino variants using SunnySky motors.
+* Updated assembly guide.
+* Increased the hardware over-current protection limit (R1 on the connectors PCB increased to 27k).
+* Added thermistor alternatives:
+
+Original  | Alternatives
+--------- | -----------------
+KTY81/120 | KTY81/110, KTY81/121, KTY81/122, KTY81/150, 102PS1J, 102PS1G
 
 ### Sadulli v1.0 (January 2021)
 
