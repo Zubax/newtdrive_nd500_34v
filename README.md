@@ -9,7 +9,7 @@ small BLDC and PMSM motors (about 40-45 mm in diameter) in a single unit.
 Being equipped with a standard mounting hole pattern,
 Sadulli can be used as a drop-in replacement for regular standalone motors in various UAV applications.
 
-## Brief specs
+## Specifications
 
 - Operating voltage range: 4-8S Li-ion LiCoO<sub>2</sub>, 12-34 V
 - Maximum continuous power 500 W
@@ -36,7 +36,7 @@ The device can deliver 5V to the Cyphal/CAN power delivery network if the respec
 
 <img src="figures/Sadulli connectors drawing.png" />
 
-Under the hood, Sadulli represents the construction of three PCBs (excluding the Mitochondrik).
+Under the hood, Sadulli is a construction of three PCBs (excluding the Mitochondrik).
 
 <p align="center">
 <img src="figures/Sadulli PCB.png" alt="Sadulli PCB"  width="60%" />
@@ -58,9 +58,27 @@ The resistance of the phase current shunts is 3 mOhm.
 The bulk capacitor bank is formed with 6
 [68µF aluminum electrolytic capacitors](https://www.digikey.com/product-detail/en/w-rth-elektronik/860020673014/732-8860-3-ND/5727097).
 
+### Telega configuration
+
+The Mitochondrik LV module installed in Sadulli needs to be configured such that it is aware of the parameters of the power stage.
+To achieve this, upload the following configuration:
+
+```yaml
+# Refer to the Mitochondrik-LV datasheet for the explanation of how the parameter values have been found.
+vsi.bridge_resistance:    [0.003, 0.006, 0.003, 0.006, 0.003, 0.003]                            # [ohm]
+vsi.phase_current_gain:   [33.333333333333, 33.333333333333, 8.333333333333, 8.333333333333]    # [ampere/volt]
+vsi.phase_current_stderr: [0.2, 0.2, 0.1, 0.1]                                                  # [ampere]
+vsi.thermistor_v2k:       [223.15, 100.0, 0.0]                                                  # for MCP9700
+
+sys.debug: false            # Turn off the in-circuit debug interfaces to enhance EMI immunity.
+sys.golden: sys. vsi.       # Retain these parameter groups across a factory reset.
+```
+
+Refer to the Telega Reference Manual for details.
+
 ## Release notes
 
-### Sadulli v1.5 (April 2023)
+### Sadulli v1.5 (May 2023)
 
 * Added Alakdan variant using Scorpion MII-4010 motor.
 * Removed Grosso and Piccino variants using SunnySky motors.
