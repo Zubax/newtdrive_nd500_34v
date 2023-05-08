@@ -60,7 +60,8 @@ The bulk capacitor bank is formed with 6
 
 ### Telega configuration
 
-The Mitochondrik LV module installed in Sadulli needs to be configured such that it is aware of the parameters of the power stage.
+The Mitochondrik LV module installed in Sadulli needs to be configured such that it is aware of the parameters of the power stage
+(and the motor).
 To achieve this, upload the following configuration:
 
 ```yaml
@@ -69,6 +70,8 @@ vsi.bridge_resistance:    [0.003, 0.006, 0.003, 0.006, 0.003, 0.003]            
 vsi.phase_current_gain:   [33.333333333333, 33.333333333333, 8.333333333333, 8.333333333333]    # [ampere/volt]
 vsi.phase_current_stderr: [0.2, 0.2, 0.1, 0.1]                                                  # [ampere]
 vsi.thermistor_v2k:       [223.15, 100.0, 0.0]                                                  # for MCP9700
+
+# TODO: add the motor parameters here as well.
 
 sys.debug: false            # Turn off the in-circuit debug interfaces to enhance EMI immunity.
 sys.golden: sys. vsi.       # Retain these parameter groups across a factory reset.
