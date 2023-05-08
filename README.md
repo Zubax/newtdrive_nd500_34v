@@ -13,7 +13,7 @@ Sadulli can be used as a drop-in replacement for regular standalone motors in va
 
 - Operating voltage range: 4-8S Li-ion LiCoO<sub>2</sub>, 12-34 V
 - Maximum continuous power 500 W
-- [Cyphal](https://telega.zubax.com/) (formerly UAVCAN)/CAN interface compatible with the DS-015 drone standard
+- [Cyphal](https://telega.zubax.com/)/CAN (formerly UAVCAN) interface compatible with the DS-015 drone standard
 - Solderless integration
 
 Sadulli consists of two main parts: a COTS motor and the ESC.
