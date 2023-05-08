@@ -58,9 +58,6 @@ The resistance of the phase current shunts is 3 mOhm.
 The bulk capacitor bank is formed with 6
 [68µF aluminum electrolytic capacitors](https://www.digikey.com/product-detail/en/w-rth-elektronik/860020673014/732-8860-3-ND/5727097).
 
-The overcurrent protection is configured to trigger at
-~47 A using a 1k resistor connected to the `OC_adj` pin (R1 on the connector PCB).
-
 ## Release notes
 
 ### Sadulli v1.5 (April 2023)
@@ -68,6 +65,7 @@ The overcurrent protection is configured to trigger at
 * Added Alakdan variant using Scorpion MII-4010 motor.
 * Removed Grosso and Piccino variants using SunnySky motors.
 * Updated assembly guide.
+* Increased the hardware over-current protection limit (R1 on the connectors PCB increased to 27k).
 * Added thermistor alternatives:
 
 Original  | Alternatives
