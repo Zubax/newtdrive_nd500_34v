@@ -71,10 +71,21 @@ vsi.phase_current_gain:   [33.333333333333, 33.333333333333, 8.333333333333, 8.3
 vsi.phase_current_stderr: [0.2, 0.2, 0.1, 0.1]                                                  # [ampere]
 vsi.thermistor_v2k:       [223.15, 100.0, 0.0]                                                  # for MCP9700
 
-# TODO: add the motor parameters here as well.
+motor.current_ctl_bwr:  0.04
+motor.current_max:      38.0
+motor.mechanical_ratio: 7                   # The motor has 14 poles.
+motor.inductance_dq:    [29.0e-6, 29.0e-6]
+motor.resistance:       0.0508
+motor.flux_linkage:     0.002115
+motor.current_ramp:     5000.0
+motor.voltage_ramp:     20.0
+# The thermistor coefficients are valid for:
+# R_pull = 1.2 kohms; R_io = 0; V_pull = 3.3 V
+# Thermistor models: KTY81/120, KTY81/110, KTY81/121, KTY81/122, KTY81/150, 102PS1J, 102PS1G.
+motor.thermistor_v2k: [151.24172662, 36.46076996, 40.65372514]
 
-sys.debug: false            # Turn off the in-circuit debug interfaces to enhance EMI immunity.
-sys.golden: sys. vsi.       # Retain these parameter groups across a factory reset.
+sys.debug: false                # Turn off the in-circuit debug interfaces to enhance EMI immunity.
+sys.golden: sys. vsi. motor.    # Retain these parameter groups across a factory reset.
 ```
 
 Refer to the Telega Reference Manual for details.
