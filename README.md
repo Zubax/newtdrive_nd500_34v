@@ -84,8 +84,10 @@ motor.voltage_ramp:     20.0
 # Thermistor models: KTY81/120, KTY81/110, KTY81/121, KTY81/122, KTY81/150, 102PS1J, 102PS1G.
 motor.thermistor_v2k: [151.24172662, 36.46076996, 40.65372514]
 
+aux.pull: +1                    # Pull up the thermistor input.
+
 sys.debug: false                # Turn off the in-circuit debug interfaces to enhance EMI immunity.
-sys.golden: sys. vsi. motor.    # Retain these parameter groups across a factory reset.
+sys.golden: sys. vsi. motor. aux.pull # Retain these parameter groups across a factory reset.
 ```
 
 Refer to the Telega Reference Manual for details.
