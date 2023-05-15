@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2967,6 +2967,8 @@ http://www.bccomponents.com/</description>
 <part name="C1" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="RADIAL-6.3X12.5-RA" package3d_urn="urn:adsk.eagle:package:6513894/3" technology="-68UF_50V" value="68µF"/>
 <part name="C5" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_6.3X12.5" package3d_urn="urn:adsk.eagle:package:6513892/3" value="68µF">
 <attribute name="DIGIKEY#" value="732-8860-1-ND"/>
+<attribute name="MANF" value="Wurth Electronics Inc"/>
+<attribute name="MANF#" value="860020673014"/>
 <attribute name="PACKAGE" value="RADIAL"/>
 </part>
 <part name="C2" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="RADIAL-6.3X12.5-RA" package3d_urn="urn:adsk.eagle:package:6513894/3" technology="-68UF_50V" value="68µF"/>
@@ -2974,6 +2976,8 @@ http://www.bccomponents.com/</description>
 <part name="C4" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="RADIAL-6.3X12.5-RA" package3d_urn="urn:adsk.eagle:package:6513894/3" technology="-68UF_50V" value="68µF"/>
 <part name="C6" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_6.3X12.5" package3d_urn="urn:adsk.eagle:package:6513892/3" value="68µF">
 <attribute name="DIGIKEY#" value="732-8860-1-ND"/>
+<attribute name="MANF" value="Wurth Electronics Inc"/>
+<attribute name="MANF#" value="860020673014"/>
 <attribute name="PACKAGE" value="RADIAL"/>
 </part>
 <part name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS33VP1UTP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
@@ -3228,6 +3232,8 @@ and capacitor selection</text>
 <attribute name="VALUE" x="100.0506" y="226.949" size="1.27" layer="96" font="vector" rot="R270" align="center-left"/>
 <attribute name="PACKAGE" x="98.298" y="227.076" size="0.762" layer="97" font="vector" rot="R90" align="center-right"/>
 <attribute name="DIGIKEY#" x="99.06" y="228.6" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANF" x="99.06" y="228.6" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANF#" x="99.06" y="228.6" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="88.9" y="228.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="89.9414" y="230.251" size="1.27" layer="95" font="vector" rot="R90" align="center-left"/>
@@ -3249,6 +3255,8 @@ and capacitor selection</text>
 <attribute name="VALUE" x="105.1306" y="226.949" size="1.27" layer="96" font="vector" rot="R270" align="center-left"/>
 <attribute name="PACKAGE" x="103.378" y="227.076" size="0.762" layer="97" font="vector" rot="R90" align="center-right"/>
 <attribute name="DIGIKEY#" x="104.14" y="228.6" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANF" x="104.14" y="228.6" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANF#" x="104.14" y="228.6" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D1" gate="G$1" x="60.96" y="228.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.42" y="228.6" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
