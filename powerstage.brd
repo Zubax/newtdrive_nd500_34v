@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -163,7 +163,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ZAJHTluVSR69FIREnNfqcQ" pcbguid="7c6f9a56-3587-45a7-8229-92f35c80dc4b" lastpulledtime="" lastsyncedchangeguid="4dafe48e-c77c-1daa-a946-6eb060b4c180"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWE4ZDY4" projecturn="a.cGVyc29uYWw6dWUyYWE4ZDY4IzIwMTkwMzI5MTg1MjAzMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ZAJHTluVSR69FIREnNfqcQ" pcbguid="7c6f9a56-3587-45a7-8229-92f35c80dc4b" lastpulledtime="" lastsyncedchangeguid="4dafe48e-c77c-1daa-a946-6eb060b4c180" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="" lastpushedtime="" linktopcb3d="false"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
 <wire x1="0" y1="0" x2="0" y2="-21" width="0.1524" layer="49" style="shortdash" locked="yes"/>
@@ -5140,6 +5140,8 @@ P2</text>
 </element>
 <element name="C5" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="RADIAL_6.3X12.5" package3d_urn="urn:adsk.eagle:package:6513892/3" value="68µF" x="-10.1" y="-14.4" locked="yes" smashed="yes">
 <attribute name="DIGIKEY#" value="732-8860-1-ND" x="-10.1" y="-14.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANF" value="Wurth Electronics Inc" x="-10.1" y="-14.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="860020673014" x="-10.1" y="-14.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-10.1" y="-15.9" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="PACKAGE" value="RADIAL" x="-10.1" y="-14.4" size="1.778" layer="27" display="off"/>
 </element>
@@ -5178,6 +5180,8 @@ P2</text>
 </element>
 <element name="C6" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="RADIAL_6.3X12.5" package3d_urn="urn:adsk.eagle:package:6513892/3" value="68µF" x="10.1" y="-14.4" locked="yes" smashed="yes">
 <attribute name="DIGIKEY#" value="732-8860-1-ND" x="10.1" y="-14.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANF" value="Wurth Electronics Inc" x="10.1" y="-14.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="860020673014" x="10.1" y="-14.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="10.1" y="-15.9" size="1" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="PACKAGE" value="RADIAL" x="10.1" y="-14.4" size="1.778" layer="27" display="off"/>
 </element>

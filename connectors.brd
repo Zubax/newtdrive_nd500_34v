@@ -920,6 +920,8 @@
 <element name="R1" library="RC0402FR-0727KL" package="RESC1005X40N" value="27K" x="-2.475" y="4.975" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="YAGEO - AF0402FR-0727KL - SMD Chip Resistor, 27 kohm, +/- 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="0.32mm" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANF" value="YAGEO" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANF#" value="AF0402FR-0727KL" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="YAGEO" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="AF0402FR-0727KL" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="-2.475" y="4.975" size="1.778" layer="27" rot="R270" display="off"/>

@@ -2048,6 +2048,8 @@ Source: &lt;a href="https://www.yageo.com/upload/media/product/productsearch/dat
 <part name="R1" library="RC0402FR-0727KL" deviceset="RC0402FR-0727KL" device="" value="27K">
 <attribute name="DESCRIPTION" value="YAGEO - AF0402FR-0727KL - SMD Chip Resistor, 27 kohm, +/- 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose"/>
 <attribute name="HEIGHT" value="0.32mm"/>
+<attribute name="MANF" value="YAGEO"/>
+<attribute name="MANF#" value="AF0402FR-0727KL"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="AF0402FR-0727KL"/>
 <attribute name="PACKAGE" value="0402"/>
 </part>
@@ -2205,6 +2207,8 @@ Source: &lt;a href="https://www.yageo.com/upload/media/product/productsearch/dat
 <attribute name="NAME" x="64.37" y="50.85" size="1.27" layer="95" align="center-left"/>
 <attribute name="VALUE" x="68.67" y="51.41" size="0.508" layer="96" align="center-left"/>
 <attribute name="PACKAGE" x="68.6" y="50.2" size="0.508" layer="96"/>
+<attribute name="MANF" x="58.4" y="50.8" size="1.778" layer="96" display="off"/>
+<attribute name="MANF#" x="58.4" y="50.8" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
