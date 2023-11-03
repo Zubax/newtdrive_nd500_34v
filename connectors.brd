@@ -183,6 +183,7 @@
 <wire x1="6.7" y1="8.7" x2="7.25" y2="10.554" width="0.01" layer="20" curve="-33.045762"/>
 <wire x1="7.25" y1="10.554" x2="7.25" y2="11.5" width="0.01" layer="20"/>
 <text x="5.5" y="-0.5" size="1.5" layer="16" font="vector" ratio="15" rot="MR90" align="center">SC1</text>
+<circle x="-6.21" y="1.8" radius="0.15" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="myxa_masterlib" urn="urn:adsk.eagle:library:1040030">
