@@ -13,6 +13,7 @@ Sadulli can be used as a drop-in replacement for regular standalone motors in va
 
 - Operating voltage range: 4-8S Li-ion LiCoO<sub>2</sub>, 11-34 V
 - Maximum continuous power 500 W
+- Maximum continuous phase current amplitude 40 A
 - [Cyphal](https://telega.zubax.com/)/CAN (formerly UAVCAN) interface compatible with the DS-015 drone standard
 - Solderless integration
 
