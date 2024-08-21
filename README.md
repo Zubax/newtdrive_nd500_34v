@@ -1,4 +1,4 @@
-# Zubax Sadulli
+# NewtDrive ND500-34V / Zubax Sadulli
 
 Sadulli is an open-hardware reference design of a 500 W integrated propeller drive based on the
 [Mitochondrik LV](http://zubax.com/mitochondrik-lv) motor control chip.
